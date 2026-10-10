@@ -4,7 +4,7 @@ An open casebook of reproducibility and replication audits across **bioinformati
 
 For each published paper, I try to (1) rerun the reported result, (2) re-implement it with different tools, and (3) test whether it holds on different data. Along the way I log every detail the paper did not state but I needed, so the next person has an easier time.
 
-> **Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete.
+**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete.
 
 ## Why
 
