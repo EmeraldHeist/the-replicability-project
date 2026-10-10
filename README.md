@@ -1,6 +1,6 @@
 # The Replicability Project
 
-An open portfolio of reproduction and replication case studies across **bioinformatics, cheminformatics, and machine learning**.
+A learning project and portfolio of reproduction and replication case studies across bioinformatics, cheminformatics, and machine learning.
 
 For each paper that shares its data and methods, I rerun the analysis as described, rebuild it with different tools, and test the same question on different data. Along the way I log every detail I had to look up or work out, and I check my own work, including AI-assisted code, so the next person has an easier path.
 
