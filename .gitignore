@@ -1,0 +1,48 @@
+# Large or third-party data: download with `make full`, never commit
+data/
+raw/
+downloads/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.cram
+*.bai
+*.vcf.gz
+*.h5ad
+*.h5
+*.rds
+*.loom
+*.mtx.gz
+*.parquet
+
+# Workflow outputs and caches
+work/
+.nextflow/
+.nextflow.log*
+.snakemake/
+results/
+output/
+
+# Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rproj.user/
+.Rhistory
+.RData
+
+# Secrets and credentials
+.env
+*.pem
+*.key
+credentials*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
