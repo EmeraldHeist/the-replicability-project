@@ -1,6 +1,6 @@
 # The Replicability Project
 
-A learning project and portfolio of reproduction and replication case studies across bioinformatics, cheminformatics, and machine learning.**
+A learning project and portfolio of reproduction and replication case studies across bioinformatics, cheminformatics, and machine learning.**.
 
 For each published paper, I try to (1) rerun the reported result, (2) re-implement it with different tools, and (3) test whether it holds on different data. Along the way I log every detail the paper did not state but I needed, so the next person has an easier time.
 
