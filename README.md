@@ -8,18 +8,13 @@ For each paper that shares its data and methods, I rerun the analysis as describ
 
 ## Why
 
-Even with coding agents, computational results are often hard to rerun: environments are unspecified, data splits leak, seeds and preprocessing steps go unreported, and benchmarks can contain flaws [1-4]. AI coding tools add another risk, since generated code can look right while hiding errors [5]. This project practices verifying analyses instead of trusting them, and documents what that takes.
+Computational results are often hard to rerun: environments are unspecified, data splits leak, seeds and preprocessing steps go unreported, and benchmarks can contain flaws [1-4]. AI coding tools add another risk, since generated code can look right while hiding errors [5]. This project practices key skills in verifying analyses and documenting decisions along the way. 
 
-Reproducing someone else's analysis is also one of the best ways to learn a method. It exposes the details that rarely fit in a methods section: software versions, random seeds, filters, thresholds, how data were split.
+## What this project produces (minimum)
 
-## What this project produces
-
-- Case studies with results at three levels: reproduce, re-implement with different tools, and replicate on different data
-- A reconstruction log for each case, listing the details a replicator needs
-- A readiness check, with each estimate compared against the actual effort
-- Verification practices for AI-assisted work: LLM-use logs and cross-checks against reference implementations
-- Exploratory observations on which features of a paper's materials made it easier to reproduce or replicate
-- A method-details assistant that tests whether an LLM can list the details a replicator would need
+  - Case studies that reproduce a result, rebuild it with different tools, and test it on different data
+  - A reproducible setup for every case: pinned environments, scripted workflows, data manifests with checksums, automated demo runs, and tagged,    citable releases
+  - A reconstruction log for each case, listing the key decisions and details a replicator needs, plus notes on how AI-assisted work was verified
 
 ## The three steps
 
