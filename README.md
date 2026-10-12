@@ -29,7 +29,7 @@ Computational results are often hard to reproduce. Researchers may not specify e
 
 Getting the same answer twice with the same tools shows an analysis is repeatable. Getting it with different tools or data is stronger evidence, which is why all three steps are here.
 
-## Skills reproducibility requires
+## Skills this project develops
 
 Reproducing or replicating research draws on many skills beyond the analysis itself. This project practices these:
 
