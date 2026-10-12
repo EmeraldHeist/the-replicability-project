@@ -25,7 +25,7 @@ Computational results are often hard to reproduce. Researchers may not specify e
 |---|---|---|---|---|
 | 1 | **Reproduce** | Yes | Yes | Does the reported result come back when I follow the description? |
 | 2 | **Re-implement** | Yes | No | Does it hold up when I rebuild it with different tools? |
-| 3 | **Replicate** | Yes  | No | Where possible, no | Does the finding hold on different data? |
+| 3 | **Replicate** | No | No | Where possible, no | Does the finding hold on different data? |
 
 Getting the same answer twice with the same tools shows an analysis is repeatable. Getting it with different tools or data is stronger evidence, which is why all three steps are here.
 
