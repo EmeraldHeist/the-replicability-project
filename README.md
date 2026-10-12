@@ -2,17 +2,20 @@
 
 A learning project and portfolio of reproduction and replication case studies across bioinformatics, cheminformatics, and machine learning.
 
-For each paper that shares its data and methods, I rerun the analysis as described, rebuild it with different tools, and test the same question on different data. Along the way I log every detail I had to look up or work out, and I check my own work, including AI-assisted code, so the next person has an easier path.
+For each paper listed below, I rerun the analysis from description with published methods and tools. I then rebuild it with different tools, and test the same question on different data. Along the way I log details and informations that were useful for  reproducing.
 
-**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. Where my result differs from a paper's, that tells you what I could reconstruct from public information. It is not a judgment on the paper.
+**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. Where my result differs from a paper's does not negate necessarily the paper's finding. It should be seen first that I was not able to reproduce the author's paper - potentially due to some missing information either from the author or from my own neglect. It can also be due to some failed assumption in my implementation. 
 
-## Why
+**Disclosure:** I intend to be fully transparent about using AI-assisted code to reproduce and replicate these papers. The final methodology, core assumptions, and AI-assisted code frameworks will be  fully documented and disclosed
 
-Computational results are often hard to rerun: environments are unspecified, data splits leak, seeds and preprocessing steps go unreported, and benchmarks can contain flaws [1-4]. AI coding tools add another risk, since generated code can look right while hiding errors [5]. This project practices key skills in verifying analyses and documenting decisions along the way. 
+
+## Why this project
+
+Computational results are often hard to reproduce. Researchers may not specify exactly what software versions they used, test data can accidentally overlap with training data, random starting points and data-cleaning steps go unreported, and the benchmarks used to judge results can have flaws [1-4]. AI coding tools add a new risk on top of this, since the code they generate can look correct while still containing hidden errors [5]. This project builds the habits needed to catch these problems: checking work carefully and writing down every decision along the way.
 
 ## What this project produces (minimum)
 
-  - Case studies that reproduce a result, rebuild it with different tools, and test it on different data
+  - Case studies that reproduce a result, rebuild it with different tools, and test it on different data (replicability)
   - A reproducible setup for every case: pinned environments, scripted workflows, data manifests with checksums, automated demo runs, and tagged,    citable releases
   - A reconstruction log for each case, listing the key decisions and details a replicator needs, plus notes on how AI-assisted work was verified
 
@@ -22,7 +25,7 @@ Computational results are often hard to rerun: environments are unspecified, dat
 |---|---|---|---|---|
 | 1 | **Reproduce** | Yes | Yes | Does the reported result come back when I follow the description? |
 | 2 | **Re-implement** | Yes | No | Does it hold up when I rebuild it with different tools? |
-| 3 | **Replicate** | No | Where possible, no | Does the finding hold on different data? |
+| 3 | **Replicate** | Yes  | No | Where possible, no | Does the finding hold on different data? |
 
 Getting the same answer twice with the same tools shows an analysis is repeatable. Getting it with different tools or data is stronger evidence, which is why all three steps are here.
 
