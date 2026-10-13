@@ -58,3 +58,15 @@ Every case provides make demo, a small labeled subset that runs in GitHub Action
 ## 9. Practice rebuilds
 
 For learning, parts of each case are rebuilt independently: once with notes, once from a checklist, then from the question alone using documentation. What changed between passes goes in [LEARNING_LOG.md](LEARNING_LOG.md).
+
+## 10. Refactoring validated code
+
+Refactoring means restructuring code, for example splitting it into functions, removing repetition, or separating reusable parts from case-specific ones, without changing what it produces. Fixing a bug, changing a parameter or adding a feature is not refactoring, because those change results.
+
+- **Decide at the end of each case.** Whether the code needs refactoring is an explicit decision recorded in the report. A one-off script I will not reuse can be left alone. Asking for structure in the written spec (separate loading, QC, analysis and plotting; parameters in one config file) reduces the work later.
+- **After, not during.** I do not refactor while reproducing a paper, because cleanup would confound the comparison. I refactor only after the case outcome is recorded.
+- **Freeze the baseline first.** I tag the validated version in git and save its reference outputs (demo and full results) with checksums.
+- **Prove nothing changed.** The refactored code must reproduce the saved outputs: exactly for identifiers and counts, and within the case's original tolerances for continuous values. I add tests that lock in current behavior before changing anything.
+- **Small steps, separate commits.** Refactoring commits are kept apart from commits that change behavior, and `make demo` is rerun after each step. `make full` is rerun before I call the refactor done.
+- **Watch for silent changes.** AI-assisted refactors can alter behavior without saying so (the order of random draws, default parameters, join and sort behavior, floating-point details). A refactor that moves a result beyond tolerance is treated as a bug in the refactor, not a finding.
+- **Log it.** AI-assisted refactoring goes in the LLM-use log like any other AI work.

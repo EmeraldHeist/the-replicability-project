@@ -93,7 +93,7 @@ The order matters more than the tool. Reading, judging and deciding what success
    - **By hand:** no AI.
 
    Using different model families for different tiers can reduce shared mistakes. The model and version are logged for every run.
-8. **Later, extend and reuse.** A case with a recorded outcome of reproduced, or reproduced with documented differences, can become a base for new questions and for evaluating other work, worked on in pair with an AI. "Validated" means only this: for that paper's data and question, under the criteria set beforehand and with the pinned versions, the outcome was recorded. It does not mean the code is correct on any input. Each reuse starts by rerunning the case's `make demo`, reusable parts are kept apart from case-specific scripts, and extensions are labeled exploratory, reported separately, and never change the original case report.
+8. **Later, extend and reuse.** A case with a recorded outcome of reproduced, or reproduced with documented differences, can become a base for new questions and for evaluating other work, worked on in pair with an AI. "Validated" means only this: for that paper's data and question, under the criteria set beforehand and with the pinned versions, the outcome was recorded. It does not mean the code is correct on any input. Before reuse I may refactor (restructure the code without changing its results) to separate reusable parts from case-specific scripts. I do this only after the outcome is recorded and against tagged reference outputs (see [PROTOCOL.md](PROTOCOL.md) section 10). Each reuse starts by rerunning the case's `make demo`, and extensions are labeled exploratory, reported separately, and never change the original case report.
 
 ## How cases are chosen
 
@@ -125,6 +125,7 @@ Planned order: 4, 7, 2, 8, then 3, 6, 1, 5, and 9 last.
 ## Practices
 
 - Pinned environments (lockfiles or container digests) and clean-environment reruns
+- Refactoring only after an outcome is recorded, checked against tagged reference outputs
 - Workflow managers (Nextflow or Snakemake) where appropriate
 - Logged software versions, seeds, parameters, data checksums and extraction dates
 - **A reconstruction log** for every case: each detail I had to look up, infer or ask about, and how I resolved it

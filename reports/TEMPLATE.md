@@ -56,6 +56,9 @@ Which skills from the README list this case needed, where I was strong, where I 
 ## Environment
 Lockfile or container digest, versions, seeds, checksums, dates.
 
+## Validated baseline and refactoring
+Git tag of the validated version, checksums of the saved reference outputs, and the end-of-case decision on refactoring (needed or not, and why). If refactored: what changed and how the outputs were checked against the baseline.
+
 ## What I learned
 
 ## Limitations
