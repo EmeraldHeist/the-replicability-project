@@ -4,7 +4,7 @@ A learning project and portfolio of reproduction and replication case studies ac
 
 For each paper listed below, I rerun the analysis from description with published methods and tools. I then rebuild it with different tools, and test the same question on different data. Along the way I log the details that turned out to matter for reproducing each result.
 
-**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. If my result differs from a paper's, that does not negate the paper's finding. It means first that I could not reproduce it, possibly because the paper left out some information or because I missed something or made a wrong assumption in my own implementation.
+**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. If my result differs from a paper's, that does not negate the paper's finding. It could simply mean that I could not reproduce it, possibly because the paper left out some information or because I missed something or made a wrong assumption in my own implementation.
 
 **Disclosure:** I intend to be fully transparent about using AI-assisted code to reproduce and replicate these papers. The final methodology, core assumptions, and AI-assisted code frameworks will be fully documented and disclosed.
 
