@@ -126,7 +126,21 @@ I chose these papers because their authors shared data and methods, and that ope
 
 ## References
 
-Numbered citations in the text refer to [REFERENCES.md](REFERENCES.md).
+Numbered citations in the text refer to the list below. Most are preprints, and I have read abstracts and summaries, not every full text. [REFERENCES.md](REFERENCES.md) gives, for each source, what it is cited for. Accessed October 10, 2026.
+
+1. Huang A, Knight IS, Naprienko S. 2025. *Data Leakage and Redundancy in the LIT-PCBA Benchmark.* arXiv:2507.21404. https://arxiv.org/abs/2507.21404
+2. Liu H, Bushuiev R, Lightheart I, et al. 2026. *MassSpecGym in the Wild: Uncovering and Correcting Evaluation Pitfalls in AI-Driven Molecule Discovery.* arXiv:2606.19624. https://arxiv.org/abs/2606.19624
+3. Chemistry World. *Benchmark flaws may be distorting AI drug discovery leaderboards.* https://www.chemistryworld.com/news/benchmark-flaws-may-be-distorting-ai-drug-discovery-leaderboards/4024084.article
+4. Semmelrock H, et al. 2025. *Reproducibility in machine-learning-based research: Overview, barriers, and drivers.* AI Magazine. https://doi.org/10.1002/aaai.70002
+5. Munn PR, Grenier JK. 2026. *From Prompt to Pipeline: A Comparative Evaluation of Large Language Model Coding Agents for Reproducible Bioinformatics Pipeline Construction.* bioRxiv. https://doi.org/10.64898/2026.09.11.751004
+6. Siegel ZS, Kapoor S, Nadgir N, Stroebl B, Narayanan A. 2024. *CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark.* Transactions on Machine Learning Research; arXiv:2409.11363. https://arxiv.org/abs/2409.11363
+7. Starace G, Jaffe O, Sherburn D, et al. 2025. *PaperBench: Evaluating AI's Ability to Replicate AI Research.* arXiv:2504.01848. https://arxiv.org/abs/2504.01848
+8. Li S, Wei QA, Tang J, et al. 2026. *ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues.* arXiv:2606.18237. https://arxiv.org/abs/2606.18237
+9. Hu C, Zhang L, Lim Y, Wadhwani A, Peters A, Kang D. 2025. *REPRO-Bench: Can Agentic AI Systems Assess the Reproducibility of Social Science Research?* Findings of ACL 2025; arXiv:2507.18901. https://arxiv.org/abs/2507.18901
+10. Mohl J, Gardner-Challis N, Dubois M, et al. 2026. *Automated Transcript Analysis for Detecting Flaws in Agentic Benchmarks.* arXiv:2607.27518. https://arxiv.org/abs/2607.27518
+11. Nadgir N, Kapoor S, Liu K, et al. 2026. *Life After Benchmark Saturation: A Case Study of CORE-Bench.* arXiv:2606.26158. https://arxiv.org/abs/2606.26158
+12. Kitzes J, Turek D, Deniz F, eds. 2018. *The Practice of Reproducible Research.* University of California Press. https://www.ucpress.edu/book/9780520294752/the-practice-of-reproducible-research
+13. The Turing Way Community. *The Turing Way: Guide for Reproducible Research.* https://book.the-turing-way.org/reproducible-research/reproducible-research/
 
 ## Repository layout
 
