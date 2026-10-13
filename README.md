@@ -2,12 +2,11 @@
 
 A learning project and portfolio of reproduction and replication case studies across bioinformatics, cheminformatics, and machine learning.
 
-For each paper listed below, I rerun the analysis from description with published methods and tools. I then rebuild it with different tools, and test the same question on different data. Along the way I log details and informations that were useful for  reproducing.
+For each paper listed below, I rerun the analysis from description with published methods and tools. I then rebuild it with different tools, and test the same question on different data. Along the way I log the details that turned out to matter for reproducing each result.
 
-**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. Where my result differs from a paper's does not negate necessarily the paper's finding. It should be seen first that I was not able to reproduce the author's paper - potentially due to some missing information either from the author or from my own neglect. It can also be due to some failed assumption in my implementation. 
+**Scope:** This is a personal learning project, not a systematic study. The sample is small and non-random, and any pattern across cases is anecdotal. Nothing here is a finding until its case report is linked and complete. If my result differs from a paper's, that does not negate the paper's finding. It means first that I could not reproduce it, possibly because the paper left out some information or because I missed something or made a wrong assumption in my own implementation.
 
-**Disclosure:** I intend to be fully transparent about using AI-assisted code to reproduce and replicate these papers. The final methodology, core assumptions, and AI-assisted code frameworks will be  fully documented and disclosed
-
+**Disclosure:** I intend to be fully transparent about using AI-assisted code to reproduce and replicate these papers. The final methodology, core assumptions, and AI-assisted code frameworks will be fully documented and disclosed.
 
 ## Why this project
 
@@ -15,9 +14,9 @@ Computational results are often hard to reproduce. Researchers may not specify e
 
 ## What this project produces (minimum)
 
-  - Case studies that reproduce a result, rebuild it with different tools, and test it on different data (replicability)
-  - A reproducible setup for every case: pinned environments, scripted workflows, data manifests with checksums, automated demo runs, and tagged,    citable releases
-  - A reconstruction log for each case, listing the key decisions and details a replicator needs, plus notes on how AI-assisted work was verified
+- Case studies that reproduce a result, rebuild it with different tools, and test it on different data (replicability)
+- A reproducible setup for every case: pinned environments, scripted workflows, data manifests with checksums, automated demo runs, and tagged, citable releases
+- A reconstruction log for each case, listing the key decisions and details a replicator needs, plus notes on how AI-assisted work was verified
 
 ## The three steps
 
@@ -112,7 +111,7 @@ Planned order: 4, 7, 2, 8, then 3, 6, 1, 5, and 9 last.
 - Logged software versions, seeds, parameters, data checksums and extraction dates
 - **A reconstruction log** for every case: each detail I had to look up, infer or ask about, and how I resolved it
 - **LLM use is logged:** model, version, prompts, and what was changed by hand
-- Each case has `make demo` (small, labeled subset, runs in CI) and `make full` (complete run; large data is downloaded, never committed)
+- Each case has `make demo` (small labeled subset or synthetic data, runs in CI) and `make full` (complete run; large data is downloaded, never committed)
 
 ## Respect for the source papers
 

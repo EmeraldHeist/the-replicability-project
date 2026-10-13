@@ -62,7 +62,7 @@ Data manifest, harmonization notes, split definitions, per-claim reproduction ta
 - Verifying AI-assisted work
 - Documentation and communication
 
-See [README](../README.md#skills-reproducibility-requires) for the full list. The skill numbers here are a plan, and the case report will record what was actually needed.
+See [README](../README.md#skills-this-project-develops) for the full list. The skill numbers here are a plan, and the case report will record what was actually needed.
 
 ## Shared method
 

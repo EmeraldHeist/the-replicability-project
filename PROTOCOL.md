@@ -36,7 +36,7 @@ None of these is a verdict on the paper. They describe what I was able to do.
 - **Reconstruction log:** every detail I had to look up, infer or ask about, how I resolved it (the authors' repository, the supplement, a documented assumption, a question to the authors), and whether it changed the result.
 - **LLM-use log:** model, version, prompts, and what was changed by hand.
 - **Environment record:** lockfile or container digest, software versions, seeds, data checksums, extraction dates.
-- **Skills record:** which of the [skills listed in the README](README.md#skills-reproducibility-requires) the case needed, where I was strong, and where I had to learn. The list is tested against real work and revised.
+- **Skills record:** which of the [skills listed in the README](README.md#skills-this-project-develops) the case needed, where I was strong, and where I had to learn. The list is tested against real work and revised.
 
 ## 6. Working with AI agents
 
