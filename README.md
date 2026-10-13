@@ -77,6 +77,24 @@ What this means for the skills above:
 - **New:** scoping a task into checkable steps, reviewing at checkpoints before expensive runs, and logging model versions and prompts so my own run is reproducible.
 - **The risk to manage:** you cannot verify what you do not understand. I rebuild parts of each case by hand, without an agent, to keep my skills my own, and I compare effort and errors with and without agent help. These comparisons are anecdotal.
 
+## How I work with AI on a case
+
+The order matters more than the tool. Reading, judging and deciding what success means come first and are mine.
+
+1. **Read alone.** I read the paper before using any AI summary, and take notes on key assumptions, criteria and details the text does not spell out.
+2. **Draft a preliminary workflow.**
+3. **Define success first.** For each claim I write the success criterion and a one-line justification for it (see [PROTOCOL.md](PROTOCOL.md) section 3), and commit both before any code runs.
+4. **Check with an AI, interactively.** I work through my notes, assumptions and criteria with an AI, which flags ambiguities and challenges my justifications, and I use it to plan the infrastructure. What each of us missed goes in the reconstruction log.
+5. **Write the spec.** Claims, criteria, assumptions (each traced to paper text, a supplement or a repository, or marked as mine) and open questions. The written spec is the only handoff to the agent.
+6. **Implement iteratively with a coding agent,** comparing against the published results and logging each difference and challenge. I do not loosen the criteria along the way. Each change is logged as either a fix that follows from the paper's description or a tweak made to close a gap.
+7. **Record the AI mode for each tier,** and vary it on purpose across cases so effort and errors can be compared (anecdotally). The modes are defined by how much I stay in the loop, not by the product:
+   - **Agent-led:** I hand over the written spec, the agent works through steps on its own, and I review at checkpoints.
+   - **Paired:** I stay in the editor and work at the level of a function or a few lines, accepting or rejecting each change as it happens.
+   - **By hand:** no AI.
+
+   Using different model families for different tiers can reduce shared mistakes. The model and version are logged for every run.
+8. **Later, extend and reuse.** A case with a recorded outcome of reproduced, or reproduced with documented differences, can become a base for new questions and for evaluating other work, worked on in pair with an AI. "Validated" means only this: for that paper's data and question, under the criteria set beforehand and with the pinned versions, the outcome was recorded. It does not mean the code is correct on any input. Each reuse starts by rerunning the case's `make demo`, reusable parts are kept apart from case-specific scripts, and extensions are labeled exploratory, reported separately, and never change the original case report.
+
 ## How cases are chosen
 
 - **Papers that share their data and methods openly**, which is what makes reproduction possible.

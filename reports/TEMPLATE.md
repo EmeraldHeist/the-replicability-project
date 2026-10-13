@@ -11,12 +11,17 @@ Citation, DOI, publication record check (date and sources), data and code availa
 ## Readiness estimate
 Straightforward / some groundwork / substantial groundwork, and why. Actual effort afterward.
 
-## Success criteria (written before running)
-| Tier | Criterion |
-|---|---|
-| 1 | |
-| 2 | |
-| 3 | |
+## Success criteria (written and justified before running)
+Committed in: <commit hash and date>
+
+| Tier | Criterion | Justification |
+|---|---|---|
+| 1 | | |
+| 2 | | |
+| 3 | | |
+
+### Amendments
+Dated changes to a criterion after seeing results, with the reason. The original stays visible above.
 
 ## Results
 | Claim | Tier 1 | Tier 2 | Tier 3 | Outcome category |
@@ -32,6 +37,16 @@ Straightforward / some groundwork / substantial groundwork, and why. Actual effo
 
 ## LLM use
 Model, version, prompts, manual changes.
+
+## Spec given to the agent
+Link or paste. Each assumption lists its source (paper text, supplement, repository, or my own assumption).
+
+## AI mode per tier
+| Tier | Agent-led / paired / by hand | Tool and model version | Notes |
+|---|---|---|---|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
 
 ## What the agent did, what I verified, and what I corrected
 
