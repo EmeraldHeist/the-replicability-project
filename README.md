@@ -106,7 +106,7 @@ See [PROTOCOL.md](PROTOCOL.md) for the full method.
 
 ## Cases
 
-All cases are currently **planned**. No results have been claimed yet.
+Cases 1 to 9 are currently **planned**. Case 10 has had an exploratory first pass, and its report is a draft. No results have been claimed as final.
 
 | # | Case | Paper studied | Status |
 |---|---|---|---|
@@ -119,6 +119,7 @@ All cases are currently **planned**. No results have been claimed yet.
 | 7 | [Variant benchmarking](cases/07-variant-benchmarking.md) | Wagner et al., Cell Genomics, 2022 | Planned |
 | 8 | [Breast cancer survival](cases/08-breast-cancer-survival.md) | Pereira et al., Nature Communications, 2016 (METABRIC) | Planned |
 | 9 | [Method-details assistant](cases/09-method-details-assistant.md) | Not a paper reproduction; evaluated on the logs from cases 1 to 8 | Starts after three finished cases |
+| 10 | [Daphnia RNA-seq (D-HEART paper)](cases/10-liao2026-dhear-rnaseq.md) | Liao et al., Environ. Sci. Technol., 2026 (RNA-seq part only; PRJNA1304005) | Exploratory Tier 1 pass done; report is a draft with sections to fill |
 
 Planned order: 4, 7, 2, 8, then 3, 6, 1, 5, and 9 last.
 
