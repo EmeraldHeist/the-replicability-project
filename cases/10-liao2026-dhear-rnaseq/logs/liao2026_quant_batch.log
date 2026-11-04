@@ -1,0 +1,1813 @@
+2026-11-02T06:02:08Z START SRR34937006
+22495362 reads; of these:
+  22495362 (100.00%) were paired; of these:
+    2561105 (11.39%) aligned concordantly 0 times
+    18879529 (83.93%) aligned concordantly exactly 1 time
+    1054728 (4.69%) aligned concordantly >1 times
+    ----
+    2561105 pairs aligned concordantly 0 times; of these:
+      79561 (3.11%) aligned discordantly 1 time
+    ----
+    2481544 pairs aligned 0 times concordantly or discordantly; of these:
+      4963088 mates make up the pairs; of these:
+        3416907 (68.85%) aligned 0 times
+        1360248 (27.41%) aligned exactly 1 time
+        185933 (3.75%) aligned >1 times
+92.41% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T06:08:53Z SRR34937006 hisat2 done: 92.41% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T06:08:53Z FAILED SRR34937006 stringtie
+2026-11-02T06:08:53Z START SRR34937005
+spots read      : 25,483,495
+reads read      : 50,966,990
+reads written   : 50,966,990
+2026-11-02T06:10:49Z SRR34937005 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25483495
+total bases: 3848007745
+Q20 bases: 3815327241(99.1507%)
+Q30 bases: 3697315431(96.0839%)
+Q40 bases: 3697315431(96.0839%)
+
+Read2 before filtering:
+total reads: 25483495
+total bases: 3848007745
+Q20 bases: 3801766475(98.7983%)
+Q30 bases: 3672875487(95.4488%)
+Q40 bases: 3672875487(95.4488%)
+
+Read1 after filtering:
+total reads: 24529689
+total bases: 3684754896
+Q20 bases: 3671676011(99.6451%)
+Q30 bases: 3585306127(97.3011%)
+Q40 bases: 3585306127(97.3011%)
+
+Read2 after filtering:
+total reads: 24529689
+total bases: 3684541798
+Q20 bases: 3670505530(99.619%)
+Q30 bases: 3583170514(97.2487%)
+Q40 bases: 3583170514(97.2487%)
+
+Filtering result:
+reads passed filter: 49059378
+reads failed due to low quality: 1899782
+reads failed due to too many N: 5944
+reads failed due to too short: 1886
+reads with adapter trimmed: 1535331
+bases trimmed due to adapters: 37649783
+
+Duplication rate: 21.2832%
+
+Insert size peak (evaluated by paired-end reads): 268
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937005/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937005/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937005/SRR34937005_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937005/SRR34937005_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937005/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937005/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937005/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937005/fastp.json 
+fastp v1.0.1, time used: 120 seconds
+2026-11-02T06:12:50Z SRR34937005 fastp done
+24529689 reads; of these:
+  24529689 (100.00%) were paired; of these:
+    2845229 (11.60%) aligned concordantly 0 times
+    20546719 (83.76%) aligned concordantly exactly 1 time
+    1137741 (4.64%) aligned concordantly >1 times
+    ----
+    2845229 pairs aligned concordantly 0 times; of these:
+      86203 (3.03%) aligned discordantly 1 time
+    ----
+    2759026 pairs aligned 0 times concordantly or discordantly; of these:
+      5518052 mates make up the pairs; of these:
+        3813873 (69.12%) aligned 0 times
+        1491139 (27.02%) aligned exactly 1 time
+        213040 (3.86%) aligned >1 times
+92.23% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T06:20:00Z SRR34937005 hisat2 done: 92.23% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T06:20:00Z FAILED SRR34937005 stringtie
+2026-11-02T06:20:00Z START SRR34937004
+spots read      : 19,479,811
+reads read      : 38,959,622
+reads written   : 38,959,622
+2026-11-02T06:20:52Z SRR34937004 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 19479811
+total bases: 2941451461
+Q20 bases: 2915222480(99.1083%)
+Q30 bases: 2825157378(96.0464%)
+Q40 bases: 2825157378(96.0464%)
+
+Read2 before filtering:
+total reads: 19479811
+total bases: 2941451461
+Q20 bases: 2904988480(98.7604%)
+Q30 bases: 2808161816(95.4686%)
+Q40 bases: 2808161816(95.4686%)
+
+Read1 after filtering:
+total reads: 18721930
+total bases: 2809066509
+Q20 bases: 2799253678(99.6507%)
+Q30 bases: 2734284272(97.3378%)
+Q40 bases: 2734284272(97.3378%)
+
+Read2 after filtering:
+total reads: 18721930
+total bases: 2808895571
+Q20 bases: 2798598893(99.6334%)
+Q30 bases: 2734549221(97.3532%)
+Q40 bases: 2734549221(97.3532%)
+
+Filtering result:
+reads passed filter: 37443860
+reads failed due to low quality: 1510042
+reads failed due to too many N: 4550
+reads failed due to too short: 1170
+reads with adapter trimmed: 1383779
+bases trimmed due to adapters: 35131373
+
+Duplication rate: 19.9796%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937004/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937004/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937004/SRR34937004_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937004/SRR34937004_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937004/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937004/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937004/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937004/fastp.json 
+fastp v1.0.1, time used: 97 seconds
+2026-11-02T06:22:29Z SRR34937004 fastp done
+18721930 reads; of these:
+  18721930 (100.00%) were paired; of these:
+    2502970 (13.37%) aligned concordantly 0 times
+    15342703 (81.95%) aligned concordantly exactly 1 time
+    876257 (4.68%) aligned concordantly >1 times
+    ----
+    2502970 pairs aligned concordantly 0 times; of these:
+      55903 (2.23%) aligned discordantly 1 time
+    ----
+    2447067 pairs aligned 0 times concordantly or discordantly; of these:
+      4894134 mates make up the pairs; of these:
+        3491503 (71.34%) aligned 0 times
+        1225913 (25.05%) aligned exactly 1 time
+        176718 (3.61%) aligned >1 times
+90.68% overall alignment rate
+[bam_sort_core] merging from 3 files and 4 in-memory blocks...
+2026-11-02T06:28:26Z SRR34937004 hisat2 done: 90.68% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T06:28:26Z FAILED SRR34937004 stringtie
+2026-11-02T06:28:26Z START SRR34937003
+spots read      : 23,494,668
+reads read      : 46,989,336
+reads written   : 46,989,336
+2026-11-02T06:29:45Z SRR34937003 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 23494668
+total bases: 3547694868
+Q20 bases: 3514713257(99.0703%)
+Q30 bases: 3407265957(96.0417%)
+Q40 bases: 3407265957(96.0417%)
+
+Read2 before filtering:
+total reads: 23494668
+total bases: 3547694868
+Q20 bases: 3502180662(98.7171%)
+Q30 bases: 3385601949(95.431%)
+Q40 bases: 3385601949(95.431%)
+
+Read1 after filtering:
+total reads: 22525162
+total bases: 3381113774
+Q20 bases: 3369652372(99.661%)
+Q30 bases: 3294493708(97.4381%)
+Q40 bases: 3294493708(97.4381%)
+
+Read2 after filtering:
+total reads: 22525162
+total bases: 3380928839
+Q20 bases: 3368729940(99.6392%)
+Q30 bases: 3293305824(97.4083%)
+Q40 bases: 3293305824(97.4083%)
+
+Filtering result:
+reads passed filter: 45050324
+reads failed due to low quality: 1931334
+reads failed due to too many N: 5608
+reads failed due to too short: 2070
+reads with adapter trimmed: 1545100
+bases trimmed due to adapters: 39509821
+
+Duplication rate: 22.4758%
+
+Insert size peak (evaluated by paired-end reads): 261
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937003/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937003/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937003/SRR34937003_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937003/SRR34937003_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937003/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937003/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937003/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937003/fastp.json 
+fastp v1.0.1, time used: 150 seconds
+2026-11-02T06:32:16Z SRR34937003 fastp done
+22525162 reads; of these:
+  22525162 (100.00%) were paired; of these:
+    3026444 (13.44%) aligned concordantly 0 times
+    18439607 (81.86%) aligned concordantly exactly 1 time
+    1059111 (4.70%) aligned concordantly >1 times
+    ----
+    3026444 pairs aligned concordantly 0 times; of these:
+      64657 (2.14%) aligned discordantly 1 time
+    ----
+    2961787 pairs aligned 0 times concordantly or discordantly; of these:
+      5923574 mates make up the pairs; of these:
+        4250706 (71.76%) aligned 0 times
+        1452570 (24.52%) aligned exactly 1 time
+        220298 (3.72%) aligned >1 times
+90.56% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T06:39:45Z SRR34937003 hisat2 done: 90.56% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T06:39:45Z FAILED SRR34937003 stringtie
+2026-11-02T06:39:45Z START SRR34937002
+spots read      : 24,796,943
+reads read      : 49,593,886
+reads written   : 49,593,886
+2026-11-02T06:41:27Z SRR34937002 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 24796943
+total bases: 3744338393
+Q20 bases: 3712824272(99.1584%)
+Q30 bases: 3602798368(96.2199%)
+Q40 bases: 3602798368(96.2199%)
+
+Read2 before filtering:
+total reads: 24796943
+total bases: 3744338393
+Q20 bases: 3702462973(98.8816%)
+Q30 bases: 3583294393(95.699%)
+Q40 bases: 3583294393(95.699%)
+
+Read1 after filtering:
+total reads: 23902345
+total bases: 3588776033
+Q20 bases: 3576754501(99.665%)
+Q30 bases: 3497480678(97.4561%)
+Q40 bases: 3497480678(97.4561%)
+
+Read2 after filtering:
+total reads: 23902345
+total bases: 3588844375
+Q20 bases: 3575988719(99.6418%)
+Q30 bases: 3495350742(97.3949%)
+Q40 bases: 3495350742(97.3949%)
+
+Filtering result:
+reads passed filter: 47804690
+reads failed due to low quality: 1781474
+reads failed due to too many N: 6004
+reads failed due to too short: 1718
+reads with adapter trimmed: 1543649
+bases trimmed due to adapters: 39692829
+
+Duplication rate: 22.3177%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937002/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937002/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937002/SRR34937002_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937002/SRR34937002_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937002/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937002/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937002/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937002/fastp.json 
+fastp v1.0.1, time used: 95 seconds
+2026-11-02T06:43:02Z SRR34937002 fastp done
+23902345 reads; of these:
+  23902345 (100.00%) were paired; of these:
+    2936180 (12.28%) aligned concordantly 0 times
+    19893563 (83.23%) aligned concordantly exactly 1 time
+    1072602 (4.49%) aligned concordantly >1 times
+    ----
+    2936180 pairs aligned concordantly 0 times; of these:
+      76726 (2.61%) aligned discordantly 1 time
+    ----
+    2859454 pairs aligned 0 times concordantly or discordantly; of these:
+      5718908 mates make up the pairs; of these:
+        4028862 (70.45%) aligned 0 times
+        1499280 (26.22%) aligned exactly 1 time
+        190766 (3.34%) aligned >1 times
+91.57% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T06:50:04Z SRR34937002 hisat2 done: 91.57% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T06:50:04Z FAILED SRR34937002 stringtie
+2026-11-02T06:50:04Z START SRR34937001
+spots read      : 22,707,994
+reads read      : 45,415,988
+reads written   : 45,415,988
+2026-11-02T06:51:23Z SRR34937001 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22707994
+total bases: 3428907094
+Q20 bases: 3399526162(99.1431%)
+Q30 bases: 3293437086(96.0492%)
+Q40 bases: 3293437086(96.0492%)
+
+Read2 before filtering:
+total reads: 22707994
+total bases: 3428907094
+Q20 bases: 3389674922(98.8558%)
+Q30 bases: 3276335181(95.5504%)
+Q40 bases: 3276335181(95.5504%)
+
+Read1 after filtering:
+total reads: 21886711
+total bases: 3286560658
+Q20 bases: 3274674383(99.6383%)
+Q30 bases: 3196628126(97.2636%)
+Q40 bases: 3196628126(97.2636%)
+
+Read2 after filtering:
+total reads: 21886711
+total bases: 3286376180
+Q20 bases: 3273886536(99.62%)
+Q30 bases: 3195736607(97.242%)
+Q40 bases: 3195736607(97.242%)
+
+Filtering result:
+reads passed filter: 43773422
+reads failed due to low quality: 1634658
+reads failed due to too many N: 5190
+reads failed due to too short: 2718
+reads with adapter trimmed: 1423495
+bases trimmed due to adapters: 35877412
+
+Duplication rate: 20.2009%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937001/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937001/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937001/SRR34937001_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937001/SRR34937001_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937001/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937001/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937001/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937001/fastp.json 
+fastp v1.0.1, time used: 103 seconds
+2026-11-02T06:53:06Z SRR34937001 fastp done
+21886711 reads; of these:
+  21886711 (100.00%) were paired; of these:
+    2715232 (12.41%) aligned concordantly 0 times
+    18208787 (83.20%) aligned concordantly exactly 1 time
+    962692 (4.40%) aligned concordantly >1 times
+    ----
+    2715232 pairs aligned concordantly 0 times; of these:
+      68821 (2.53%) aligned discordantly 1 time
+    ----
+    2646411 pairs aligned 0 times concordantly or discordantly; of these:
+      5292822 mates make up the pairs; of these:
+        3762312 (71.08%) aligned 0 times
+        1367818 (25.84%) aligned exactly 1 time
+        162692 (3.07%) aligned >1 times
+91.41% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T07:00:07Z SRR34937001 hisat2 done: 91.41% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:00:07Z FAILED SRR34937001 stringtie
+2026-11-02T07:00:07Z START SRR34937000
+spots read      : 25,074,897
+reads read      : 50,149,794
+reads written   : 50,149,794
+2026-11-02T07:01:42Z SRR34937000 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25074897
+total bases: 3786309447
+Q20 bases: 3753997671(99.1466%)
+Q30 bases: 3637470871(96.069%)
+Q40 bases: 3637470871(96.069%)
+
+Read2 before filtering:
+total reads: 25074897
+total bases: 3786309447
+Q20 bases: 3741457793(98.8154%)
+Q30 bases: 3614977875(95.475%)
+Q40 bases: 3614977875(95.475%)
+
+Read1 after filtering:
+total reads: 24138844
+total bases: 3624505511
+Q20 bases: 3611604566(99.6441%)
+Q30 bases: 3526462280(97.295%)
+Q40 bases: 3526462280(97.295%)
+
+Read2 after filtering:
+total reads: 24138844
+total bases: 3624316194
+Q20 bases: 3610519657(99.6193%)
+Q30 bases: 3524376294(97.2425%)
+Q40 bases: 3524376294(97.2425%)
+
+Filtering result:
+reads passed filter: 48277688
+reads failed due to low quality: 1863594
+reads failed due to too many N: 6058
+reads failed due to too short: 2454
+reads with adapter trimmed: 1594729
+bases trimmed due to adapters: 40327539
+
+Duplication rate: 20.3917%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34937000/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34937000/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34937000/SRR34937000_1.fastq -I $RP/work/liao2026_quant/runs/SRR34937000/SRR34937000_2.fastq -o $RP/work/liao2026_quant/runs/SRR34937000/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34937000/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34937000/fastp.html -j $RP/work/liao2026_quant/runs/SRR34937000/fastp.json 
+fastp v1.0.1, time used: 137 seconds
+2026-11-02T07:03:59Z SRR34937000 fastp done
+24138844 reads; of these:
+  24138844 (100.00%) were paired; of these:
+    2978706 (12.34%) aligned concordantly 0 times
+    20084525 (83.20%) aligned concordantly exactly 1 time
+    1075613 (4.46%) aligned concordantly >1 times
+    ----
+    2978706 pairs aligned concordantly 0 times; of these:
+      78545 (2.64%) aligned discordantly 1 time
+    ----
+    2900161 pairs aligned 0 times concordantly or discordantly; of these:
+      5800322 mates make up the pairs; of these:
+        4085316 (70.43%) aligned 0 times
+        1519450 (26.20%) aligned exactly 1 time
+        195556 (3.37%) aligned >1 times
+91.54% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T07:11:01Z SRR34937000 hisat2 done: 91.54% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:11:02Z FAILED SRR34937000 stringtie
+2026-11-02T07:11:02Z START SRR34936999
+spots read      : 27,759,907
+reads read      : 55,519,814
+reads written   : 55,519,814
+2026-11-02T07:12:44Z SRR34936999 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 27759907
+total bases: 4191745957
+Q20 bases: 4153274225(99.0822%)
+Q30 bases: 4023286850(95.9812%)
+Q40 bases: 4023286850(95.9812%)
+
+Read2 before filtering:
+total reads: 27759907
+total bases: 4191745957
+Q20 bases: 4140578802(98.7793%)
+Q30 bases: 4002534983(95.4861%)
+Q40 bases: 4002534983(95.4861%)
+
+Read1 after filtering:
+total reads: 26689795
+total bases: 4006788228
+Q20 bases: 3992633650(99.6467%)
+Q30 bases: 3899333382(97.3182%)
+Q40 bases: 3899333382(97.3182%)
+
+Read2 after filtering:
+total reads: 26689795
+total bases: 4006573073
+Q20 bases: 3991900175(99.6338%)
+Q30 bases: 3899811703(97.3353%)
+Q40 bases: 3899811703(97.3353%)
+
+Filtering result:
+reads passed filter: 53379590
+reads failed due to low quality: 2131632
+reads failed due to too many N: 6490
+reads failed due to too short: 2102
+reads with adapter trimmed: 1837645
+bases trimmed due to adapters: 45959515
+
+Duplication rate: 20.427%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936999/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936999/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936999/SRR34936999_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936999/SRR34936999_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936999/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936999/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936999/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936999/fastp.json 
+fastp v1.0.1, time used: 125 seconds
+2026-11-02T07:14:49Z SRR34936999 fastp done
+26689795 reads; of these:
+  26689795 (100.00%) were paired; of these:
+    3290826 (12.33%) aligned concordantly 0 times
+    22168720 (83.06%) aligned concordantly exactly 1 time
+    1230249 (4.61%) aligned concordantly >1 times
+    ----
+    3290826 pairs aligned concordantly 0 times; of these:
+      85301 (2.59%) aligned discordantly 1 time
+    ----
+    3205525 pairs aligned 0 times concordantly or discordantly; of these:
+      6411050 mates make up the pairs; of these:
+        4527881 (70.63%) aligned 0 times
+        1672685 (26.09%) aligned exactly 1 time
+        210484 (3.28%) aligned >1 times
+91.52% overall alignment rate
+[bam_sort_core] merging from 5 files and 4 in-memory blocks...
+2026-11-02T07:22:40Z SRR34936999 hisat2 done: 91.52% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:22:40Z FAILED SRR34936999 stringtie
+2026-11-02T07:22:40Z START SRR34936998
+spots read      : 22,644,422
+reads read      : 45,288,844
+reads written   : 45,288,844
+2026-11-02T07:23:57Z SRR34936998 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22644422
+total bases: 3419307722
+Q20 bases: 3388405080(99.0962%)
+Q30 bases: 3286267926(96.1092%)
+Q40 bases: 3286267926(96.1092%)
+
+Read2 before filtering:
+total reads: 22644422
+total bases: 3419307722
+Q20 bases: 3376594152(98.7508%)
+Q30 bases: 3263973316(95.4571%)
+Q40 bases: 3263973316(95.4571%)
+
+Read1 after filtering:
+total reads: 21763649
+total bases: 3267329526
+Q20 bases: 3256386890(99.6651%)
+Q30 bases: 3183969523(97.4487%)
+Q40 bases: 3183969523(97.4487%)
+
+Read2 after filtering:
+total reads: 21763649
+total bases: 3267144569
+Q20 bases: 3255198642(99.6344%)
+Q30 bases: 3180423220(97.3457%)
+Q40 bases: 3180423220(97.3457%)
+
+Filtering result:
+reads passed filter: 43527298
+reads failed due to low quality: 1754244
+reads failed due to too many N: 5322
+reads failed due to too short: 1980
+reads with adapter trimmed: 1477172
+bases trimmed due to adapters: 37219430
+
+Duplication rate: 19.9872%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936998/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936998/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936998/SRR34936998_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936998/SRR34936998_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936998/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936998/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936998/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936998/fastp.json 
+fastp v1.0.1, time used: 101 seconds
+2026-11-02T07:25:38Z SRR34936998 fastp done
+21763649 reads; of these:
+  21763649 (100.00%) were paired; of these:
+    2717104 (12.48%) aligned concordantly 0 times
+    18056911 (82.97%) aligned concordantly exactly 1 time
+    989634 (4.55%) aligned concordantly >1 times
+    ----
+    2717104 pairs aligned concordantly 0 times; of these:
+      71210 (2.62%) aligned discordantly 1 time
+    ----
+    2645894 pairs aligned 0 times concordantly or discordantly; of these:
+      5291788 mates make up the pairs; of these:
+        3718946 (70.28%) aligned 0 times
+        1395609 (26.37%) aligned exactly 1 time
+        177233 (3.35%) aligned >1 times
+91.46% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T07:32:00Z SRR34936998 hisat2 done: 91.46% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:32:00Z FAILED SRR34936998 stringtie
+2026-11-02T07:32:00Z START SRR34936997
+spots read      : 25,433,604
+reads read      : 50,867,208
+reads written   : 50,867,208
+2026-11-02T07:33:45Z SRR34936997 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25433604
+total bases: 3840474204
+Q20 bases: 3807562141(99.143%)
+Q30 bases: 3691232552(96.114%)
+Q40 bases: 3691232552(96.114%)
+
+Read2 before filtering:
+total reads: 25433604
+total bases: 3840474204
+Q20 bases: 3796925085(98.866%)
+Q30 bases: 3672957744(95.6381%)
+Q40 bases: 3672957744(95.6381%)
+
+Read1 after filtering:
+total reads: 24511931
+total bases: 3680663682
+Q20 bases: 3668073238(99.6579%)
+Q30 bases: 3583996928(97.3737%)
+Q40 bases: 3583996928(97.3737%)
+
+Read2 after filtering:
+total reads: 24511931
+total bases: 3680467136
+Q20 bases: 3667097797(99.6367%)
+Q30 bases: 3583095884(97.3544%)
+Q40 bases: 3583095884(97.3544%)
+
+Filtering result:
+reads passed filter: 49023862
+reads failed due to low quality: 1834582
+reads failed due to too many N: 6124
+reads failed due to too short: 2640
+reads with adapter trimmed: 1583769
+bases trimmed due to adapters: 40639175
+
+Duplication rate: 19.9981%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936997/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936997/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936997/SRR34936997_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936997/SRR34936997_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936997/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936997/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936997/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936997/fastp.json 
+fastp v1.0.1, time used: 131 seconds
+2026-11-02T07:35:56Z SRR34936997 fastp done
+24511931 reads; of these:
+  24511931 (100.00%) were paired; of these:
+    3002929 (12.25%) aligned concordantly 0 times
+    20360479 (83.06%) aligned concordantly exactly 1 time
+    1148523 (4.69%) aligned concordantly >1 times
+    ----
+    3002929 pairs aligned concordantly 0 times; of these:
+      81580 (2.72%) aligned discordantly 1 time
+    ----
+    2921349 pairs aligned 0 times concordantly or discordantly; of these:
+      5842698 mates make up the pairs; of these:
+        4119742 (70.51%) aligned 0 times
+        1523227 (26.07%) aligned exactly 1 time
+        199729 (3.42%) aligned >1 times
+91.60% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T07:43:04Z SRR34936997 hisat2 done: 91.60% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:43:04Z FAILED SRR34936997 stringtie
+2026-11-02T07:43:04Z START SRR34936996
+spots read      : 24,083,768
+reads read      : 48,167,536
+reads written   : 48,167,536
+2026-11-02T07:44:24Z SRR34936996 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 24083768
+total bases: 3636648968
+Q20 bases: 3604323082(99.1111%)
+Q30 bases: 3496115364(96.1356%)
+Q40 bases: 3496115364(96.1356%)
+
+Read2 before filtering:
+total reads: 24083768
+total bases: 3636648968
+Q20 bases: 3590636185(98.7347%)
+Q30 bases: 3469195069(95.3954%)
+Q40 bases: 3469195069(95.3954%)
+
+Read1 after filtering:
+total reads: 23127464
+total bases: 3474919840
+Q20 bases: 3463381263(99.6679%)
+Q30 bases: 3386376164(97.4519%)
+Q40 bases: 3386376164(97.4519%)
+
+Read2 after filtering:
+total reads: 23127464
+total bases: 3474955186
+Q20 bases: 3461950429(99.6258%)
+Q30 bases: 3381412360(97.3081%)
+Q40 bases: 3381412360(97.3081%)
+
+Filtering result:
+reads passed filter: 46254928
+reads failed due to low quality: 1904548
+reads failed due to too many N: 5780
+reads failed due to too short: 2280
+reads with adapter trimmed: 1342690
+bases trimmed due to adapters: 33605990
+
+Duplication rate: 20.481%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936996/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936996/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936996/SRR34936996_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936996/SRR34936996_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936996/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936996/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936996/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936996/fastp.json 
+fastp v1.0.1, time used: 90 seconds
+2026-11-02T07:45:54Z SRR34936996 fastp done
+23127464 reads; of these:
+  23127464 (100.00%) were paired; of these:
+    3321605 (14.36%) aligned concordantly 0 times
+    18721136 (80.95%) aligned concordantly exactly 1 time
+    1084723 (4.69%) aligned concordantly >1 times
+    ----
+    3321605 pairs aligned concordantly 0 times; of these:
+      70008 (2.11%) aligned discordantly 1 time
+    ----
+    3251597 pairs aligned 0 times concordantly or discordantly; of these:
+      6503194 mates make up the pairs; of these:
+        4737057 (72.84%) aligned 0 times
+        1538784 (23.66%) aligned exactly 1 time
+        227353 (3.50%) aligned >1 times
+89.76% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T07:52:39Z SRR34936996 hisat2 done: 89.76% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T07:52:39Z FAILED SRR34936996 stringtie
+2026-11-02T07:52:39Z START SRR34936995
+spots read      : 26,251,191
+reads read      : 52,502,382
+reads written   : 52,502,382
+2026-11-02T07:54:22Z SRR34936995 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 26251191
+total bases: 3963929841
+Q20 bases: 3927882092(99.0906%)
+Q30 bases: 3806329934(96.0241%)
+Q40 bases: 3806329934(96.0241%)
+
+Read2 before filtering:
+total reads: 26251191
+total bases: 3963929841
+Q20 bases: 3913146032(98.7189%)
+Q30 bases: 3779372013(95.3441%)
+Q40 bases: 3779372013(95.3441%)
+
+Read1 after filtering:
+total reads: 25207786
+total bases: 3779274247
+Q20 bases: 3766247268(99.6553%)
+Q30 bases: 3679924172(97.3712%)
+Q40 bases: 3679924172(97.3712%)
+
+Read2 after filtering:
+total reads: 25207786
+total bases: 3779052025
+Q20 bases: 3765001076(99.6282%)
+Q30 bases: 3677723797(97.3187%)
+Q40 bases: 3677723797(97.3187%)
+
+Filtering result:
+reads passed filter: 50415572
+reads failed due to low quality: 2078580
+reads failed due to too many N: 6424
+reads failed due to too short: 1806
+reads with adapter trimmed: 2022958
+bases trimmed due to adapters: 52921763
+
+Duplication rate: 19.7885%
+
+Insert size peak (evaluated by paired-end reads): 270
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936995/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936995/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936995/SRR34936995_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936995/SRR34936995_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936995/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936995/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936995/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936995/fastp.json 
+fastp v1.0.1, time used: 118 seconds
+2026-11-02T07:56:20Z SRR34936995 fastp done
+25207786 reads; of these:
+  25207786 (100.00%) were paired; of these:
+    3549135 (14.08%) aligned concordantly 0 times
+    20468552 (81.20%) aligned concordantly exactly 1 time
+    1190099 (4.72%) aligned concordantly >1 times
+    ----
+    3549135 pairs aligned concordantly 0 times; of these:
+      77942 (2.20%) aligned discordantly 1 time
+    ----
+    3471193 pairs aligned 0 times concordantly or discordantly; of these:
+      6942386 mates make up the pairs; of these:
+        5033325 (72.50%) aligned 0 times
+        1662114 (23.94%) aligned exactly 1 time
+        246947 (3.56%) aligned >1 times
+90.02% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:03:42Z SRR34936995 hisat2 done: 90.02% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:03:42Z FAILED SRR34936995 stringtie
+2026-11-02T08:03:42Z START SRR34936994
+spots read      : 22,937,710
+reads read      : 45,875,420
+reads written   : 45,875,420
+2026-11-02T08:05:13Z SRR34936994 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22937710
+total bases: 3463594210
+Q20 bases: 3434275302(99.1535%)
+Q30 bases: 3331348682(96.1818%)
+Q40 bases: 3331348682(96.1818%)
+
+Read2 before filtering:
+total reads: 22937710
+total bases: 3463594210
+Q20 bases: 3422558969(98.8152%)
+Q30 bases: 3309245174(95.5437%)
+Q40 bases: 3309245174(95.5437%)
+
+Read1 after filtering:
+total reads: 22075374
+total bases: 3315246852
+Q20 bases: 3304066409(99.6628%)
+Q30 bases: 3230005960(97.4288%)
+Q40 bases: 3230005960(97.4288%)
+
+Read2 after filtering:
+total reads: 22075374
+total bases: 3315072380
+Q20 bases: 3302890571(99.6325%)
+Q30 bases: 3226888763(97.3399%)
+Q40 bases: 3226888763(97.3399%)
+
+Filtering result:
+reads passed filter: 44150748
+reads failed due to low quality: 1717830
+reads failed due to too many N: 5402
+reads failed due to too short: 1440
+reads with adapter trimmed: 1449052
+bases trimmed due to adapters: 35510496
+
+Duplication rate: 21.0982%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936994/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936994/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936994/SRR34936994_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936994/SRR34936994_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936994/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936994/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936994/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936994/fastp.json 
+fastp v1.0.1, time used: 106 seconds
+2026-11-02T08:07:00Z SRR34936994 fastp done
+22075374 reads; of these:
+  22075374 (100.00%) were paired; of these:
+    2559955 (11.60%) aligned concordantly 0 times
+    18502146 (83.81%) aligned concordantly exactly 1 time
+    1013273 (4.59%) aligned concordantly >1 times
+    ----
+    2559955 pairs aligned concordantly 0 times; of these:
+      74201 (2.90%) aligned discordantly 1 time
+    ----
+    2485754 pairs aligned 0 times concordantly or discordantly; of these:
+      4971508 mates make up the pairs; of these:
+        3449845 (69.39%) aligned 0 times
+        1338408 (26.92%) aligned exactly 1 time
+        183255 (3.69%) aligned >1 times
+92.19% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:13:28Z SRR34936994 hisat2 done: 92.19% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:13:28Z FAILED SRR34936994 stringtie
+2026-11-02T08:13:28Z START SRR34936993
+spots read      : 22,291,675
+reads read      : 44,583,350
+reads written   : 44,583,350
+2026-11-02T08:14:47Z SRR34936993 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22291675
+total bases: 3366042925
+Q20 bases: 3334545617(99.0643%)
+Q30 bases: 3231045191(95.9894%)
+Q40 bases: 3231045191(95.9894%)
+
+Read2 before filtering:
+total reads: 22291675
+total bases: 3366042925
+Q20 bases: 3319302302(98.6114%)
+Q30 bases: 3202264311(95.1344%)
+Q40 bases: 3202264311(95.1344%)
+
+Read1 after filtering:
+total reads: 21353148
+total bases: 3206335179
+Q20 bases: 3195212601(99.6531%)
+Q30 bases: 3121857494(97.3653%)
+Q40 bases: 3121857494(97.3653%)
+
+Read2 after filtering:
+total reads: 21353148
+total bases: 3206145858
+Q20 bases: 3193762533(99.6138%)
+Q30 bases: 3117267266(97.2279%)
+Q40 bases: 3117267266(97.2279%)
+
+Filtering result:
+reads passed filter: 42706296
+reads failed due to low quality: 1869336
+reads failed due to too many N: 5248
+reads failed due to too short: 2470
+reads with adapter trimmed: 1408713
+bases trimmed due to adapters: 34593229
+
+Duplication rate: 19.5286%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936993/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936993/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936993/SRR34936993_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936993/SRR34936993_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936993/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936993/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936993/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936993/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-02T08:16:30Z SRR34936993 fastp done
+21353148 reads; of these:
+  21353148 (100.00%) were paired; of these:
+    3070762 (14.38%) aligned concordantly 0 times
+    17313502 (81.08%) aligned concordantly exactly 1 time
+    968884 (4.54%) aligned concordantly >1 times
+    ----
+    3070762 pairs aligned concordantly 0 times; of these:
+      64632 (2.10%) aligned discordantly 1 time
+    ----
+    3006130 pairs aligned 0 times concordantly or discordantly; of these:
+      6012260 mates make up the pairs; of these:
+        4348131 (72.32%) aligned 0 times
+        1436352 (23.89%) aligned exactly 1 time
+        227777 (3.79%) aligned >1 times
+89.82% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:22:50Z SRR34936993 hisat2 done: 89.82% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:22:50Z FAILED SRR34936993 stringtie
+2026-11-02T08:22:50Z START SRR34936992
+spots read      : 20,474,595
+reads read      : 40,949,190
+reads written   : 40,949,190
+2026-11-02T08:23:58Z SRR34936992 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20474595
+total bases: 3091663845
+Q20 bases: 3062381333(99.0529%)
+Q30 bases: 2964277674(95.8797%)
+Q40 bases: 2964277674(95.8797%)
+
+Read2 before filtering:
+total reads: 20474595
+total bases: 3091663845
+Q20 bases: 3051076914(98.6872%)
+Q30 bases: 2944978814(95.2555%)
+Q40 bases: 2944978814(95.2555%)
+
+Read1 after filtering:
+total reads: 19642642
+total bases: 2947979373
+Q20 bases: 2937378436(99.6404%)
+Q30 bases: 2867134223(97.2576%)
+Q40 bases: 2867134223(97.2576%)
+
+Read2 after filtering:
+total reads: 19642642
+total bases: 2947827244
+Q20 bases: 2936537059(99.617%)
+Q30 bases: 2866277803(97.2336%)
+Q40 bases: 2866277803(97.2336%)
+
+Filtering result:
+reads passed filter: 39285284
+reads failed due to low quality: 1657504
+reads failed due to too many N: 4672
+reads failed due to too short: 1730
+reads with adapter trimmed: 1420077
+bases trimmed due to adapters: 35540795
+
+Duplication rate: 17.993%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936992/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936992/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936992/SRR34936992_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936992/SRR34936992_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936992/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936992/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936992/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936992/fastp.json 
+fastp v1.0.1, time used: 95 seconds
+2026-11-02T08:25:33Z SRR34936992 fastp done
+19642642 reads; of these:
+  19642642 (100.00%) were paired; of these:
+    3166271 (16.12%) aligned concordantly 0 times
+    15614012 (79.49%) aligned concordantly exactly 1 time
+    862359 (4.39%) aligned concordantly >1 times
+    ----
+    3166271 pairs aligned concordantly 0 times; of these:
+      57052 (1.80%) aligned discordantly 1 time
+    ----
+    3109219 pairs aligned 0 times concordantly or discordantly; of these:
+      6218438 mates make up the pairs; of these:
+        4857790 (78.12%) aligned 0 times
+        1206433 (19.40%) aligned exactly 1 time
+        154215 (2.48%) aligned >1 times
+87.63% overall alignment rate
+[bam_sort_core] merging from 3 files and 4 in-memory blocks...
+2026-11-02T08:31:16Z SRR34936992 hisat2 done: 87.63% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:31:16Z FAILED SRR34936992 stringtie
+2026-11-02T08:31:16Z START SRR34936991
+spots read      : 22,621,274
+reads read      : 45,242,548
+reads written   : 45,242,548
+2026-11-02T08:32:53Z SRR34936991 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22621274
+total bases: 3415812374
+Q20 bases: 3382362003(99.0207%)
+Q30 bases: 3275282990(95.8859%)
+Q40 bases: 3275282990(95.8859%)
+
+Read2 before filtering:
+total reads: 22621274
+total bases: 3415812374
+Q20 bases: 3371819895(98.7121%)
+Q30 bases: 3259850125(95.4341%)
+Q40 bases: 3259850125(95.4341%)
+
+Read1 after filtering:
+total reads: 21712248
+total bases: 3255639130
+Q20 bases: 3244179491(99.648%)
+Q30 bases: 3168467096(97.3224%)
+Q40 bases: 3168467096(97.3224%)
+
+Read2 after filtering:
+total reads: 21712248
+total bases: 3255464876
+Q20 bases: 3243846979(99.6431%)
+Q30 bases: 3171045426(97.4068%)
+Q40 bases: 3171045426(97.4068%)
+
+Filtering result:
+reads passed filter: 43424496
+reads failed due to low quality: 1810172
+reads failed due to too many N: 5324
+reads failed due to too short: 2556
+reads with adapter trimmed: 1743772
+bases trimmed due to adapters: 45120557
+
+Duplication rate: 18.6032%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936991/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936991/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936991/SRR34936991_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936991/SRR34936991_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936991/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936991/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936991/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936991/fastp.json 
+fastp v1.0.1, time used: 105 seconds
+2026-11-02T08:34:38Z SRR34936991 fastp done
+21712248 reads; of these:
+  21712248 (100.00%) were paired; of these:
+    3537130 (16.29%) aligned concordantly 0 times
+    17232296 (79.37%) aligned concordantly exactly 1 time
+    942822 (4.34%) aligned concordantly >1 times
+    ----
+    3537130 pairs aligned concordantly 0 times; of these:
+      62189 (1.76%) aligned discordantly 1 time
+    ----
+    3474941 pairs aligned 0 times concordantly or discordantly; of these:
+      6949882 mates make up the pairs; of these:
+        5424599 (78.05%) aligned 0 times
+        1362448 (19.60%) aligned exactly 1 time
+        162835 (2.34%) aligned >1 times
+87.51% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:40:57Z SRR34936991 hisat2 done: 87.51% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:40:57Z FAILED SRR34936991 stringtie
+2026-11-02T08:40:57Z START SRR34936990
+spots read      : 22,347,240
+reads read      : 44,694,480
+reads written   : 44,694,480
+2026-11-02T08:42:00Z SRR34936990 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22347240
+total bases: 3374433240
+Q20 bases: 3341909845(99.0362%)
+Q30 bases: 3239782134(96.0097%)
+Q40 bases: 3239782134(96.0097%)
+
+Read2 before filtering:
+total reads: 22347240
+total bases: 3374433240
+Q20 bases: 3329505551(98.6686%)
+Q30 bases: 3217987526(95.3638%)
+Q40 bases: 3217987526(95.3638%)
+
+Read1 after filtering:
+total reads: 21410977
+total bases: 3213801777
+Q20 bases: 3202962531(99.6627%)
+Q30 bases: 3131781678(97.4479%)
+Q40 bases: 3131781678(97.4479%)
+
+Read2 after filtering:
+total reads: 21410977
+total bases: 3213637512
+Q20 bases: 3202136005(99.6421%)
+Q30 bases: 3130404151(97.41%)
+Q40 bases: 3130404151(97.41%)
+
+Filtering result:
+reads passed filter: 42821954
+reads failed due to low quality: 1864930
+reads failed due to too many N: 5558
+reads failed due to too short: 2038
+reads with adapter trimmed: 1463220
+bases trimmed due to adapters: 37510779
+
+Duplication rate: 20.6844%
+
+Insert size peak (evaluated by paired-end reads): 269
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936990/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936990/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936990/SRR34936990_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936990/SRR34936990_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936990/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936990/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936990/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936990/fastp.json 
+fastp v1.0.1, time used: 105 seconds
+2026-11-02T08:43:45Z SRR34936990 fastp done
+21410977 reads; of these:
+  21410977 (100.00%) were paired; of these:
+    3454390 (16.13%) aligned concordantly 0 times
+    17020020 (79.49%) aligned concordantly exactly 1 time
+    936567 (4.37%) aligned concordantly >1 times
+    ----
+    3454390 pairs aligned concordantly 0 times; of these:
+      63948 (1.85%) aligned discordantly 1 time
+    ----
+    3390442 pairs aligned 0 times concordantly or discordantly; of these:
+      6780884 mates make up the pairs; of these:
+        5253868 (77.48%) aligned 0 times
+        1347034 (19.87%) aligned exactly 1 time
+        179982 (2.65%) aligned >1 times
+87.73% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:49:58Z SRR34936990 hisat2 done: 87.73% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:49:58Z FAILED SRR34936990 stringtie
+2026-11-02T08:49:58Z START SRR34936989
+spots read      : 22,687,502
+reads read      : 45,375,004
+reads written   : 45,375,004
+2026-11-02T08:51:12Z SRR34936989 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22687502
+total bases: 3425812802
+Q20 bases: 3396355985(99.1402%)
+Q30 bases: 3292825281(96.1181%)
+Q40 bases: 3292825281(96.1181%)
+
+Read2 before filtering:
+total reads: 22687502
+total bases: 3425812802
+Q20 bases: 3383942582(98.7778%)
+Q30 bases: 3270740062(95.4734%)
+Q40 bases: 3270740062(95.4734%)
+
+Read1 after filtering:
+total reads: 21825707
+total bases: 3279681643
+Q20 bases: 3268287012(99.6526%)
+Q30 bases: 3192933810(97.355%)
+Q40 bases: 3192933810(97.355%)
+
+Read2 after filtering:
+total reads: 21825707
+total bases: 3279503739
+Q20 bases: 3267400053(99.6309%)
+Q30 bases: 3191390482(97.3132%)
+Q40 bases: 3191390482(97.3132%)
+
+Filtering result:
+reads passed filter: 43651414
+reads failed due to low quality: 1716050
+reads failed due to too many N: 5608
+reads failed due to too short: 1932
+reads with adapter trimmed: 1283143
+bases trimmed due to adapters: 31294842
+
+Duplication rate: 19.7212%
+
+Insert size peak (evaluated by paired-end reads): 267
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936989/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936989/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936989/SRR34936989_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936989/SRR34936989_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936989/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936989/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936989/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936989/fastp.json 
+fastp v1.0.1, time used: 104 seconds
+2026-11-02T08:52:56Z SRR34936989 fastp done
+21825707 reads; of these:
+  21825707 (100.00%) were paired; of these:
+    3041360 (13.93%) aligned concordantly 0 times
+    17785430 (81.49%) aligned concordantly exactly 1 time
+    998917 (4.58%) aligned concordantly >1 times
+    ----
+    3041360 pairs aligned concordantly 0 times; of these:
+      79389 (2.61%) aligned discordantly 1 time
+    ----
+    2961971 pairs aligned 0 times concordantly or discordantly; of these:
+      5923942 mates make up the pairs; of these:
+        4299918 (72.59%) aligned 0 times
+        1417677 (23.93%) aligned exactly 1 time
+        206347 (3.48%) aligned >1 times
+90.15% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T08:59:20Z SRR34936989 hisat2 done: 90.15% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T08:59:21Z FAILED SRR34936989 stringtie
+2026-11-02T08:59:21Z START SRR34936988
+spots read      : 22,123,730
+reads read      : 44,247,460
+reads written   : 44,247,460
+2026-11-02T09:00:31Z SRR34936988 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22123730
+total bases: 3340683230
+Q20 bases: 3310122348(99.0852%)
+Q30 bases: 3206959946(95.9971%)
+Q40 bases: 3206959946(95.9971%)
+
+Read2 before filtering:
+total reads: 22123730
+total bases: 3340683230
+Q20 bases: 3298902062(98.7493%)
+Q30 bases: 3188587971(95.4472%)
+Q40 bases: 3188587971(95.4472%)
+
+Read1 after filtering:
+total reads: 21259301
+total bases: 3192292670
+Q20 bases: 3181094479(99.6492%)
+Q30 bases: 3106953227(97.3267%)
+Q40 bases: 3106953227(97.3267%)
+
+Read2 after filtering:
+total reads: 21259301
+total bases: 3192132021
+Q20 bases: 3180402852(99.6326%)
+Q30 bases: 3107034257(97.3341%)
+Q40 bases: 3107034257(97.3341%)
+
+Filtering result:
+reads passed filter: 42518602
+reads failed due to low quality: 1722428
+reads failed due to too many N: 5040
+reads failed due to too short: 1390
+reads with adapter trimmed: 1392423
+bases trimmed due to adapters: 35172573
+
+Duplication rate: 18.8477%
+
+Insert size peak (evaluated by paired-end reads): 270
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936988/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936988/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936988/SRR34936988_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936988/SRR34936988_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936988/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936988/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936988/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936988/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-02T09:02:13Z SRR34936988 fastp done
+21259301 reads; of these:
+  21259301 (100.00%) were paired; of these:
+    3011157 (14.16%) aligned concordantly 0 times
+    17257322 (81.18%) aligned concordantly exactly 1 time
+    990822 (4.66%) aligned concordantly >1 times
+    ----
+    3011157 pairs aligned concordantly 0 times; of these:
+      73851 (2.45%) aligned discordantly 1 time
+    ----
+    2937306 pairs aligned 0 times concordantly or discordantly; of these:
+      5874612 mates make up the pairs; of these:
+        4289173 (73.01%) aligned 0 times
+        1384494 (23.57%) aligned exactly 1 time
+        200945 (3.42%) aligned >1 times
+89.91% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T09:08:31Z SRR34936988 hisat2 done: 89.91% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:08:31Z FAILED SRR34936988 stringtie
+2026-11-02T09:08:31Z START SRR34936987
+spots read      : 21,123,677
+reads read      : 42,247,354
+reads written   : 42,247,354
+2026-11-02T09:09:39Z SRR34936987 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 21123677
+total bases: 3189675227
+Q20 bases: 3161321462(99.1111%)
+Q30 bases: 3063674765(96.0497%)
+Q40 bases: 3063674765(96.0497%)
+
+Read2 before filtering:
+total reads: 21123677
+total bases: 3189675227
+Q20 bases: 3148805867(98.7187%)
+Q30 bases: 3040247878(95.3153%)
+Q40 bases: 3040247878(95.3153%)
+
+Read1 after filtering:
+total reads: 20296557
+total bases: 3048284208
+Q20 bases: 3037789857(99.6557%)
+Q30 bases: 2967744464(97.3579%)
+Q40 bases: 2967744464(97.3579%)
+
+Read2 after filtering:
+total reads: 20296557
+total bases: 3048028785
+Q20 bases: 3036395072(99.6183%)
+Q30 bases: 2963863389(97.2387%)
+Q40 bases: 2963863389(97.2387%)
+
+Filtering result:
+reads passed filter: 40593114
+reads failed due to low quality: 1639960
+reads failed due to too many N: 5046
+reads failed due to too short: 9234
+reads with adapter trimmed: 1171415
+bases trimmed due to adapters: 32739799
+
+Duplication rate: 18.6554%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936987/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936987/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936987/SRR34936987_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936987/SRR34936987_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936987/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936987/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936987/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936987/fastp.json 
+fastp v1.0.1, time used: 98 seconds
+2026-11-02T09:11:17Z SRR34936987 fastp done
+20296557 reads; of these:
+  20296557 (100.00%) were paired; of these:
+    2870765 (14.14%) aligned concordantly 0 times
+    16480065 (81.20%) aligned concordantly exactly 1 time
+    945727 (4.66%) aligned concordantly >1 times
+    ----
+    2870765 pairs aligned concordantly 0 times; of these:
+      74240 (2.59%) aligned discordantly 1 time
+    ----
+    2796525 pairs aligned 0 times concordantly or discordantly; of these:
+      5593050 mates make up the pairs; of these:
+        4048625 (72.39%) aligned 0 times
+        1346121 (24.07%) aligned exactly 1 time
+        198304 (3.55%) aligned >1 times
+90.03% overall alignment rate
+[bam_sort_core] merging from 3 files and 4 in-memory blocks...
+2026-11-02T09:17:19Z SRR34936987 hisat2 done: 90.03% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:17:19Z FAILED SRR34936987 stringtie
+2026-11-02T09:17:19Z START SRR34936986
+spots read      : 20,668,775
+reads read      : 41,337,550
+reads written   : 41,337,550
+2026-11-02T09:18:28Z SRR34936986 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20668775
+total bases: 3120985025
+Q20 bases: 3092852170(99.0986%)
+Q30 bases: 3000488932(96.1392%)
+Q40 bases: 3000488932(96.1392%)
+
+Read2 before filtering:
+total reads: 20668775
+total bases: 3120985025
+Q20 bases: 3080540400(98.7041%)
+Q30 bases: 2975914911(95.3518%)
+Q40 bases: 2975914911(95.3518%)
+
+Read1 after filtering:
+total reads: 19830558
+total bases: 2979255001
+Q20 bases: 2969315618(99.6664%)
+Q30 bases: 2903962356(97.4728%)
+Q40 bases: 2903962356(97.4728%)
+
+Read2 after filtering:
+total reads: 19830558
+total bases: 2979094628
+Q20 bases: 2967968578(99.6265%)
+Q30 bases: 2899001421(97.3115%)
+Q40 bases: 2899001421(97.3115%)
+
+Filtering result:
+reads passed filter: 39661116
+reads failed due to low quality: 1670204
+reads failed due to too many N: 4978
+reads failed due to too short: 1252
+reads with adapter trimmed: 1179778
+bases trimmed due to adapters: 29431238
+
+Duplication rate: 20.9446%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936986/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936986/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936986/SRR34936986_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936986/SRR34936986_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936986/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936986/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936986/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936986/fastp.json 
+fastp v1.0.1, time used: 96 seconds
+2026-11-02T09:20:04Z SRR34936986 fastp done
+19830558 reads; of these:
+  19830558 (100.00%) were paired; of these:
+    2657444 (13.40%) aligned concordantly 0 times
+    16256163 (81.98%) aligned concordantly exactly 1 time
+    916951 (4.62%) aligned concordantly >1 times
+    ----
+    2657444 pairs aligned concordantly 0 times; of these:
+      62678 (2.36%) aligned discordantly 1 time
+    ----
+    2594766 pairs aligned 0 times concordantly or discordantly; of these:
+      5189532 mates make up the pairs; of these:
+        3689257 (71.09%) aligned 0 times
+        1305784 (25.16%) aligned exactly 1 time
+        194491 (3.75%) aligned >1 times
+90.70% overall alignment rate
+[bam_sort_core] merging from 3 files and 4 in-memory blocks...
+2026-11-02T09:25:50Z SRR34936986 hisat2 done: 90.70% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:25:50Z FAILED SRR34936986 stringtie
+2026-11-02T09:25:50Z START SRR34936985
+spots read      : 22,284,543
+reads read      : 44,569,086
+reads written   : 44,569,086
+2026-11-02T09:27:12Z SRR34936985 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22284543
+total bases: 3364965993
+Q20 bases: 3336541621(99.1553%)
+Q30 bases: 3235051481(96.1392%)
+Q40 bases: 3235051481(96.1392%)
+
+Read2 before filtering:
+total reads: 22284543
+total bases: 3364965993
+Q20 bases: 3327900778(98.8985%)
+Q30 bases: 3224511733(95.826%)
+Q40 bases: 3224511733(95.826%)
+
+Read1 after filtering:
+total reads: 21495876
+total bases: 3226748552
+Q20 bases: 3215650241(99.6561%)
+Q30 bases: 3141310934(97.3522%)
+Q40 bases: 3141310934(97.3522%)
+
+Read2 after filtering:
+total reads: 21495876
+total bases: 3226619620
+Q20 bases: 3215763321(99.6635%)
+Q30 bases: 3146248111(97.5091%)
+Q40 bases: 3146248111(97.5091%)
+
+Filtering result:
+reads passed filter: 42991752
+reads failed due to low quality: 1569694
+reads failed due to too many N: 4136
+reads failed due to too short: 3504
+reads with adapter trimmed: 1452696
+bases trimmed due to adapters: 37836009
+
+Duplication rate: 18.6256%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936985/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936985/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936985/SRR34936985_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936985/SRR34936985_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936985/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936985/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936985/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936985/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-02T09:28:54Z SRR34936985 fastp done
+21495876 reads; of these:
+  21495876 (100.00%) were paired; of these:
+    2912306 (13.55%) aligned concordantly 0 times
+    17563271 (81.71%) aligned concordantly exactly 1 time
+    1020299 (4.75%) aligned concordantly >1 times
+    ----
+    2912306 pairs aligned concordantly 0 times; of these:
+      68325 (2.35%) aligned discordantly 1 time
+    ----
+    2843981 pairs aligned 0 times concordantly or discordantly; of these:
+      5687962 mates make up the pairs; of these:
+        4065280 (71.47%) aligned 0 times
+        1424041 (25.04%) aligned exactly 1 time
+        198641 (3.49%) aligned >1 times
+90.54% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T09:35:15Z SRR34936985 hisat2 done: 90.54% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:35:15Z FAILED SRR34936985 stringtie
+2026-11-02T09:35:15Z START SRR34936984
+spots read      : 20,939,186
+reads read      : 41,878,372
+reads written   : 41,878,372
+2026-11-02T09:36:38Z SRR34936984 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20939186
+total bases: 3161817086
+Q20 bases: 3130803687(99.0191%)
+Q30 bases: 3031136630(95.8669%)
+Q40 bases: 3031136630(95.8669%)
+
+Read2 before filtering:
+total reads: 20939186
+total bases: 3161817086
+Q20 bases: 3117037745(98.5837%)
+Q30 bases: 3007987233(95.1348%)
+Q40 bases: 3007987233(95.1348%)
+
+Read1 after filtering:
+total reads: 20035570
+total bases: 3007431810
+Q20 bases: 2996769162(99.6455%)
+Q30 bases: 2926546466(97.3105%)
+Q40 bases: 2926546466(97.3105%)
+
+Read2 after filtering:
+total reads: 20035570
+total bases: 3007259545
+Q20 bases: 2995903070(99.6224%)
+Q30 bases: 2925708195(97.2882%)
+Q40 bases: 2925708195(97.2882%)
+
+Filtering result:
+reads passed filter: 40071140
+reads failed due to low quality: 1798254
+reads failed due to too many N: 4978
+reads failed due to too short: 4000
+reads with adapter trimmed: 1369238
+bases trimmed due to adapters: 35340637
+
+Duplication rate: 19.1087%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936984/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936984/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936984/SRR34936984_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936984/SRR34936984_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936984/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936984/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936984/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936984/fastp.json 
+fastp v1.0.1, time used: 101 seconds
+2026-11-02T09:38:26Z SRR34936984 fastp done
+20035570 reads; of these:
+  20035570 (100.00%) were paired; of these:
+    2752583 (13.74%) aligned concordantly 0 times
+    16381522 (81.76%) aligned concordantly exactly 1 time
+    901465 (4.50%) aligned concordantly >1 times
+    ----
+    2752583 pairs aligned concordantly 0 times; of these:
+      62523 (2.27%) aligned discordantly 1 time
+    ----
+    2690060 pairs aligned 0 times concordantly or discordantly; of these:
+      5380120 mates make up the pairs; of these:
+        3870965 (71.95%) aligned 0 times
+        1317932 (24.50%) aligned exactly 1 time
+        191223 (3.55%) aligned >1 times
+90.34% overall alignment rate
+[bam_sort_core] merging from 3 files and 4 in-memory blocks...
+2026-11-02T09:44:18Z SRR34936984 hisat2 done: 90.34% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:44:18Z FAILED SRR34936984 stringtie
+2026-11-02T09:44:18Z START SRR34936983
+spots read      : 22,252,245
+reads read      : 44,504,490
+reads written   : 44,504,490
+2026-11-02T09:45:54Z SRR34936983 fasterq-dump done
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22252245
+total bases: 3360088995
+Q20 bases: 3328921051(99.0724%)
+Q30 bases: 3226299537(96.0183%)
+Q40 bases: 3226299537(96.0183%)
+
+Read2 before filtering:
+total reads: 22252245
+total bases: 3360088995
+Q20 bases: 3317736036(98.7395%)
+Q30 bases: 3207712929(95.4651%)
+Q40 bases: 3207712929(95.4651%)
+
+Read1 after filtering:
+total reads: 21356910
+total bases: 3205390370
+Q20 bases: 3194229703(99.6518%)
+Q30 bases: 3121252625(97.3751%)
+Q40 bases: 3121252625(97.3751%)
+
+Read2 after filtering:
+total reads: 21356910
+total bases: 3205213521
+Q20 bases: 3193674339(99.64%)
+Q30 bases: 3121877921(97.4%)
+Q40 bases: 3121877921(97.4%)
+
+Filtering result:
+reads passed filter: 42713820
+reads failed due to low quality: 1783326
+reads failed due to too many N: 5366
+reads failed due to too short: 1978
+reads with adapter trimmed: 1480178
+bases trimmed due to adapters: 38119431
+
+Duplication rate: 21.3791%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/runs/SRR34936983/fastp.json
+HTML report: $RP/work/liao2026_quant/runs/SRR34936983/fastp.html
+
+fastp -i $RP/work/liao2026_quant/runs/SRR34936983/SRR34936983_1.fastq -I $RP/work/liao2026_quant/runs/SRR34936983/SRR34936983_2.fastq -o $RP/work/liao2026_quant/runs/SRR34936983/clean_1.fq.gz -O $RP/work/liao2026_quant/runs/SRR34936983/clean_2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/runs/SRR34936983/fastp.html -j $RP/work/liao2026_quant/runs/SRR34936983/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-02T09:47:36Z SRR34936983 fastp done
+21356910 reads; of these:
+  21356910 (100.00%) were paired; of these:
+    2900520 (13.58%) aligned concordantly 0 times
+    17460483 (81.76%) aligned concordantly exactly 1 time
+    995907 (4.66%) aligned concordantly >1 times
+    ----
+    2900520 pairs aligned concordantly 0 times; of these:
+      64111 (2.21%) aligned discordantly 1 time
+    ----
+    2836409 pairs aligned 0 times concordantly or discordantly; of these:
+      5672818 mates make up the pairs; of these:
+        4070129 (71.75%) aligned 0 times
+        1386896 (24.45%) aligned exactly 1 time
+        215793 (3.80%) aligned >1 times
+90.47% overall alignment rate
+[bam_sort_core] merging from 4 files and 4 in-memory blocks...
+2026-11-02T09:53:54Z SRR34936983 hisat2 done: 90.47% overall alignment rate
+Error: no valid ID found for GFF record
+2026-11-02T09:53:54Z FAILED SRR34936983 stringtie
+2026-11-02T09:53:54Z BATCH_DONE ok=0 failed=24

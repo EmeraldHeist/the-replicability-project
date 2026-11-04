@@ -1,0 +1,3747 @@
+rsem-extract-reference-transcripts $RP/work/liao2026_quant/rsem/ref/dm 0 $RP/work/liao2026_quant/index/genes.tx.gtf None 0 $RP/work/liao2026_quant/index/genome.fa
+Parsed 200000 lines
+Parsed 400000 lines
+Parsed 600000 lines
+Parsing gtf File is done!
+$RP/work/liao2026_quant/index/genome.fa is processed!
+45636 transcripts are extracted.
+Extracting sequences is done!
+Group File is generated!
+Transcript Information File is generated!
+Chromosome List File is generated!
+Extracted Sequences File is generated!
+
+rsem-preref $RP/work/liao2026_quant/rsem/ref/dm.transcripts.fa 1 $RP/work/liao2026_quant/rsem/ref/dm
+Refs.makeRefs finished!
+Refs.saveRefs finished!
+$RP/work/liao2026_quant/rsem/ref/dm.idx.fa is generated!
+$RP/work/liao2026_quant/rsem/ref/dm.n2g.idx.fa is generated!
+
+$CONDA_BASE/envs/daphnia_rsem/bin/bowtie2-build -f --threads 8 $RP/work/liao2026_quant/rsem/ref/dm.idx.fa $RP/work/liao2026_quant/rsem/ref/dm
+Settings:
+  Output files: "$RP/work/liao2026_quant/rsem/ref/dm.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 32
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  $RP/work/liao2026_quant/rsem/ref/dm.idx.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:01
+bmax according to bmaxDivN setting: 3193102
+Using parameters --bmax 2394827 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 2394827 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:01
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:01
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 86 sample suffixes
+Generating random suffixes
+QSorting 86 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 86 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 9, merged 40; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 9, merged 7; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 4, merged 2; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 4, merged 3; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 1, merged 3; iterating...
+Avg bucket size: 1.73185e+06 (target: 2394826)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 59
+  Reserving size (2394827) for bucket 1
+  Calculating Z arrays for bucket 1
+Getting block 3 of 59
+  Reserving size (2394827) for bucket 3
+Getting block 4 of 59
+  Reserving size (2394827) for bucket 4
+Getting block 2 of 59
+  Reserving size (2394827) for bucket 2
+  Calculating Z arrays for bucket 2
+Getting block 5 of 59
+  Reserving size (2394827) for bucket 5
+  Calculating Z arrays for bucket 5
+  Calculating Z arrays for bucket 4
+  Entering block accumulator loop for bucket 2:
+Getting block 6 of 59
+  Reserving size (2394827) for bucket 6
+  Calculating Z arrays for bucket 3
+  Entering block accumulator loop for bucket 4:
+  Calculating Z arrays for bucket 6
+  Entering block accumulator loop for bucket 5:
+  Entering block accumulator loop for bucket 3:
+  Entering block accumulator loop for bucket 6:
+  Entering block accumulator loop for bucket 1:
+Getting block 7 of 59
+  Reserving size (2394827) for bucket 7
+  Calculating Z arrays for bucket 7
+  Entering block accumulator loop for bucket 7:
+  bucket 1: 10%
+  bucket 3: 10%
+  bucket 5: 10%
+  bucket 2: 10%
+  bucket 4: 10%
+  bucket 6: 10%
+  bucket 7: 10%
+  bucket 1: 20%
+  bucket 3: 20%
+  bucket 5: 20%
+  bucket 2: 20%
+  bucket 4: 20%
+  bucket 6: 20%
+  bucket 7: 20%
+  bucket 1: 30%
+  bucket 3: 30%
+  bucket 5: 30%
+  bucket 2: 30%
+  bucket 4: 30%
+  bucket 6: 30%
+  bucket 1: 40%
+  bucket 7: 30%
+  bucket 3: 40%
+  bucket 5: 40%
+  bucket 2: 40%
+  bucket 4: 40%
+  bucket 1: 50%
+  bucket 6: 40%
+  bucket 7: 40%
+  bucket 3: 50%
+  bucket 5: 50%
+  bucket 2: 50%
+  bucket 1: 60%
+  bucket 4: 50%
+  bucket 6: 50%
+  bucket 7: 50%
+  bucket 3: 60%
+  bucket 1: 70%
+  bucket 5: 60%
+  bucket 2: 60%
+  bucket 4: 60%
+  bucket 6: 60%
+  bucket 3: 70%
+  bucket 1: 80%
+  bucket 7: 60%
+  bucket 5: 70%
+  bucket 2: 70%
+  bucket 4: 70%
+  bucket 6: 70%
+  bucket 1: 90%
+  bucket 3: 80%
+  bucket 5: 80%
+  bucket 7: 70%
+  bucket 2: 80%
+  bucket 4: 80%
+  bucket 6: 80%
+  bucket 1: 100%
+  Sorting block of length 1961865 for bucket 1
+  (Using difference cover)
+  bucket 3: 90%
+  bucket 5: 90%
+  bucket 2: 90%
+  bucket 7: 80%
+  bucket 4: 90%
+  bucket 6: 90%
+  bucket 3: 100%
+  Sorting block of length 1976663 for bucket 3
+  (Using difference cover)
+  bucket 5: 100%
+  Sorting block of length 761884 for bucket 5
+  (Using difference cover)
+  bucket 2: 100%
+  Sorting block of length 2389328 for bucket 2
+  (Using difference cover)
+  bucket 7: 90%
+  bucket 4: 100%
+  Sorting block of length 2739528 for bucket 4
+  (Using difference cover)
+  bucket 6: 100%
+  Sorting block of length 623619 for bucket 6
+  (Using difference cover)
+  bucket 7: 100%
+  Sorting block of length 1877094 for bucket 7
+  (Using difference cover)
+  Sorting block time: 00:00:01
+Returning block of 623620 for bucket 6
+Getting block 8 of 59
+  Reserving size (2394827) for bucket 8
+  Calculating Z arrays for bucket 8
+  Entering block accumulator loop for bucket 8:
+  bucket 8: 10%
+  bucket 8: 20%
+  bucket 8: 30%
+  Sorting block time: 00:00:01
+Returning block of 761885 for bucket 5
+Getting block 9 of 59
+  Reserving size (2394827) for bucket 9
+  Calculating Z arrays for bucket 9
+  Entering block accumulator loop for bucket 9:
+  bucket 8: 40%
+  bucket 9: 10%
+  bucket 8: 50%
+  bucket 9: 20%
+  bucket 8: 60%
+  bucket 9: 30%
+  bucket 8: 70%
+  bucket 9: 40%
+  bucket 8: 80%
+  bucket 9: 50%
+  bucket 8: 90%
+  bucket 9: 60%
+  bucket 8: 100%
+  Sorting block of length 2014288 for bucket 8
+  (Using difference cover)
+  bucket 9: 70%
+  bucket 9: 80%
+  bucket 9: 90%
+  bucket 9: 100%
+  Sorting block of length 624744 for bucket 9
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 624745 for bucket 9
+Getting block 10 of 59
+  Reserving size (2394827) for bucket 10
+  Calculating Z arrays for bucket 10
+  Entering block accumulator loop for bucket 10:
+  Sorting block time: 00:00:04
+Returning block of 1961866 for bucket 1
+  bucket 10: 10%
+Getting block 11 of 59
+  Reserving size (2394827) for bucket 11
+  Calculating Z arrays for bucket 11
+  Entering block accumulator loop for bucket 11:
+  bucket 10: 20%
+  bucket 11: 10%
+  Sorting block time: 00:00:04
+Returning block of 1877095 for bucket 7
+Getting block 12 of 59
+  Reserving size (2394827) for bucket 12
+  Calculating Z arrays for bucket 12
+  Entering block accumulator loop for bucket 12:
+  bucket 10: 30%
+  bucket 11: 20%
+  Sorting block time: 00:00:04
+Returning block of 1976664 for bucket 3
+  bucket 12: 10%
+  bucket 10: 40%
+Getting block 13 of 59
+  Reserving size (2394827) for bucket 13
+  Calculating Z arrays for bucket 13
+  Entering block accumulator loop for bucket 13:
+  bucket 11: 30%
+  bucket 10: 50%
+  bucket 12: 20%
+  bucket 13: 10%
+  bucket 11: 40%
+  bucket 10: 60%
+  bucket 12: 30%
+  bucket 13: 20%
+  bucket 11: 50%
+  bucket 10: 70%
+  bucket 12: 40%
+  bucket 13: 30%
+  bucket 11: 60%
+  bucket 10: 80%
+  bucket 12: 50%
+  bucket 13: 40%
+  bucket 11: 70%
+  bucket 10: 90%
+  bucket 12: 60%
+  bucket 11: 80%
+  bucket 13: 50%
+  bucket 10: 100%
+  Sorting block of length 1947592 for bucket 10
+  (Using difference cover)
+  bucket 12: 70%
+  bucket 11: 90%
+  bucket 13: 60%
+  bucket 12: 80%
+  bucket 11: 100%
+  Sorting block of length 1794405 for bucket 11
+  (Using difference cover)
+  bucket 13: 70%
+  bucket 12: 90%
+  bucket 13: 80%
+  Sorting block time: 00:00:05
+Returning block of 2389329 for bucket 2
+  bucket 12: 100%
+  Sorting block of length 1254723 for bucket 12
+  (Using difference cover)
+Getting block 14 of 59
+  Reserving size (2394827) for bucket 14
+  Calculating Z arrays for bucket 14
+  Entering block accumulator loop for bucket 14:
+  bucket 13: 90%
+  bucket 14: 10%
+  bucket 13: 100%
+  Sorting block of length 1738134 for bucket 13
+  (Using difference cover)
+  bucket 14: 20%
+  bucket 14: 30%
+  bucket 14: 40%
+  bucket 14: 50%
+  bucket 14: 60%
+  bucket 14: 70%
+  bucket 14: 80%
+  Sorting block time: 00:00:06
+Returning block of 2739529 for bucket 4
+  bucket 14: 90%
+Getting block 15 of 59
+  Reserving size (2394827) for bucket 15
+  Calculating Z arrays for bucket 15
+  Entering block accumulator loop for bucket 15:
+  bucket 14: 100%
+  Sorting block of length 1411227 for bucket 14
+  (Using difference cover)
+  bucket 15: 10%
+  bucket 15: 20%
+  bucket 15: 30%
+  bucket 15: 40%
+  bucket 15: 50%
+  bucket 15: 60%
+  Sorting block time: 00:00:05
+Returning block of 2014289 for bucket 8
+Getting block 16 of 59
+  Reserving size (2394827) for bucket 16
+  Calculating Z arrays for bucket 16
+  Entering block accumulator loop for bucket 16:
+  bucket 15: 70%
+  bucket 15: 80%
+  bucket 16: 10%
+  bucket 15: 90%
+  bucket 16: 20%
+  bucket 15: 100%
+  Sorting block of length 1866017 for bucket 15
+  (Using difference cover)
+  bucket 16: 30%
+  bucket 16: 40%
+  bucket 16: 50%
+  bucket 16: 60%
+  bucket 16: 70%
+  bucket 16: 80%
+  bucket 16: 90%
+  bucket 16: 100%
+  Sorting block of length 2127336 for bucket 16
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1254724 for bucket 12
+Getting block 17 of 59
+  Reserving size (2394827) for bucket 17
+  Calculating Z arrays for bucket 17
+  Entering block accumulator loop for bucket 17:
+  bucket 17: 10%
+  bucket 17: 20%
+  bucket 17: 30%
+  bucket 17: 40%
+  bucket 17: 50%
+  bucket 17: 60%
+  bucket 17: 70%
+  bucket 17: 80%
+  bucket 17: 90%
+  bucket 17: 100%
+  Sorting block of length 1966436 for bucket 17
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1794406 for bucket 11
+Getting block 18 of 59
+  Reserving size (2394827) for bucket 18
+  Calculating Z arrays for bucket 18
+  Entering block accumulator loop for bucket 18:
+  Sorting block time: 00:00:04
+Returning block of 1947593 for bucket 10
+  bucket 18: 10%
+Getting block 19 of 59
+  Reserving size (2394827) for bucket 19
+  Calculating Z arrays for bucket 19
+  Entering block accumulator loop for bucket 19:
+  Sorting block time: 00:00:04
+Returning block of 1738135 for bucket 13
+  Sorting block time: 00:00:03
+Returning block of 1411228 for bucket 14
+  bucket 18: 20%
+Getting block 20 of 59
+  Reserving size (2394827) for bucket 20
+  Calculating Z arrays for bucket 20
+  Entering block accumulator loop for bucket 20:
+Getting block 21 of 59
+  Reserving size (2394827) for bucket 21
+  Calculating Z arrays for bucket 21
+  Entering block accumulator loop for bucket 21:
+  bucket 19: 10%
+  bucket 18: 30%
+  bucket 20: 10%
+  bucket 21: 10%
+  bucket 19: 20%
+  bucket 21: 20%
+  bucket 18: 40%
+  bucket 20: 20%
+  bucket 19: 30%
+  bucket 21: 30%
+  bucket 20: 30%
+  bucket 18: 50%
+  bucket 19: 40%
+  bucket 21: 40%
+  bucket 20: 40%
+  bucket 18: 60%
+  bucket 19: 50%
+  bucket 21: 50%
+  bucket 20: 50%
+  bucket 19: 60%
+  bucket 18: 70%
+  bucket 21: 60%
+  bucket 19: 70%
+  bucket 20: 60%
+  bucket 18: 80%
+  bucket 21: 70%
+  bucket 19: 80%
+  bucket 20: 70%
+  bucket 18: 90%
+  bucket 21: 80%
+  bucket 19: 90%
+  bucket 20: 80%
+  bucket 18: 100%
+  Sorting block of length 1203290 for bucket 18
+  (Using difference cover)
+  bucket 21: 90%
+  bucket 19: 100%
+  Sorting block of length 2129755 for bucket 19
+  (Using difference cover)
+  bucket 20: 90%
+  bucket 21: 100%
+  Sorting block of length 1961446 for bucket 21
+  (Using difference cover)
+  bucket 20: 100%
+  Sorting block of length 2182807 for bucket 20
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1866018 for bucket 15
+Getting block 22 of 59
+  Reserving size (2394827) for bucket 22
+  Calculating Z arrays for bucket 22
+  Entering block accumulator loop for bucket 22:
+  bucket 22: 10%
+  bucket 22: 20%
+  bucket 22: 30%
+  bucket 22: 40%
+  bucket 22: 50%
+  bucket 22: 60%
+  bucket 22: 70%
+  bucket 22: 80%
+  bucket 22: 90%
+  bucket 22: 100%
+  Sorting block of length 989847 for bucket 22
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 2127337 for bucket 16
+Getting block 23 of 59
+  Reserving size (2394827) for bucket 23
+  Calculating Z arrays for bucket 23
+  Entering block accumulator loop for bucket 23:
+  bucket 23: 10%
+  Sorting block time: 00:00:03
+Returning block of 1203291 for bucket 18
+  bucket 23: 20%
+Getting block 24 of 59
+  Reserving size (2394827) for bucket 24
+  Calculating Z arrays for bucket 24
+  Entering block accumulator loop for bucket 24:
+  bucket 23: 30%
+  bucket 24: 10%
+  bucket 23: 40%
+  bucket 24: 20%
+  bucket 23: 50%
+  bucket 24: 30%
+  bucket 23: 60%
+  bucket 24: 40%
+  bucket 23: 70%
+  bucket 24: 50%
+  Sorting block time: 00:00:05
+Returning block of 1966437 for bucket 17
+  bucket 23: 80%
+Getting block 25 of 59
+  Reserving size (2394827) for bucket 25
+  Calculating Z arrays for bucket 25
+  Entering block accumulator loop for bucket 25:
+  bucket 24: 60%
+  bucket 23: 90%
+  bucket 25: 10%
+  bucket 24: 70%
+  bucket 23: 100%
+  Sorting block of length 1753283 for bucket 23
+  (Using difference cover)
+  bucket 25: 20%
+  bucket 24: 80%
+  bucket 25: 30%
+  bucket 24: 90%
+  bucket 25: 40%
+  bucket 24: 100%
+  Sorting block of length 1869292 for bucket 24
+  (Using difference cover)
+  bucket 25: 50%
+  bucket 25: 60%
+  bucket 25: 70%
+  bucket 25: 80%
+  bucket 25: 90%
+  bucket 25: 100%
+  Sorting block of length 2204977 for bucket 25
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 989848 for bucket 22
+Getting block 26 of 59
+  Reserving size (2394827) for bucket 26
+  Calculating Z arrays for bucket 26
+  Entering block accumulator loop for bucket 26:
+  bucket 26: 10%
+  Sorting block time: 00:00:05
+Returning block of 1961447 for bucket 21
+Getting block 27 of 59
+  Reserving size (2394827) for bucket 27
+  Calculating Z arrays for bucket 27
+  Entering block accumulator loop for bucket 27:
+  bucket 26: 20%
+  bucket 27: 10%
+  bucket 26: 30%
+  Sorting block time: 00:00:05
+Returning block of 2129756 for bucket 19
+Getting block 28 of 59
+  Reserving size (2394827) for bucket 28
+  Calculating Z arrays for bucket 28
+  Entering block accumulator loop for bucket 28:
+  bucket 27: 20%
+  bucket 26: 40%
+  bucket 28: 10%
+  bucket 27: 30%
+  bucket 26: 50%
+  bucket 28: 20%
+  bucket 27: 40%
+  bucket 26: 60%
+  Sorting block time: 00:00:06
+Returning block of 2182808 for bucket 20
+  bucket 28: 30%
+  bucket 27: 50%
+Getting block 29 of 59
+  Reserving size (2394827) for bucket 29
+  Calculating Z arrays for bucket 29
+  Entering block accumulator loop for bucket 29:
+  bucket 26: 70%
+  bucket 27: 60%
+  bucket 28: 40%
+  bucket 26: 80%
+  bucket 29: 10%
+  bucket 28: 50%
+  bucket 27: 70%
+  bucket 26: 90%
+  bucket 29: 20%
+  bucket 27: 80%
+  bucket 28: 60%
+  bucket 26: 100%
+  Sorting block of length 1557021 for bucket 26
+  (Using difference cover)
+  bucket 29: 30%
+  bucket 27: 90%
+  bucket 28: 70%
+  bucket 29: 40%
+  bucket 27: 100%
+  Sorting block of length 1376980 for bucket 27
+  (Using difference cover)
+  bucket 28: 80%
+  bucket 29: 50%
+  bucket 28: 90%
+  bucket 29: 60%
+  bucket 28: 100%
+  Sorting block of length 2162919 for bucket 28
+  (Using difference cover)
+  bucket 29: 70%
+  bucket 29: 80%
+  bucket 29: 90%
+  bucket 29: 100%
+  Sorting block of length 1508576 for bucket 29
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1753284 for bucket 23
+Getting block 30 of 59
+  Reserving size (2394827) for bucket 30
+  Calculating Z arrays for bucket 30
+  Entering block accumulator loop for bucket 30:
+  bucket 30: 10%
+  bucket 30: 20%
+  bucket 30: 30%
+  bucket 30: 40%
+  Sorting block time: 00:00:04
+Returning block of 1869293 for bucket 24
+Getting block 31 of 59
+  Reserving size (2394827) for bucket 31
+  Calculating Z arrays for bucket 31
+  Entering block accumulator loop for bucket 31:
+  bucket 30: 50%
+  bucket 31: 10%
+  bucket 30: 60%
+  bucket 31: 20%
+  bucket 30: 70%
+  bucket 31: 30%
+  bucket 30: 80%
+  bucket 31: 40%
+  bucket 30: 90%
+  bucket 31: 50%
+  bucket 31: 60%
+  bucket 30: 100%
+  Sorting block of length 2350520 for bucket 30
+  (Using difference cover)
+  bucket 31: 70%
+  Sorting block time: 00:00:03
+Returning block of 1376981 for bucket 27
+  bucket 31: 80%
+Getting block 32 of 59
+  Reserving size (2394827) for bucket 32
+  Calculating Z arrays for bucket 32
+  Entering block accumulator loop for bucket 32:
+  bucket 31: 90%
+  bucket 32: 10%
+  bucket 31: 100%
+  Sorting block of length 1441155 for bucket 31
+  (Using difference cover)
+  bucket 32: 20%
+  Sorting block time: 00:00:04
+Returning block of 1557022 for bucket 26
+Getting block 33 of 59
+  Reserving size (2394827) for bucket 33
+  Calculating Z arrays for bucket 33
+  Entering block accumulator loop for bucket 33:
+  bucket 32: 30%
+  bucket 33: 10%
+  bucket 32: 40%
+  bucket 33: 20%
+  Sorting block time: 00:00:05
+Returning block of 2204978 for bucket 25
+Getting block 34 of 59
+  Reserving size (2394827) for bucket 34
+  Calculating Z arrays for bucket 34
+  Entering block accumulator loop for bucket 34:
+  bucket 32: 50%
+  bucket 33: 30%
+  bucket 34: 10%
+  bucket 32: 60%
+  bucket 33: 40%
+  bucket 34: 20%
+  bucket 32: 70%
+  Sorting block time: 00:00:03
+Returning block of 1508577 for bucket 29
+  bucket 33: 50%
+Getting block 35 of 59
+  Reserving size (2394827) for bucket 35
+  Calculating Z arrays for bucket 35
+  Entering block accumulator loop for bucket 35:
+  bucket 34: 30%
+  bucket 32: 80%
+  bucket 33: 60%
+  bucket 35: 10%
+  bucket 34: 40%
+  bucket 32: 90%
+  bucket 33: 70%
+  bucket 35: 20%
+  bucket 34: 50%
+  bucket 32: 100%
+  Sorting block of length 1308866 for bucket 32
+  (Using difference cover)
+  bucket 33: 80%
+  bucket 35: 30%
+  bucket 34: 60%
+  bucket 33: 90%
+  bucket 35: 40%
+  bucket 34: 70%
+  bucket 35: 50%
+  bucket 33: 100%
+  Sorting block of length 2099364 for bucket 33
+  (Using difference cover)
+  bucket 34: 80%
+  bucket 35: 60%
+  bucket 34: 90%
+  bucket 35: 70%
+  bucket 34: 100%
+  Sorting block of length 1588802 for bucket 34
+  (Using difference cover)
+  bucket 35: 80%
+  Sorting block time: 00:00:05
+Returning block of 2162920 for bucket 28
+  bucket 35: 90%
+Getting block 36 of 59
+  Reserving size (2394827) for bucket 36
+  Calculating Z arrays for bucket 36
+  Entering block accumulator loop for bucket 36:
+  bucket 35: 100%
+  Sorting block of length 1172194 for bucket 35
+  (Using difference cover)
+  bucket 36: 10%
+  bucket 36: 20%
+  bucket 36: 30%
+  bucket 36: 40%
+  bucket 36: 50%
+  bucket 36: 60%
+  bucket 36: 70%
+  bucket 36: 80%
+  bucket 36: 90%
+  bucket 36: 100%
+  Sorting block of length 2077657 for bucket 36
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1441156 for bucket 31
+Getting block 37 of 59
+  Reserving size (2394827) for bucket 37
+  Calculating Z arrays for bucket 37
+  Entering block accumulator loop for bucket 37:
+  bucket 37: 10%
+  bucket 37: 20%
+  bucket 37: 30%
+  bucket 37: 40%
+  bucket 37: 50%
+  bucket 37: 60%
+  Sorting block time: 00:00:03
+Returning block of 1308867 for bucket 32
+Getting block 38 of 59
+  Reserving size (2394827) for bucket 38
+  Calculating Z arrays for bucket 38
+  Entering block accumulator loop for bucket 38:
+  bucket 37: 70%
+  bucket 38: 10%
+  bucket 37: 80%
+  bucket 38: 20%
+  bucket 37: 90%
+  bucket 38: 30%
+  bucket 37: 100%
+  Sorting block of length 1900499 for bucket 37
+  (Using difference cover)
+  bucket 38: 40%
+  bucket 38: 50%
+  Sorting block time: 00:00:02
+Returning block of 1172195 for bucket 35
+Getting block 39 of 59
+  Reserving size (2394827) for bucket 39
+  Calculating Z arrays for bucket 39
+  Entering block accumulator loop for bucket 39:
+  bucket 38: 60%
+  bucket 39: 10%
+  bucket 38: 70%
+  bucket 39: 20%
+  bucket 38: 80%
+  Sorting block time: 00:00:06
+Returning block of 2350521 for bucket 30
+Getting block 40 of 59
+  Reserving size (2394827) for bucket 40
+  Calculating Z arrays for bucket 40
+  Entering block accumulator loop for bucket 40:
+  bucket 39: 30%
+  bucket 38: 90%
+  bucket 40: 10%
+  bucket 39: 40%
+  bucket 38: 100%
+  Sorting block of length 1874334 for bucket 38
+  (Using difference cover)
+  bucket 40: 20%
+  bucket 39: 50%
+  Sorting block time: 00:00:04
+Returning block of 1588803 for bucket 34
+Getting block 41 of 59
+  Reserving size (2394827) for bucket 41
+  Calculating Z arrays for bucket 41
+  Entering block accumulator loop for bucket 41:
+  bucket 40: 30%
+  bucket 39: 60%
+  bucket 41: 10%
+  bucket 40: 40%
+  bucket 39: 70%
+  bucket 41: 20%
+  bucket 40: 50%
+  bucket 39: 80%
+  bucket 41: 30%
+  bucket 40: 60%
+  bucket 39: 90%
+  bucket 41: 40%
+  bucket 40: 70%
+  bucket 39: 100%
+  Sorting block of length 1895682 for bucket 39
+  (Using difference cover)
+  bucket 41: 50%
+  bucket 40: 80%
+  bucket 41: 60%
+  bucket 40: 90%
+  Sorting block time: 00:00:05
+Returning block of 2099365 for bucket 33
+  bucket 41: 70%
+  bucket 40: 100%
+  Sorting block of length 1952890 for bucket 40
+  (Using difference cover)
+Getting block 42 of 59
+  Reserving size (2394827) for bucket 42
+  Calculating Z arrays for bucket 42
+  Entering block accumulator loop for bucket 42:
+  bucket 41: 80%
+  bucket 42: 10%
+  bucket 41: 90%
+  bucket 42: 20%
+  bucket 41: 100%
+  Sorting block of length 1652405 for bucket 41
+  (Using difference cover)
+  bucket 42: 30%
+  bucket 42: 40%
+  bucket 42: 50%
+  bucket 42: 60%
+  bucket 42: 70%
+  bucket 42: 80%
+  bucket 42: 90%
+  bucket 42: 100%
+  Sorting block of length 1257258 for bucket 42
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 2077658 for bucket 36
+Getting block 43 of 59
+  Reserving size (2394827) for bucket 43
+  Calculating Z arrays for bucket 43
+  Entering block accumulator loop for bucket 43:
+  bucket 43: 10%
+  bucket 43: 20%
+  bucket 43: 30%
+  bucket 43: 40%
+  bucket 43: 50%
+  bucket 43: 60%
+  bucket 43: 70%
+  Sorting block time: 00:00:05
+Returning block of 1900500 for bucket 37
+Getting block 44 of 59
+  Reserving size (2394827) for bucket 44
+  Calculating Z arrays for bucket 44
+  Entering block accumulator loop for bucket 44:
+  bucket 43: 80%
+  bucket 44: 10%
+  bucket 43: 90%
+  bucket 44: 20%
+  bucket 43: 100%
+  Sorting block of length 1974341 for bucket 43
+  (Using difference cover)
+  bucket 44: 30%
+  bucket 44: 40%
+  bucket 44: 50%
+  bucket 44: 60%
+  Sorting block time: 00:00:04
+Returning block of 1874335 for bucket 38
+Getting block 45 of 59
+  Reserving size (2394827) for bucket 45
+  Calculating Z arrays for bucket 45
+  Entering block accumulator loop for bucket 45:
+  bucket 44: 70%
+  bucket 45: 10%
+  bucket 44: 80%
+  bucket 45: 20%
+  bucket 44: 90%
+  bucket 45: 30%
+  bucket 44: 100%
+  Sorting block of length 1143950 for bucket 44
+  (Using difference cover)
+  bucket 45: 40%
+  bucket 45: 50%
+  Sorting block time: 00:00:04
+Returning block of 1895683 for bucket 39
+  bucket 45: 60%
+  Sorting block time: 00:00:03
+Returning block of 1257259 for bucket 42
+Getting block 46 of 59
+  Reserving size (2394827) for bucket 46
+  Calculating Z arrays for bucket 46
+  Entering block accumulator loop for bucket 46:
+Getting block 47 of 59
+  Reserving size (2394827) for bucket 47
+  Calculating Z arrays for bucket 47
+  Entering block accumulator loop for bucket 47:
+  bucket 45: 70%
+  Sorting block time: 00:00:04
+Returning block of 1652406 for bucket 41
+  bucket 46: 10%
+Getting block 48 of 59
+  Reserving size (2394827) for bucket 48
+  Calculating Z arrays for bucket 48
+  Entering block accumulator loop for bucket 48:
+  bucket 47: 10%
+  bucket 45: 80%
+  bucket 46: 20%
+  bucket 48: 10%
+  bucket 47: 20%
+  bucket 45: 90%
+  bucket 46: 30%
+  Sorting block time: 00:00:05
+Returning block of 1952891 for bucket 40
+  bucket 48: 20%
+  bucket 47: 30%
+Getting block 49 of 59
+  Reserving size (2394827) for bucket 49
+  Calculating Z arrays for bucket 49
+  Entering block accumulator loop for bucket 49:
+  bucket 45: 100%
+  Sorting block of length 2263072 for bucket 45
+  (Using difference cover)
+  bucket 46: 40%
+  bucket 48: 30%
+  bucket 47: 40%
+  bucket 49: 10%
+  bucket 46: 50%
+  bucket 48: 40%
+  bucket 47: 50%
+  bucket 49: 20%
+  bucket 46: 60%
+  bucket 48: 50%
+  bucket 47: 60%
+  bucket 49: 30%
+  bucket 46: 70%
+  bucket 48: 60%
+  bucket 47: 70%
+  bucket 49: 40%
+  bucket 46: 80%
+  bucket 49: 50%
+  bucket 47: 80%
+  bucket 48: 70%
+  bucket 46: 90%
+  bucket 49: 60%
+  bucket 47: 90%
+  bucket 48: 80%
+  bucket 46: 100%
+  Sorting block of length 817963 for bucket 46
+  (Using difference cover)
+  bucket 49: 70%
+  bucket 47: 100%
+  Sorting block of length 2036031 for bucket 47
+  (Using difference cover)
+  bucket 48: 90%
+  bucket 49: 80%
+  bucket 48: 100%
+  Sorting block of length 2207566 for bucket 48
+  (Using difference cover)
+  bucket 49: 90%
+  bucket 49: 100%
+  Sorting block of length 1502767 for bucket 49
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1143951 for bucket 44
+Getting block 50 of 59
+  Reserving size (2394827) for bucket 50
+  Calculating Z arrays for bucket 50
+  Entering block accumulator loop for bucket 50:
+  bucket 50: 10%
+  bucket 50: 20%
+  bucket 50: 30%
+  bucket 50: 40%
+  bucket 50: 50%
+  bucket 50: 60%
+  Sorting block time: 00:00:02
+Returning block of 817964 for bucket 46
+Getting block 51 of 59
+  Reserving size (2394827) for bucket 51
+  Calculating Z arrays for bucket 51
+  Entering block accumulator loop for bucket 51:
+  bucket 50: 70%
+  bucket 51: 10%
+  bucket 50: 80%
+  bucket 51: 20%
+  bucket 50: 90%
+  Sorting block time: 00:00:05
+Returning block of 1974342 for bucket 43
+Getting block 52 of 59
+  Reserving size (2394827) for bucket 52
+  Calculating Z arrays for bucket 52
+  Entering block accumulator loop for bucket 52:
+  bucket 51: 30%
+  bucket 50: 100%
+  Sorting block of length 2008368 for bucket 50
+  (Using difference cover)
+  bucket 52: 10%
+  bucket 51: 40%
+  bucket 52: 20%
+  bucket 51: 50%
+  bucket 52: 30%
+  bucket 51: 60%
+  bucket 52: 40%
+  bucket 51: 70%
+  bucket 52: 50%
+  bucket 51: 80%
+  bucket 52: 60%
+  bucket 51: 90%
+  bucket 52: 70%
+  bucket 51: 100%
+  Sorting block of length 2321350 for bucket 51
+  (Using difference cover)
+  bucket 52: 80%
+  bucket 52: 90%
+  bucket 52: 100%
+  Sorting block of length 2222700 for bucket 52
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1502768 for bucket 49
+Getting block 53 of 59
+  Reserving size (2394827) for bucket 53
+  Calculating Z arrays for bucket 53
+  Entering block accumulator loop for bucket 53:
+  bucket 53: 10%
+  bucket 53: 20%
+  bucket 53: 30%
+  Sorting block time: 00:00:05
+Returning block of 2263073 for bucket 45
+Getting block 54 of 59
+  Reserving size (2394827) for bucket 54
+  Calculating Z arrays for bucket 54
+  Entering block accumulator loop for bucket 54:
+  bucket 53: 40%
+  bucket 54: 10%
+  bucket 53: 50%
+  bucket 54: 20%
+  Sorting block time: 00:00:04
+Returning block of 2036032 for bucket 47
+  bucket 53: 60%
+Getting block 55 of 59
+  Reserving size (2394827) for bucket 55
+  Calculating Z arrays for bucket 55
+  Entering block accumulator loop for bucket 55:
+  bucket 54: 30%
+  bucket 53: 70%
+  bucket 55: 10%
+  bucket 54: 40%
+  bucket 53: 80%
+  bucket 55: 20%
+  bucket 54: 50%
+  bucket 53: 90%
+  bucket 55: 30%
+  bucket 54: 60%
+  bucket 53: 100%
+  Sorting block of length 733403 for bucket 53
+  (Using difference cover)
+  bucket 55: 40%
+  bucket 54: 70%
+  Sorting block time: 00:00:05
+Returning block of 2207567 for bucket 48
+  bucket 55: 50%
+Getting block 56 of 59
+  Reserving size (2394827) for bucket 56
+  Calculating Z arrays for bucket 56
+  Entering block accumulator loop for bucket 56:
+  bucket 54: 80%
+  bucket 55: 60%
+  bucket 56: 10%
+  bucket 54: 90%
+  bucket 55: 70%
+  bucket 56: 20%
+  bucket 54: 100%
+  Sorting block of length 2303242 for bucket 54
+  (Using difference cover)
+  bucket 55: 80%
+  bucket 56: 30%
+  bucket 55: 90%
+  bucket 56: 40%
+  bucket 55: 100%
+  Sorting block of length 1824989 for bucket 55
+  (Using difference cover)
+  bucket 56: 50%
+  bucket 56: 60%
+  bucket 56: 70%
+  bucket 56: 80%
+  bucket 56: 90%
+  bucket 56: 100%
+  Sorting block of length 1669779 for bucket 56
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 2008369 for bucket 50
+  Sorting block time: 00:00:02
+Returning block of 733404 for bucket 53
+Getting block 57 of 59
+  Reserving size (2394827) for bucket 57
+  Calculating Z arrays for bucket 57
+  Entering block accumulator loop for bucket 57:
+Getting block 58 of 59
+  Reserving size (2394827) for bucket 58
+  Calculating Z arrays for bucket 58
+  Entering block accumulator loop for bucket 58:
+  bucket 57: 10%
+  bucket 58: 10%
+  bucket 57: 20%
+  bucket 58: 20%
+  bucket 57: 30%
+  bucket 58: 30%
+  bucket 57: 40%
+  bucket 58: 40%
+  bucket 57: 50%
+  bucket 58: 50%
+  bucket 58: 60%
+  bucket 57: 60%
+  bucket 58: 70%
+  bucket 57: 70%
+  bucket 58: 80%
+  bucket 57: 80%
+  bucket 58: 90%
+  bucket 57: 90%
+  bucket 58: 100%
+  Sorting block of length 411893 for bucket 58
+  (Using difference cover)
+  bucket 57: 100%
+  Sorting block of length 2174593 for bucket 57
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 2321351 for bucket 51
+Getting block 59 of 59
+  Reserving size (2394827) for bucket 59
+  Calculating Z arrays for bucket 59
+  Entering block accumulator loop for bucket 59:
+  bucket 59: 10%
+  Sorting block time: 00:00:05
+Returning block of 2222701 for bucket 52
+  bucket 59: 20%
+  bucket 59: 30%
+  bucket 59: 40%
+  bucket 59: 50%
+  Sorting block time: 00:00:01
+Returning block of 411894 for bucket 58
+  bucket 59: 60%
+  bucket 59: 70%
+  bucket 59: 80%
+  bucket 59: 90%
+  bucket 59: 100%
+  Sorting block of length 2016503 for bucket 59
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1824990 for bucket 55
+  Sorting block time: 00:00:04
+Returning block of 1669780 for bucket 56
+  Sorting block time: 00:00:06
+Returning block of 2303243 for bucket 54
+  Sorting block time: 00:00:05
+Returning block of 2174594 for bucket 57
+  Sorting block time: 00:00:05
+Returning block of 2016504 for bucket 59
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 29225338
+fchr[G]: 51603862
+fchr[T]: 73853832
+fchr[$]: 102179270
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 39711874 bytes to primary EBWT file: $RP/work/liao2026_quant/rsem/ref/dm.1.bt2.tmp
+Wrote 25544824 bytes to secondary EBWT file: $RP/work/liao2026_quant/rsem/ref/dm.2.bt2.tmp
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 102179270
+    bwtLen: 102179271
+    sz: 25544818
+    bwtSz: 25544818
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 6386205
+    offsSz: 25544820
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 532184
+    numLines: 532184
+    ebwtTotLen: 34059776
+    ebwtTotSz: 34059776
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:53
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:01
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 3193102
+Using parameters --bmax 2394827 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 2394827 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:01
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:01
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 86 sample suffixes
+Generating random suffixes
+QSorting 86 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 86 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 10, merged 36; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 5, merged 5; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 3, merged 3; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 1, merged 3; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 1.76171e+06 (target: 2394826)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 58
+  Reserving size (2394827) for bucket 1
+  Calculating Z arrays for bucket 1
+Getting block 2 of 58
+  Reserving size (2394827) for bucket 2
+Getting block 3 of 58
+  Reserving size (2394827) for bucket 3
+  Calculating Z arrays for bucket 2
+Getting block 5 of 58
+  Reserving size (2394827) for bucket 5
+Getting block 6 of 58
+  Reserving size (2394827) for bucket 6
+  Entering block accumulator loop for bucket 2:
+Getting block 4 of 58
+  Reserving size (2394827) for bucket 4
+  Calculating Z arrays for bucket 5
+  Calculating Z arrays for bucket 6
+  Calculating Z arrays for bucket 4
+Getting block 7 of 58
+  Reserving size (2394827) for bucket 7
+  Entering block accumulator loop for bucket 4:
+  Entering block accumulator loop for bucket 5:
+  Calculating Z arrays for bucket 3
+  Entering block accumulator loop for bucket 6:
+  Entering block accumulator loop for bucket 1:
+  Calculating Z arrays for bucket 7
+  Entering block accumulator loop for bucket 3:
+  Entering block accumulator loop for bucket 7:
+  bucket 1: 10%
+  bucket 2: 10%
+  bucket 3: 10%
+  bucket 4: 10%
+  bucket 5: 10%
+  bucket 7: 10%
+  bucket 6: 10%
+  bucket 1: 20%
+  bucket 2: 20%
+  bucket 3: 20%
+  bucket 4: 20%
+  bucket 5: 20%
+  bucket 7: 20%
+  bucket 6: 20%
+  bucket 1: 30%
+  bucket 2: 30%
+  bucket 3: 30%
+  bucket 4: 30%
+  bucket 5: 30%
+  bucket 7: 30%
+  bucket 6: 30%
+  bucket 1: 40%
+  bucket 2: 40%
+  bucket 3: 40%
+  bucket 4: 40%
+  bucket 5: 40%
+  bucket 1: 50%
+  bucket 7: 40%
+  bucket 2: 50%
+  bucket 6: 40%
+  bucket 3: 50%
+  bucket 4: 50%
+  bucket 5: 50%
+  bucket 1: 60%
+  bucket 2: 60%
+  bucket 7: 50%
+  bucket 6: 50%
+  bucket 3: 60%
+  bucket 4: 60%
+  bucket 1: 70%
+  bucket 5: 60%
+  bucket 2: 70%
+  bucket 3: 70%
+  bucket 7: 60%
+  bucket 1: 80%
+  bucket 6: 60%
+  bucket 4: 70%
+  bucket 5: 70%
+  bucket 2: 80%
+  bucket 1: 90%
+  bucket 3: 80%
+  bucket 4: 80%
+  bucket 7: 70%
+  bucket 6: 70%
+  bucket 5: 80%
+  bucket 2: 90%
+  bucket 1: 100%
+  Sorting block of length 2078694 for bucket 1
+  (Using difference cover)
+  bucket 3: 90%
+  bucket 4: 90%
+  bucket 6: 80%
+  bucket 7: 80%
+  bucket 5: 90%
+  bucket 2: 100%
+  Sorting block of length 2162098 for bucket 2
+  (Using difference cover)
+  bucket 3: 100%
+  Sorting block of length 2070661 for bucket 3
+  (Using difference cover)
+  bucket 4: 100%
+  Sorting block of length 1319421 for bucket 4
+  (Using difference cover)
+  bucket 5: 100%
+  Sorting block of length 1531990 for bucket 5
+  (Using difference cover)
+  bucket 7: 90%
+  bucket 6: 90%
+  bucket 6: 100%
+  Sorting block of length 1988030 for bucket 6
+  (Using difference cover)
+  bucket 7: 100%
+  Sorting block of length 1816989 for bucket 7
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1319422 for bucket 4
+Getting block 8 of 58
+  Reserving size (2394827) for bucket 8
+  Calculating Z arrays for bucket 8
+  Entering block accumulator loop for bucket 8:
+  bucket 8: 10%
+  bucket 8: 20%
+  bucket 8: 30%
+  bucket 8: 40%
+  bucket 8: 50%
+  Sorting block time: 00:00:03
+Returning block of 1531991 for bucket 5
+Getting block 9 of 58
+  Reserving size (2394827) for bucket 9
+  Calculating Z arrays for bucket 9
+  Entering block accumulator loop for bucket 9:
+  bucket 8: 60%
+  bucket 9: 10%
+  bucket 8: 70%
+  bucket 9: 20%
+  bucket 8: 80%
+  bucket 9: 30%
+  bucket 8: 90%
+  bucket 9: 40%
+  bucket 8: 100%
+  Sorting block of length 2323085 for bucket 8
+  (Using difference cover)
+  bucket 9: 50%
+  bucket 9: 60%
+  bucket 9: 70%
+  bucket 9: 80%
+  Sorting block time: 00:00:04
+Returning block of 1816990 for bucket 7
+Getting block 10 of 58
+  Reserving size (2394827) for bucket 10
+  Calculating Z arrays for bucket 10
+  Entering block accumulator loop for bucket 10:
+  bucket 9: 90%
+  bucket 10: 10%
+  bucket 9: 100%
+  Sorting block of length 602442 for bucket 9
+  (Using difference cover)
+  bucket 10: 20%
+  Sorting block time: 00:00:04
+Returning block of 2078695 for bucket 1
+Getting block 11 of 58
+  Reserving size (2394827) for bucket 11
+  Calculating Z arrays for bucket 11
+  Entering block accumulator loop for bucket 11:
+  bucket 10: 30%
+  Sorting block time: 00:00:04
+Returning block of 2070662 for bucket 3
+Getting block 12 of 58
+  Reserving size (2394827) for bucket 12
+  Calculating Z arrays for bucket 12
+  Entering block accumulator loop for bucket 12:
+  bucket 11: 10%
+  Sorting block time: 00:00:04
+Returning block of 1988031 for bucket 6
+  bucket 10: 40%
+Getting block 13 of 58
+  Reserving size (2394827) for bucket 13
+  Calculating Z arrays for bucket 13
+  Entering block accumulator loop for bucket 13:
+  bucket 12: 10%
+  bucket 11: 20%
+  bucket 10: 50%
+  Sorting block time: 00:00:04
+Returning block of 2162099 for bucket 2
+  bucket 13: 10%
+Getting block 14 of 58
+  Reserving size (2394827) for bucket 14
+  Calculating Z arrays for bucket 14
+  Entering block accumulator loop for bucket 14:
+  bucket 12: 20%
+  bucket 11: 30%
+  bucket 10: 60%
+  bucket 13: 20%
+  bucket 14: 10%
+  bucket 11: 40%
+  bucket 12: 30%
+  bucket 10: 70%
+  bucket 13: 30%
+  bucket 14: 20%
+  bucket 10: 80%
+  bucket 11: 50%
+  bucket 12: 40%
+  bucket 13: 40%
+  bucket 10: 90%
+  bucket 14: 30%
+  bucket 11: 60%
+  bucket 12: 50%
+  bucket 14: 40%
+  bucket 13: 50%
+  bucket 10: 100%
+  Sorting block of length 2357056 for bucket 10
+  (Using difference cover)
+  bucket 11: 70%
+  bucket 12: 60%
+  bucket 14: 50%
+  bucket 12: 70%
+  bucket 13: 60%
+  bucket 11: 80%
+  bucket 14: 60%
+  bucket 12: 80%
+  bucket 11: 90%
+  bucket 13: 70%
+  bucket 14: 70%
+  bucket 11: 100%
+  Sorting block of length 963988 for bucket 11
+  (Using difference cover)
+  bucket 12: 90%
+  bucket 13: 80%
+  bucket 14: 80%
+  bucket 12: 100%
+  Sorting block of length 2142876 for bucket 12
+  (Using difference cover)
+  bucket 13: 90%
+  Sorting block time: 00:00:01
+Returning block of 602443 for bucket 9
+Getting block 15 of 58
+  Reserving size (2394827) for bucket 15
+  Calculating Z arrays for bucket 15
+  Entering block accumulator loop for bucket 15:
+  bucket 14: 90%
+  bucket 13: 100%
+  Sorting block of length 2074565 for bucket 13
+  (Using difference cover)
+  bucket 15: 10%
+  bucket 14: 100%
+  Sorting block of length 1826365 for bucket 14
+  (Using difference cover)
+  bucket 15: 20%
+  bucket 15: 30%
+  bucket 15: 40%
+  bucket 15: 50%
+  bucket 15: 60%
+  bucket 15: 70%
+  bucket 15: 80%
+  bucket 15: 90%
+  bucket 15: 100%
+  Sorting block of length 2346375 for bucket 15
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 963989 for bucket 11
+Getting block 16 of 58
+  Reserving size (2394827) for bucket 16
+  Calculating Z arrays for bucket 16
+  Entering block accumulator loop for bucket 16:
+  bucket 16: 10%
+  bucket 16: 20%
+  bucket 16: 30%
+  bucket 16: 40%
+  bucket 16: 50%
+  bucket 16: 60%
+  bucket 16: 70%
+  bucket 16: 80%
+  bucket 16: 90%
+  bucket 16: 100%
+  Sorting block of length 1228683 for bucket 16
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 2323086 for bucket 8
+Getting block 17 of 58
+  Reserving size (2394827) for bucket 17
+  Calculating Z arrays for bucket 17
+  Entering block accumulator loop for bucket 17:
+  bucket 17: 10%
+  bucket 17: 20%
+  bucket 17: 30%
+  bucket 17: 40%
+  bucket 17: 50%
+  bucket 17: 60%
+  bucket 17: 70%
+  Sorting block time: 00:00:04
+Returning block of 1826366 for bucket 14
+  bucket 17: 80%
+Getting block 18 of 58
+  Reserving size (2394827) for bucket 18
+  Calculating Z arrays for bucket 18
+  Entering block accumulator loop for bucket 18:
+  bucket 18: 10%
+  bucket 17: 90%
+  bucket 18: 20%
+  bucket 17: 100%
+  Sorting block of length 2224581 for bucket 17
+  (Using difference cover)
+  bucket 18: 30%
+  Sorting block time: 00:00:05
+Returning block of 2074566 for bucket 13
+  bucket 18: 40%
+  Sorting block time: 00:00:05
+Returning block of 2357057 for bucket 10
+Getting block 19 of 58
+  Reserving size (2394827) for bucket 19
+  Calculating Z arrays for bucket 19
+  Entering block accumulator loop for bucket 19:
+Getting block 20 of 58
+  Reserving size (2394827) for bucket 20
+  Calculating Z arrays for bucket 20
+  Entering block accumulator loop for bucket 20:
+  bucket 18: 50%
+  Sorting block time: 00:00:05
+Returning block of 2142877 for bucket 12
+  bucket 19: 10%
+Getting block 21 of 58
+  Reserving size (2394827) for bucket 21
+  Calculating Z arrays for bucket 21
+  Entering block accumulator loop for bucket 21:
+  bucket 20: 10%
+  bucket 18: 60%
+  bucket 19: 20%
+  bucket 21: 10%
+  bucket 20: 20%
+  bucket 18: 70%
+  bucket 19: 30%
+  bucket 20: 30%
+  bucket 21: 20%
+  bucket 18: 80%
+  bucket 19: 40%
+  bucket 20: 40%
+  bucket 21: 30%
+  bucket 18: 90%
+  bucket 19: 50%
+  bucket 20: 50%
+  bucket 21: 40%
+  bucket 18: 100%
+  Sorting block of length 2289878 for bucket 18
+  (Using difference cover)
+  bucket 20: 60%
+  bucket 19: 60%
+  bucket 21: 50%
+  bucket 20: 70%
+  bucket 19: 70%
+  bucket 21: 60%
+  bucket 20: 80%
+  bucket 19: 80%
+  bucket 21: 70%
+  bucket 20: 90%
+  bucket 19: 90%
+  bucket 21: 80%
+  Sorting block time: 00:00:03
+Returning block of 1228684 for bucket 16
+  bucket 20: 100%
+  Sorting block of length 1176230 for bucket 20
+  (Using difference cover)
+Getting block 22 of 58
+  Reserving size (2394827) for bucket 22
+  Calculating Z arrays for bucket 22
+  Entering block accumulator loop for bucket 22:
+  bucket 19: 100%
+  Sorting block of length 2362982 for bucket 19
+  (Using difference cover)
+  bucket 21: 90%
+  bucket 22: 10%
+  bucket 21: 100%
+  Sorting block of length 2182332 for bucket 21
+  (Using difference cover)
+  bucket 22: 20%
+  bucket 22: 30%
+  bucket 22: 40%
+  Sorting block time: 00:00:06
+Returning block of 2346376 for bucket 15
+Getting block 23 of 58
+  Reserving size (2394827) for bucket 23
+  Calculating Z arrays for bucket 23
+  Entering block accumulator loop for bucket 23:
+  bucket 22: 50%
+  bucket 23: 10%
+  bucket 22: 60%
+  bucket 23: 20%
+  bucket 22: 70%
+  bucket 22: 80%
+  bucket 23: 30%
+  bucket 22: 90%
+  bucket 23: 40%
+  bucket 22: 100%
+  Sorting block of length 1789558 for bucket 22
+  (Using difference cover)
+  bucket 23: 50%
+  bucket 23: 60%
+  bucket 23: 70%
+  bucket 23: 80%
+  bucket 23: 90%
+  bucket 23: 100%
+  Sorting block of length 2325128 for bucket 23
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1176231 for bucket 20
+Getting block 24 of 58
+  Reserving size (2394827) for bucket 24
+  Calculating Z arrays for bucket 24
+  Entering block accumulator loop for bucket 24:
+  bucket 24: 10%
+  bucket 24: 20%
+  bucket 24: 30%
+  bucket 24: 40%
+  bucket 24: 50%
+  bucket 24: 60%
+  bucket 24: 70%
+  bucket 24: 80%
+  bucket 24: 90%
+  Sorting block time: 00:00:05
+Returning block of 2224582 for bucket 17
+Getting block 25 of 58
+  Reserving size (2394827) for bucket 25
+  Calculating Z arrays for bucket 25
+  Entering block accumulator loop for bucket 25:
+  bucket 24: 100%
+  Sorting block of length 1404057 for bucket 24
+  (Using difference cover)
+  bucket 25: 10%
+  bucket 25: 20%
+  bucket 25: 30%
+  bucket 25: 40%
+  bucket 25: 50%
+  bucket 25: 60%
+  bucket 25: 70%
+  bucket 25: 80%
+  Sorting block time: 00:00:05
+Returning block of 2289879 for bucket 18
+Getting block 26 of 58
+  Reserving size (2394827) for bucket 26
+  Calculating Z arrays for bucket 26
+  Entering block accumulator loop for bucket 26:
+  bucket 25: 90%
+  bucket 26: 10%
+  bucket 25: 100%
+  Sorting block of length 1692681 for bucket 25
+  (Using difference cover)
+  bucket 26: 20%
+  bucket 26: 30%
+  Sorting block time: 00:00:05
+Returning block of 2182333 for bucket 21
+  Sorting block time: 00:00:05
+Returning block of 1789559 for bucket 22
+Getting block 27 of 58
+  Reserving size (2394827) for bucket 27
+  Calculating Z arrays for bucket 27
+  Entering block accumulator loop for bucket 27:
+Getting block 28 of 58
+  Reserving size (2394827) for bucket 28
+  Calculating Z arrays for bucket 28
+  Entering block accumulator loop for bucket 28:
+  bucket 26: 40%
+  Sorting block time: 00:00:06
+Returning block of 2362983 for bucket 19
+  bucket 27: 10%
+  bucket 28: 10%
+  bucket 26: 50%
+Getting block 29 of 58
+  Reserving size (2394827) for bucket 29
+  Calculating Z arrays for bucket 29
+  Entering block accumulator loop for bucket 29:
+  bucket 27: 20%
+  bucket 28: 20%
+  bucket 26: 60%
+  bucket 29: 10%
+  bucket 27: 30%
+  bucket 26: 70%
+  bucket 28: 30%
+  bucket 29: 20%
+  bucket 27: 40%
+  bucket 26: 80%
+  bucket 28: 40%
+  bucket 29: 30%
+  bucket 27: 50%
+  bucket 26: 90%
+  bucket 28: 50%
+  bucket 29: 40%
+  bucket 27: 60%
+  bucket 26: 100%
+  Sorting block of length 2271737 for bucket 26
+  (Using difference cover)
+  bucket 28: 60%
+  bucket 27: 70%
+  bucket 29: 50%
+  bucket 28: 70%
+  bucket 27: 80%
+  bucket 29: 60%
+  bucket 28: 80%
+  bucket 27: 90%
+  bucket 29: 70%
+  bucket 28: 90%
+  bucket 27: 100%
+  Sorting block of length 1181807 for bucket 27
+  (Using difference cover)
+  bucket 28: 100%
+  Sorting block of length 1617255 for bucket 28
+  (Using difference cover)
+  bucket 29: 80%
+  bucket 29: 90%
+  bucket 29: 100%
+  Sorting block of length 1924685 for bucket 29
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1404058 for bucket 24
+Getting block 30 of 58
+  Reserving size (2394827) for bucket 30
+  Calculating Z arrays for bucket 30
+  Entering block accumulator loop for bucket 30:
+  Sorting block time: 00:00:05
+Returning block of 2325129 for bucket 23
+Getting block 31 of 58
+  Reserving size (2394827) for bucket 31
+  Calculating Z arrays for bucket 31
+  Entering block accumulator loop for bucket 31:
+  bucket 30: 10%
+  bucket 31: 10%
+  bucket 30: 20%
+  bucket 31: 20%
+  bucket 30: 30%
+  bucket 31: 30%
+  bucket 30: 40%
+  bucket 31: 40%
+  bucket 30: 50%
+  bucket 31: 50%
+  bucket 30: 60%
+  bucket 31: 60%
+  bucket 30: 70%
+  bucket 31: 70%
+  bucket 30: 80%
+  bucket 31: 80%
+  bucket 30: 90%
+  bucket 31: 90%
+  bucket 30: 100%
+  Sorting block of length 703317 for bucket 30
+  (Using difference cover)
+  bucket 31: 100%
+  Sorting block of length 1837652 for bucket 31
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1692682 for bucket 25
+Getting block 32 of 58
+  Reserving size (2394827) for bucket 32
+  Calculating Z arrays for bucket 32
+  Entering block accumulator loop for bucket 32:
+  bucket 32: 10%
+  bucket 32: 20%
+  bucket 32: 30%
+  Sorting block time: 00:00:03
+Returning block of 1181808 for bucket 27
+Getting block 33 of 58
+  Reserving size (2394827) for bucket 33
+  Calculating Z arrays for bucket 33
+  Entering block accumulator loop for bucket 33:
+  bucket 32: 40%
+  bucket 33: 10%
+  bucket 32: 50%
+  bucket 33: 20%
+  bucket 32: 60%
+  bucket 33: 30%
+  bucket 32: 70%
+  bucket 33: 40%
+  bucket 32: 80%
+  Sorting block time: 00:00:01
+Returning block of 703318 for bucket 30
+Getting block 34 of 58
+  Reserving size (2394827) for bucket 34
+  Calculating Z arrays for bucket 34
+  Entering block accumulator loop for bucket 34:
+  bucket 33: 50%
+  bucket 32: 90%
+  bucket 34: 10%
+  bucket 33: 60%
+  bucket 32: 100%
+  Sorting block of length 1822092 for bucket 32
+  (Using difference cover)
+  bucket 34: 20%
+  bucket 33: 70%
+  bucket 34: 30%
+  bucket 33: 80%
+  Sorting block time: 00:00:04
+Returning block of 1617256 for bucket 28
+Getting block 35 of 58
+  Reserving size (2394827) for bucket 35
+  Calculating Z arrays for bucket 35
+  Entering block accumulator loop for bucket 35:
+  bucket 34: 40%
+  bucket 33: 90%
+  bucket 35: 10%
+  bucket 34: 50%
+  bucket 33: 100%
+  Sorting block of length 1325524 for bucket 33
+  (Using difference cover)
+  bucket 35: 20%
+  bucket 34: 60%
+  bucket 35: 30%
+  bucket 34: 70%
+  bucket 35: 40%
+  bucket 34: 80%
+  bucket 35: 50%
+  bucket 34: 90%
+  bucket 35: 60%
+  bucket 34: 100%
+  Sorting block of length 2239243 for bucket 34
+  (Using difference cover)
+  bucket 35: 70%
+  Sorting block time: 00:00:05
+Returning block of 1924686 for bucket 29
+  bucket 35: 80%
+Getting block 36 of 58
+  Reserving size (2394827) for bucket 36
+  Calculating Z arrays for bucket 36
+  Entering block accumulator loop for bucket 36:
+  Sorting block time: 00:00:06
+Returning block of 2271738 for bucket 26
+  bucket 35: 90%
+Getting block 37 of 58
+  Reserving size (2394827) for bucket 37
+  Calculating Z arrays for bucket 37
+  Entering block accumulator loop for bucket 37:
+  bucket 36: 10%
+  bucket 35: 100%
+  Sorting block of length 2277010 for bucket 35
+  (Using difference cover)
+  bucket 37: 10%
+  bucket 36: 20%
+  bucket 37: 20%
+  bucket 36: 30%
+  bucket 37: 30%
+  bucket 36: 40%
+  bucket 37: 40%
+  bucket 36: 50%
+  bucket 37: 50%
+  bucket 36: 60%
+  bucket 37: 60%
+  bucket 36: 70%
+  bucket 37: 70%
+  bucket 36: 80%
+  bucket 37: 80%
+  bucket 36: 90%
+  bucket 37: 90%
+  bucket 36: 100%
+  Sorting block of length 1264302 for bucket 36
+  (Using difference cover)
+  bucket 37: 100%
+  Sorting block of length 1539532 for bucket 37
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1837653 for bucket 31
+Getting block 38 of 58
+  Reserving size (2394827) for bucket 38
+  Calculating Z arrays for bucket 38
+  Entering block accumulator loop for bucket 38:
+  bucket 38: 10%
+  bucket 38: 20%
+  bucket 38: 30%
+  bucket 38: 40%
+  bucket 38: 50%
+  bucket 38: 60%
+  bucket 38: 70%
+  bucket 38: 80%
+  Sorting block time: 00:00:03
+Returning block of 1325525 for bucket 33
+Getting block 39 of 58
+  Reserving size (2394827) for bucket 39
+  Calculating Z arrays for bucket 39
+  Entering block accumulator loop for bucket 39:
+  bucket 38: 90%
+  bucket 39: 10%
+  bucket 38: 100%
+  Sorting block of length 1106412 for bucket 38
+  (Using difference cover)
+  bucket 39: 20%
+  bucket 39: 30%
+  bucket 39: 40%
+  bucket 39: 50%
+  bucket 39: 60%
+  Sorting block time: 00:00:05
+Returning block of 1822093 for bucket 32
+Getting block 40 of 58
+  Reserving size (2394827) for bucket 40
+  Calculating Z arrays for bucket 40
+  Entering block accumulator loop for bucket 40:
+  bucket 39: 70%
+  bucket 40: 10%
+  bucket 39: 80%
+  bucket 40: 20%
+  bucket 39: 90%
+  bucket 40: 30%
+  bucket 39: 100%
+  Sorting block of length 1596545 for bucket 39
+  (Using difference cover)
+  bucket 40: 40%
+  bucket 40: 50%
+  bucket 40: 60%
+  bucket 40: 70%
+  bucket 40: 80%
+  Sorting block time: 00:00:03
+Returning block of 1264303 for bucket 36
+Getting block 41 of 58
+  Reserving size (2394827) for bucket 41
+  Calculating Z arrays for bucket 41
+  Entering block accumulator loop for bucket 41:
+  bucket 40: 90%
+  bucket 41: 10%
+  bucket 40: 100%
+  Sorting block of length 2181550 for bucket 40
+  (Using difference cover)
+  bucket 41: 20%
+  bucket 41: 30%
+  bucket 41: 40%
+  bucket 41: 50%
+  Sorting block time: 00:00:04
+Returning block of 1539533 for bucket 37
+Getting block 42 of 58
+  Reserving size (2394827) for bucket 42
+  Calculating Z arrays for bucket 42
+  Entering block accumulator loop for bucket 42:
+  bucket 41: 60%
+  bucket 42: 10%
+  bucket 41: 70%
+  bucket 42: 20%
+  Sorting block time: 00:00:02
+Returning block of 1106413 for bucket 38
+  bucket 41: 80%
+Getting block 43 of 58
+  Reserving size (2394827) for bucket 43
+  Calculating Z arrays for bucket 43
+  Entering block accumulator loop for bucket 43:
+  Sorting block time: 00:00:06
+Returning block of 2239244 for bucket 34
+Getting block 44 of 58
+  Reserving size (2394827) for bucket 44
+  Calculating Z arrays for bucket 44
+  Entering block accumulator loop for bucket 44:
+  bucket 42: 30%
+  bucket 41: 90%
+  bucket 43: 10%
+  bucket 44: 10%
+  bucket 41: 100%
+  Sorting block of length 1541770 for bucket 41
+  (Using difference cover)
+  bucket 43: 20%
+  bucket 42: 40%
+  bucket 44: 20%
+  bucket 43: 30%
+  bucket 42: 50%
+  Sorting block time: 00:00:06
+Returning block of 2277011 for bucket 35
+  bucket 44: 30%
+Getting block 45 of 58
+  Reserving size (2394827) for bucket 45
+  Calculating Z arrays for bucket 45
+  Entering block accumulator loop for bucket 45:
+  bucket 43: 40%
+  bucket 42: 60%
+  bucket 44: 40%
+  bucket 45: 10%
+  bucket 43: 50%
+  bucket 42: 70%
+  bucket 44: 50%
+  bucket 45: 20%
+  bucket 43: 60%
+  bucket 42: 80%
+  bucket 44: 60%
+  bucket 45: 30%
+  bucket 43: 70%
+  bucket 44: 70%
+  bucket 42: 90%
+  bucket 45: 40%
+  bucket 43: 80%
+  bucket 44: 80%
+  bucket 42: 100%
+  Sorting block of length 1562030 for bucket 42
+  (Using difference cover)
+  bucket 45: 50%
+  bucket 43: 90%
+  bucket 44: 90%
+  bucket 45: 60%
+  bucket 43: 100%
+  Sorting block of length 2118712 for bucket 43
+  (Using difference cover)
+  bucket 44: 100%
+  Sorting block of length 1688553 for bucket 44
+  (Using difference cover)
+  bucket 45: 70%
+  bucket 45: 80%
+  bucket 45: 90%
+  bucket 45: 100%
+  Sorting block of length 1170420 for bucket 45
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1596546 for bucket 39
+Getting block 46 of 58
+  Reserving size (2394827) for bucket 46
+  Calculating Z arrays for bucket 46
+  Entering block accumulator loop for bucket 46:
+  bucket 46: 10%
+  bucket 46: 20%
+  bucket 46: 30%
+  bucket 46: 40%
+  bucket 46: 50%
+  bucket 46: 60%
+  bucket 46: 70%
+  bucket 46: 80%
+  bucket 46: 90%
+  bucket 46: 100%
+  Sorting block of length 1560357 for bucket 46
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 1541771 for bucket 41
+Getting block 47 of 58
+  Reserving size (2394827) for bucket 47
+  Calculating Z arrays for bucket 47
+  Entering block accumulator loop for bucket 47:
+  bucket 47: 10%
+  bucket 47: 20%
+  bucket 47: 30%
+  Sorting block time: 00:00:06
+Returning block of 2181551 for bucket 40
+Getting block 48 of 58
+  Reserving size (2394827) for bucket 48
+  Calculating Z arrays for bucket 48
+  Entering block accumulator loop for bucket 48:
+  bucket 47: 40%
+  Sorting block time: 00:00:03
+Returning block of 1170421 for bucket 45
+Getting block 49 of 58
+  Reserving size (2394827) for bucket 49
+  Calculating Z arrays for bucket 49
+  Entering block accumulator loop for bucket 49:
+  bucket 48: 10%
+  bucket 47: 50%
+  bucket 49: 10%
+  bucket 48: 20%
+  bucket 47: 60%
+  bucket 49: 20%
+  bucket 48: 30%
+  bucket 47: 70%
+  Sorting block time: 00:00:04
+Returning block of 1562031 for bucket 42
+Getting block 50 of 58
+  Reserving size (2394827) for bucket 50
+  Calculating Z arrays for bucket 50
+  Entering block accumulator loop for bucket 50:
+  bucket 49: 30%
+  bucket 48: 40%
+  bucket 47: 80%
+  bucket 50: 10%
+  bucket 49: 40%
+  bucket 48: 50%
+  bucket 47: 90%
+  bucket 50: 20%
+  bucket 49: 50%
+  bucket 48: 60%
+  bucket 47: 100%
+  Sorting block of length 1383284 for bucket 47
+  (Using difference cover)
+  bucket 50: 30%
+  bucket 49: 60%
+  bucket 48: 70%
+  Sorting block time: 00:00:04
+Returning block of 1688554 for bucket 44
+  bucket 50: 40%
+Getting block 51 of 58
+  Reserving size (2394827) for bucket 51
+  Calculating Z arrays for bucket 51
+  Entering block accumulator loop for bucket 51:
+  bucket 49: 70%
+  bucket 48: 80%
+  bucket 50: 50%
+  bucket 51: 10%
+  bucket 49: 80%
+  bucket 48: 90%
+  bucket 50: 60%
+  bucket 51: 20%
+  bucket 49: 90%
+  bucket 48: 100%
+  Sorting block of length 1226560 for bucket 48
+  (Using difference cover)
+  bucket 50: 70%
+  bucket 51: 30%
+  bucket 49: 100%
+  Sorting block of length 2337219 for bucket 49
+  (Using difference cover)
+  bucket 50: 80%
+  bucket 51: 40%
+  bucket 50: 90%
+  bucket 51: 50%
+  bucket 50: 100%
+  Sorting block of length 962556 for bucket 50
+  (Using difference cover)
+  bucket 51: 60%
+  Sorting block time: 00:00:05
+Returning block of 2118713 for bucket 43
+  bucket 51: 70%
+Getting block 52 of 58
+  Reserving size (2394827) for bucket 52
+  Calculating Z arrays for bucket 52
+  Entering block accumulator loop for bucket 52:
+  bucket 51: 80%
+  bucket 52: 10%
+  bucket 51: 90%
+  bucket 52: 20%
+  bucket 51: 100%
+  Sorting block of length 2106739 for bucket 51
+  (Using difference cover)
+  bucket 52: 30%
+  bucket 52: 40%
+  bucket 52: 50%
+  bucket 52: 60%
+  Sorting block time: 00:00:04
+Returning block of 1560358 for bucket 46
+  bucket 52: 70%
+Getting block 53 of 58
+  Reserving size (2394827) for bucket 53
+  Calculating Z arrays for bucket 53
+  Entering block accumulator loop for bucket 53:
+  bucket 52: 80%
+  bucket 53: 10%
+  bucket 52: 90%
+  bucket 53: 20%
+  bucket 53: 30%
+  bucket 52: 100%
+  Sorting block of length 1151566 for bucket 52
+  (Using difference cover)
+  bucket 53: 40%
+  bucket 53: 50%
+  bucket 53: 60%
+  bucket 53: 70%
+  bucket 53: 80%
+  bucket 53: 90%
+  bucket 53: 100%
+  Sorting block of length 1998221 for bucket 53
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 962557 for bucket 50
+Getting block 54 of 58
+  Reserving size (2394827) for bucket 54
+  Calculating Z arrays for bucket 54
+  Entering block accumulator loop for bucket 54:
+  Sorting block time: 00:00:03
+Returning block of 1383285 for bucket 47
+Getting block 55 of 58
+  Reserving size (2394827) for bucket 55
+  Calculating Z arrays for bucket 55
+  Entering block accumulator loop for bucket 55:
+  Sorting block time: 00:00:03
+Returning block of 1226561 for bucket 48
+Getting block 56 of 58
+  Reserving size (2394827) for bucket 56
+  Calculating Z arrays for bucket 56
+  Entering block accumulator loop for bucket 56:
+  bucket 54: 10%
+  bucket 55: 10%
+  bucket 56: 10%
+  bucket 54: 20%
+  bucket 55: 20%
+  bucket 56: 20%
+  bucket 54: 30%
+  bucket 55: 30%
+  bucket 56: 30%
+  bucket 54: 40%
+  bucket 55: 40%
+  bucket 56: 40%
+  bucket 54: 50%
+  bucket 55: 50%
+  bucket 56: 50%
+  bucket 54: 60%
+  bucket 55: 60%
+  bucket 56: 60%
+  bucket 54: 70%
+  bucket 55: 70%
+  bucket 56: 70%
+  bucket 54: 80%
+  bucket 55: 80%
+  bucket 56: 80%
+  bucket 54: 90%
+  bucket 55: 90%
+  bucket 56: 90%
+  bucket 54: 100%
+  Sorting block of length 2316286 for bucket 54
+  (Using difference cover)
+  bucket 55: 100%
+  Sorting block of length 2217490 for bucket 55
+  (Using difference cover)
+  bucket 56: 100%
+  Sorting block of length 1493227 for bucket 56
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 1151567 for bucket 52
+Getting block 57 of 58
+  Reserving size (2394827) for bucket 57
+  Calculating Z arrays for bucket 57
+  Entering block accumulator loop for bucket 57:
+  bucket 57: 10%
+  bucket 57: 20%
+  bucket 57: 30%
+  bucket 57: 40%
+  bucket 57: 50%
+  bucket 57: 60%
+  bucket 57: 70%
+  Sorting block time: 00:00:06
+Returning block of 2337220 for bucket 49
+  bucket 57: 80%
+Getting block 58 of 58
+  Reserving size (2394827) for bucket 58
+  Calculating Z arrays for bucket 58
+  Entering block accumulator loop for bucket 58:
+  bucket 58: 10%
+  bucket 57: 90%
+  bucket 58: 20%
+  bucket 58: 30%
+  bucket 57: 100%
+  Sorting block of length 2128097 for bucket 57
+  (Using difference cover)
+  bucket 58: 40%
+  Sorting block time: 00:00:05
+Returning block of 2106740 for bucket 51
+  bucket 58: 50%
+  bucket 58: 60%
+  bucket 58: 70%
+  bucket 58: 80%
+  bucket 58: 90%
+  bucket 58: 100%
+  Sorting block of length 2046718 for bucket 58
+  (Using difference cover)
+  Sorting block time: 00:00:05
+Returning block of 1998222 for bucket 53
+  Sorting block time: 00:00:04
+Returning block of 1493228 for bucket 56
+  Sorting block time: 00:00:05
+Returning block of 2217491 for bucket 55
+  Sorting block time: 00:00:06
+Returning block of 2316287 for bucket 54
+  Sorting block time: 00:00:05
+Returning block of 2128098 for bucket 57
+  Sorting block time: 00:00:04
+Returning block of 2046719 for bucket 58
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 29225338
+fchr[G]: 51603862
+fchr[T]: 73853832
+fchr[$]: 102179270
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 39711874 bytes to primary EBWT file: $RP/work/liao2026_quant/rsem/ref/dm.rev.1.bt2.tmp
+Wrote 25544824 bytes to secondary EBWT file: $RP/work/liao2026_quant/rsem/ref/dm.rev.2.bt2.tmp
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 102179270
+    bwtLen: 102179271
+    sz: 25544818
+    bwtSz: 25544818
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 6386205
+    offsSz: 25544820
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 532184
+    numLines: 532184
+    ebwtTotLen: 34059776
+    ebwtTotSz: 34059776
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:53
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.3.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.3.bt2
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.4.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.4.bt2
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.1.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.1.bt2
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.2.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.2.bt2
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.rev.1.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.rev.1.bt2
+Renaming $RP/work/liao2026_quant/rsem/ref/dm.rev.2.bt2.tmp to $RP/work/liao2026_quant/rsem/ref/dm.rev.2.bt2
+
+2026-11-02T23:10:31Z reference done
+2026-11-02T23:10:31Z START SRR34937006
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 23,347,355
+reads read      : 46,694,710
+reads written   : 46,694,710
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 23347355
+total bases: 3525450605
+Q20 bases: 3495887178(99.1614%)
+Q30 bases: 3388628152(96.119%)
+Q40 bases: 3388628152(96.119%)
+
+Read2 before filtering:
+total reads: 23347355
+total bases: 3525450605
+Q20 bases: 3484160861(98.8288%)
+Q30 bases: 3369110079(95.5654%)
+Q40 bases: 3369110079(95.5654%)
+
+Read1 after filtering:
+total reads: 22495362
+total bases: 3378334738
+Q20 bases: 3366421666(99.6474%)
+Q30 bases: 3287636420(97.3153%)
+Q40 bases: 3287636420(97.3153%)
+
+Read2 after filtering:
+total reads: 22495362
+total bases: 3378155221
+Q20 bases: 3365771721(99.6334%)
+Q30 bases: 3287729936(97.3232%)
+Q40 bases: 3287729936(97.3232%)
+
+Filtering result:
+reads passed filter: 44990724
+reads failed due to low quality: 1696400
+reads failed due to too many N: 5576
+reads failed due to too short: 2010
+reads with adapter trimmed: 1446109
+bases trimmed due to adapters: 36184255
+
+Duplication rate: 20.5324%
+
+Insert size peak (evaluated by paired-end reads): 270
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937006/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937006/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937006/SRR34937006_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937006/SRR34937006_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937006/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937006/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937006/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937006/fastp.json 
+fastp v1.0.1, time used: 118 seconds
+2026-11-03T06:04:15Z OK SRR34937006 min=413
+2026-11-03T06:04:15Z START SRR34937005
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 25,483,495
+reads read      : 50,966,990
+reads written   : 50,966,990
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25483495
+total bases: 3848007745
+Q20 bases: 3815327241(99.1507%)
+Q30 bases: 3697315431(96.0839%)
+Q40 bases: 3697315431(96.0839%)
+
+Read2 before filtering:
+total reads: 25483495
+total bases: 3848007745
+Q20 bases: 3801766475(98.7983%)
+Q30 bases: 3672875487(95.4488%)
+Q40 bases: 3672875487(95.4488%)
+
+Read1 after filtering:
+total reads: 24529689
+total bases: 3684754896
+Q20 bases: 3671676011(99.6451%)
+Q30 bases: 3585306127(97.3011%)
+Q40 bases: 3585306127(97.3011%)
+
+Read2 after filtering:
+total reads: 24529689
+total bases: 3684541798
+Q20 bases: 3670505530(99.619%)
+Q30 bases: 3583170514(97.2487%)
+Q40 bases: 3583170514(97.2487%)
+
+Filtering result:
+reads passed filter: 49059378
+reads failed due to low quality: 1899782
+reads failed due to too many N: 5944
+reads failed due to too short: 1886
+reads with adapter trimmed: 1535331
+bases trimmed due to adapters: 37649783
+
+Duplication rate: 21.2832%
+
+Insert size peak (evaluated by paired-end reads): 268
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937005/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937005/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937005/SRR34937005_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937005/SRR34937005_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937005/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937005/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937005/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937005/fastp.json 
+fastp v1.0.1, time used: 123 seconds
+2026-11-03T07:28:40Z OK SRR34937005 min=84
+2026-11-03T07:28:40Z START SRR34937004
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 19,479,811
+reads read      : 38,959,622
+reads written   : 38,959,622
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 19479811
+total bases: 2941451461
+Q20 bases: 2915222480(99.1083%)
+Q30 bases: 2825157378(96.0464%)
+Q40 bases: 2825157378(96.0464%)
+
+Read2 before filtering:
+total reads: 19479811
+total bases: 2941451461
+Q20 bases: 2904988480(98.7604%)
+Q30 bases: 2808161816(95.4686%)
+Q40 bases: 2808161816(95.4686%)
+
+Read1 after filtering:
+total reads: 18721930
+total bases: 2809066509
+Q20 bases: 2799253678(99.6507%)
+Q30 bases: 2734284272(97.3378%)
+Q40 bases: 2734284272(97.3378%)
+
+Read2 after filtering:
+total reads: 18721930
+total bases: 2808895571
+Q20 bases: 2798598893(99.6334%)
+Q30 bases: 2734549221(97.3532%)
+Q40 bases: 2734549221(97.3532%)
+
+Filtering result:
+reads passed filter: 37443860
+reads failed due to low quality: 1510042
+reads failed due to too many N: 4550
+reads failed due to too short: 1170
+reads with adapter trimmed: 1383779
+bases trimmed due to adapters: 35131373
+
+Duplication rate: 19.9796%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937004/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937004/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937004/SRR34937004_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937004/SRR34937004_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937004/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937004/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937004/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937004/fastp.json 
+fastp v1.0.1, time used: 91 seconds
+2026-11-03T08:08:22Z OK SRR34937004 min=39
+2026-11-03T08:08:22Z START SRR34937003
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 23,494,668
+reads read      : 46,989,336
+reads written   : 46,989,336
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 23494668
+total bases: 3547694868
+Q20 bases: 3514713257(99.0703%)
+Q30 bases: 3407265957(96.0417%)
+Q40 bases: 3407265957(96.0417%)
+
+Read2 before filtering:
+total reads: 23494668
+total bases: 3547694868
+Q20 bases: 3502180662(98.7171%)
+Q30 bases: 3385601949(95.431%)
+Q40 bases: 3385601949(95.431%)
+
+Read1 after filtering:
+total reads: 22525162
+total bases: 3381113774
+Q20 bases: 3369652372(99.661%)
+Q30 bases: 3294493708(97.4381%)
+Q40 bases: 3294493708(97.4381%)
+
+Read2 after filtering:
+total reads: 22525162
+total bases: 3380928839
+Q20 bases: 3368729940(99.6392%)
+Q30 bases: 3293305824(97.4083%)
+Q40 bases: 3293305824(97.4083%)
+
+Filtering result:
+reads passed filter: 45050324
+reads failed due to low quality: 1931334
+reads failed due to too many N: 5608
+reads failed due to too short: 2070
+reads with adapter trimmed: 1545100
+bases trimmed due to adapters: 39509821
+
+Duplication rate: 22.4758%
+
+Insert size peak (evaluated by paired-end reads): 261
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937003/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937003/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937003/SRR34937003_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937003/SRR34937003_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937003/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937003/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937003/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937003/fastp.json 
+fastp v1.0.1, time used: 103 seconds
+2026-11-03T08:55:31Z OK SRR34937003 min=47
+2026-11-03T08:55:31Z START SRR34937002
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 24,796,943
+reads read      : 49,593,886
+reads written   : 49,593,886
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 24796943
+total bases: 3744338393
+Q20 bases: 3712824272(99.1584%)
+Q30 bases: 3602798368(96.2199%)
+Q40 bases: 3602798368(96.2199%)
+
+Read2 before filtering:
+total reads: 24796943
+total bases: 3744338393
+Q20 bases: 3702462973(98.8816%)
+Q30 bases: 3583294393(95.699%)
+Q40 bases: 3583294393(95.699%)
+
+Read1 after filtering:
+total reads: 23902345
+total bases: 3588776033
+Q20 bases: 3576754501(99.665%)
+Q30 bases: 3497480678(97.4561%)
+Q40 bases: 3497480678(97.4561%)
+
+Read2 after filtering:
+total reads: 23902345
+total bases: 3588844375
+Q20 bases: 3575988719(99.6418%)
+Q30 bases: 3495350742(97.3949%)
+Q40 bases: 3495350742(97.3949%)
+
+Filtering result:
+reads passed filter: 47804690
+reads failed due to low quality: 1781474
+reads failed due to too many N: 6004
+reads failed due to too short: 1718
+reads with adapter trimmed: 1543649
+bases trimmed due to adapters: 39692829
+
+Duplication rate: 22.3177%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937002/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937002/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937002/SRR34937002_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937002/SRR34937002_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937002/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937002/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937002/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937002/fastp.json 
+fastp v1.0.1, time used: 89 seconds
+2026-11-03T09:44:21Z OK SRR34937002 min=48
+2026-11-03T09:44:21Z START SRR34937001
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,707,994
+reads read      : 45,415,988
+reads written   : 45,415,988
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22707994
+total bases: 3428907094
+Q20 bases: 3399526162(99.1431%)
+Q30 bases: 3293437086(96.0492%)
+Q40 bases: 3293437086(96.0492%)
+
+Read2 before filtering:
+total reads: 22707994
+total bases: 3428907094
+Q20 bases: 3389674922(98.8558%)
+Q30 bases: 3276335181(95.5504%)
+Q40 bases: 3276335181(95.5504%)
+
+Read1 after filtering:
+total reads: 21886711
+total bases: 3286560658
+Q20 bases: 3274674383(99.6383%)
+Q30 bases: 3196628126(97.2636%)
+Q40 bases: 3196628126(97.2636%)
+
+Read2 after filtering:
+total reads: 21886711
+total bases: 3286376180
+Q20 bases: 3273886536(99.62%)
+Q30 bases: 3195736607(97.242%)
+Q40 bases: 3195736607(97.242%)
+
+Filtering result:
+reads passed filter: 43773422
+reads failed due to low quality: 1634658
+reads failed due to too many N: 5190
+reads failed due to too short: 2718
+reads with adapter trimmed: 1423495
+bases trimmed due to adapters: 35877412
+
+Duplication rate: 20.2009%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937001/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937001/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937001/SRR34937001_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937001/SRR34937001_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937001/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937001/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937001/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937001/fastp.json 
+fastp v1.0.1, time used: 98 seconds
+2026-11-03T10:29:09Z OK SRR34937001 min=44
+2026-11-03T10:29:09Z START SRR34937000
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 25,074,897
+reads read      : 50,149,794
+reads written   : 50,149,794
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25074897
+total bases: 3786309447
+Q20 bases: 3753997671(99.1466%)
+Q30 bases: 3637470871(96.069%)
+Q40 bases: 3637470871(96.069%)
+
+Read2 before filtering:
+total reads: 25074897
+total bases: 3786309447
+Q20 bases: 3741457793(98.8154%)
+Q30 bases: 3614977875(95.475%)
+Q40 bases: 3614977875(95.475%)
+
+Read1 after filtering:
+total reads: 24138844
+total bases: 3624505511
+Q20 bases: 3611604566(99.6441%)
+Q30 bases: 3526462280(97.295%)
+Q40 bases: 3526462280(97.295%)
+
+Read2 after filtering:
+total reads: 24138844
+total bases: 3624316194
+Q20 bases: 3610519657(99.6193%)
+Q30 bases: 3524376294(97.2425%)
+Q40 bases: 3524376294(97.2425%)
+
+Filtering result:
+reads passed filter: 48277688
+reads failed due to low quality: 1863594
+reads failed due to too many N: 6058
+reads failed due to too short: 2454
+reads with adapter trimmed: 1594729
+bases trimmed due to adapters: 40327539
+
+Duplication rate: 20.3917%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34937000/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34937000/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34937000/SRR34937000_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34937000/SRR34937000_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34937000/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34937000/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34937000/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34937000/fastp.json 
+fastp v1.0.1, time used: 111 seconds
+2026-11-03T11:18:42Z OK SRR34937000 min=49
+2026-11-03T11:18:42Z START SRR34936999
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 27,759,907
+reads read      : 55,519,814
+reads written   : 55,519,814
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 27759907
+total bases: 4191745957
+Q20 bases: 4153274225(99.0822%)
+Q30 bases: 4023286850(95.9812%)
+Q40 bases: 4023286850(95.9812%)
+
+Read2 before filtering:
+total reads: 27759907
+total bases: 4191745957
+Q20 bases: 4140578802(98.7793%)
+Q30 bases: 4002534983(95.4861%)
+Q40 bases: 4002534983(95.4861%)
+
+Read1 after filtering:
+total reads: 26689795
+total bases: 4006788228
+Q20 bases: 3992633650(99.6467%)
+Q30 bases: 3899333382(97.3182%)
+Q40 bases: 3899333382(97.3182%)
+
+Read2 after filtering:
+total reads: 26689795
+total bases: 4006573073
+Q20 bases: 3991900175(99.6338%)
+Q30 bases: 3899811703(97.3353%)
+Q40 bases: 3899811703(97.3353%)
+
+Filtering result:
+reads passed filter: 53379590
+reads failed due to low quality: 2131632
+reads failed due to too many N: 6490
+reads failed due to too short: 2102
+reads with adapter trimmed: 1837645
+bases trimmed due to adapters: 45959515
+
+Duplication rate: 20.427%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936999/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936999/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936999/SRR34936999_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936999/SRR34936999_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936999/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936999/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936999/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936999/fastp.json 
+fastp v1.0.1, time used: 123 seconds
+2026-11-03T12:14:11Z OK SRR34936999 min=55
+2026-11-03T12:14:11Z START SRR34936998
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,644,422
+reads read      : 45,288,844
+reads written   : 45,288,844
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22644422
+total bases: 3419307722
+Q20 bases: 3388405080(99.0962%)
+Q30 bases: 3286267926(96.1092%)
+Q40 bases: 3286267926(96.1092%)
+
+Read2 before filtering:
+total reads: 22644422
+total bases: 3419307722
+Q20 bases: 3376594152(98.7508%)
+Q30 bases: 3263973316(95.4571%)
+Q40 bases: 3263973316(95.4571%)
+
+Read1 after filtering:
+total reads: 21763649
+total bases: 3267329526
+Q20 bases: 3256386890(99.6651%)
+Q30 bases: 3183969523(97.4487%)
+Q40 bases: 3183969523(97.4487%)
+
+Read2 after filtering:
+total reads: 21763649
+total bases: 3267144569
+Q20 bases: 3255198642(99.6344%)
+Q30 bases: 3180423220(97.3457%)
+Q40 bases: 3180423220(97.3457%)
+
+Filtering result:
+reads passed filter: 43527298
+reads failed due to low quality: 1754244
+reads failed due to too many N: 5322
+reads failed due to too short: 1980
+reads with adapter trimmed: 1477172
+bases trimmed due to adapters: 37219430
+
+Duplication rate: 19.9872%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936998/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936998/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936998/SRR34936998_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936998/SRR34936998_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936998/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936998/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936998/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936998/fastp.json 
+fastp v1.0.1, time used: 97 seconds
+2026-11-03T16:26:45Z OK SRR34936998 min=252
+2026-11-03T16:26:45Z START SRR34936997
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 25,433,604
+reads read      : 50,867,208
+reads written   : 50,867,208
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 25433604
+total bases: 3840474204
+Q20 bases: 3807562141(99.143%)
+Q30 bases: 3691232552(96.114%)
+Q40 bases: 3691232552(96.114%)
+
+Read2 before filtering:
+total reads: 25433604
+total bases: 3840474204
+Q20 bases: 3796925085(98.866%)
+Q30 bases: 3672957744(95.6381%)
+Q40 bases: 3672957744(95.6381%)
+
+Read1 after filtering:
+total reads: 24511931
+total bases: 3680663682
+Q20 bases: 3668073238(99.6579%)
+Q30 bases: 3583996928(97.3737%)
+Q40 bases: 3583996928(97.3737%)
+
+Read2 after filtering:
+total reads: 24511931
+total bases: 3680467136
+Q20 bases: 3667097797(99.6367%)
+Q30 bases: 3583095884(97.3544%)
+Q40 bases: 3583095884(97.3544%)
+
+Filtering result:
+reads passed filter: 49023862
+reads failed due to low quality: 1834582
+reads failed due to too many N: 6124
+reads failed due to too short: 2640
+reads with adapter trimmed: 1583769
+bases trimmed due to adapters: 40639175
+
+Duplication rate: 19.9981%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936997/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936997/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936997/SRR34936997_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936997/SRR34936997_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936997/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936997/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936997/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936997/fastp.json 
+fastp v1.0.1, time used: 121 seconds
+2026-11-03T17:22:52Z OK SRR34936997 min=56
+2026-11-03T17:22:52Z START SRR34936996
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 24,083,768
+reads read      : 48,167,536
+reads written   : 48,167,536
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 24083768
+total bases: 3636648968
+Q20 bases: 3604323082(99.1111%)
+Q30 bases: 3496115364(96.1356%)
+Q40 bases: 3496115364(96.1356%)
+
+Read2 before filtering:
+total reads: 24083768
+total bases: 3636648968
+Q20 bases: 3590636185(98.7347%)
+Q30 bases: 3469195069(95.3954%)
+Q40 bases: 3469195069(95.3954%)
+
+Read1 after filtering:
+total reads: 23127464
+total bases: 3474919840
+Q20 bases: 3463381263(99.6679%)
+Q30 bases: 3386376164(97.4519%)
+Q40 bases: 3386376164(97.4519%)
+
+Read2 after filtering:
+total reads: 23127464
+total bases: 3474955186
+Q20 bases: 3461950429(99.6258%)
+Q30 bases: 3381412360(97.3081%)
+Q40 bases: 3381412360(97.3081%)
+
+Filtering result:
+reads passed filter: 46254928
+reads failed due to low quality: 1904548
+reads failed due to too many N: 5780
+reads failed due to too short: 2280
+reads with adapter trimmed: 1342690
+bases trimmed due to adapters: 33605990
+
+Duplication rate: 20.481%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936996/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936996/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936996/SRR34936996_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936996/SRR34936996_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936996/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936996/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936996/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936996/fastp.json 
+fastp v1.0.1, time used: 97 seconds
+2026-11-03T19:02:32Z OK SRR34936996 min=99
+2026-11-03T19:02:32Z START SRR34936995
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 26,251,191
+reads read      : 52,502,382
+reads written   : 52,502,382
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 26251191
+total bases: 3963929841
+Q20 bases: 3927882092(99.0906%)
+Q30 bases: 3806329934(96.0241%)
+Q40 bases: 3806329934(96.0241%)
+
+Read2 before filtering:
+total reads: 26251191
+total bases: 3963929841
+Q20 bases: 3913146032(98.7189%)
+Q30 bases: 3779372013(95.3441%)
+Q40 bases: 3779372013(95.3441%)
+
+Read1 after filtering:
+total reads: 25207786
+total bases: 3779274247
+Q20 bases: 3766247268(99.6553%)
+Q30 bases: 3679924172(97.3712%)
+Q40 bases: 3679924172(97.3712%)
+
+Read2 after filtering:
+total reads: 25207786
+total bases: 3779052025
+Q20 bases: 3765001076(99.6282%)
+Q30 bases: 3677723797(97.3187%)
+Q40 bases: 3677723797(97.3187%)
+
+Filtering result:
+reads passed filter: 50415572
+reads failed due to low quality: 2078580
+reads failed due to too many N: 6424
+reads failed due to too short: 1806
+reads with adapter trimmed: 2022958
+bases trimmed due to adapters: 52921763
+
+Duplication rate: 19.7885%
+
+Insert size peak (evaluated by paired-end reads): 270
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936995/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936995/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936995/SRR34936995_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936995/SRR34936995_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936995/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936995/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936995/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936995/fastp.json 
+fastp v1.0.1, time used: 2771 seconds
+2026-11-03T20:45:12Z OK SRR34936995 min=102
+2026-11-03T20:45:12Z START SRR34936994
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,937,710
+reads read      : 45,875,420
+reads written   : 45,875,420
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22937710
+total bases: 3463594210
+Q20 bases: 3434275302(99.1535%)
+Q30 bases: 3331348682(96.1818%)
+Q40 bases: 3331348682(96.1818%)
+
+Read2 before filtering:
+total reads: 22937710
+total bases: 3463594210
+Q20 bases: 3422558969(98.8152%)
+Q30 bases: 3309245174(95.5437%)
+Q40 bases: 3309245174(95.5437%)
+
+Read1 after filtering:
+total reads: 22075374
+total bases: 3315246852
+Q20 bases: 3304066409(99.6628%)
+Q30 bases: 3230005960(97.4288%)
+Q40 bases: 3230005960(97.4288%)
+
+Read2 after filtering:
+total reads: 22075374
+total bases: 3315072380
+Q20 bases: 3302890571(99.6325%)
+Q30 bases: 3226888763(97.3399%)
+Q40 bases: 3226888763(97.3399%)
+
+Filtering result:
+reads passed filter: 44150748
+reads failed due to low quality: 1717830
+reads failed due to too many N: 5402
+reads failed due to too short: 1440
+reads with adapter trimmed: 1449052
+bases trimmed due to adapters: 35510496
+
+Duplication rate: 21.0982%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936994/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936994/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936994/SRR34936994_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936994/SRR34936994_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936994/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936994/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936994/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936994/fastp.json 
+fastp v1.0.1, time used: 111 seconds
+2026-11-03T21:35:11Z OK SRR34936994 min=49
+2026-11-03T21:35:11Z START SRR34936993
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,291,675
+reads read      : 44,583,350
+reads written   : 44,583,350
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22291675
+total bases: 3366042925
+Q20 bases: 3334545617(99.0643%)
+Q30 bases: 3231045191(95.9894%)
+Q40 bases: 3231045191(95.9894%)
+
+Read2 before filtering:
+total reads: 22291675
+total bases: 3366042925
+Q20 bases: 3319302302(98.6114%)
+Q30 bases: 3202264311(95.1344%)
+Q40 bases: 3202264311(95.1344%)
+
+Read1 after filtering:
+total reads: 21353148
+total bases: 3206335179
+Q20 bases: 3195212601(99.6531%)
+Q30 bases: 3121857494(97.3653%)
+Q40 bases: 3121857494(97.3653%)
+
+Read2 after filtering:
+total reads: 21353148
+total bases: 3206145858
+Q20 bases: 3193762533(99.6138%)
+Q30 bases: 3117267266(97.2279%)
+Q40 bases: 3117267266(97.2279%)
+
+Filtering result:
+reads passed filter: 42706296
+reads failed due to low quality: 1869336
+reads failed due to too many N: 5248
+reads failed due to too short: 2470
+reads with adapter trimmed: 1408713
+bases trimmed due to adapters: 34593229
+
+Duplication rate: 19.5286%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936993/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936993/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936993/SRR34936993_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936993/SRR34936993_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936993/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936993/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936993/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936993/fastp.json 
+fastp v1.0.1, time used: 111 seconds
+2026-11-04T03:21:53Z OK SRR34936993 min=346
+2026-11-04T03:21:53Z START SRR34936992
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 20,474,595
+reads read      : 40,949,190
+reads written   : 40,949,190
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20474595
+total bases: 3091663845
+Q20 bases: 3062381333(99.0529%)
+Q30 bases: 2964277674(95.8797%)
+Q40 bases: 2964277674(95.8797%)
+
+Read2 before filtering:
+total reads: 20474595
+total bases: 3091663845
+Q20 bases: 3051076914(98.6872%)
+Q30 bases: 2944978814(95.2555%)
+Q40 bases: 2944978814(95.2555%)
+
+Read1 after filtering:
+total reads: 19642642
+total bases: 2947979373
+Q20 bases: 2937378436(99.6404%)
+Q30 bases: 2867134223(97.2576%)
+Q40 bases: 2867134223(97.2576%)
+
+Read2 after filtering:
+total reads: 19642642
+total bases: 2947827244
+Q20 bases: 2936537059(99.617%)
+Q30 bases: 2866277803(97.2336%)
+Q40 bases: 2866277803(97.2336%)
+
+Filtering result:
+reads passed filter: 39285284
+reads failed due to low quality: 1657504
+reads failed due to too many N: 4672
+reads failed due to too short: 1730
+reads with adapter trimmed: 1420077
+bases trimmed due to adapters: 35540795
+
+Duplication rate: 17.993%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936992/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936992/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936992/SRR34936992_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936992/SRR34936992_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936992/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936992/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936992/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936992/fastp.json 
+fastp v1.0.1, time used: 103 seconds
+2026-11-04T04:05:16Z OK SRR34936992 min=43
+2026-11-04T04:05:16Z START SRR34936991
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,621,274
+reads read      : 45,242,548
+reads written   : 45,242,548
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22621274
+total bases: 3415812374
+Q20 bases: 3382362003(99.0207%)
+Q30 bases: 3275282990(95.8859%)
+Q40 bases: 3275282990(95.8859%)
+
+Read2 before filtering:
+total reads: 22621274
+total bases: 3415812374
+Q20 bases: 3371819895(98.7121%)
+Q30 bases: 3259850125(95.4341%)
+Q40 bases: 3259850125(95.4341%)
+
+Read1 after filtering:
+total reads: 21712248
+total bases: 3255639130
+Q20 bases: 3244179491(99.648%)
+Q30 bases: 3168467096(97.3224%)
+Q40 bases: 3168467096(97.3224%)
+
+Read2 after filtering:
+total reads: 21712248
+total bases: 3255464876
+Q20 bases: 3243846979(99.6431%)
+Q30 bases: 3171045426(97.4068%)
+Q40 bases: 3171045426(97.4068%)
+
+Filtering result:
+reads passed filter: 43424496
+reads failed due to low quality: 1810172
+reads failed due to too many N: 5324
+reads failed due to too short: 2556
+reads with adapter trimmed: 1743772
+bases trimmed due to adapters: 45120557
+
+Duplication rate: 18.6032%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936991/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936991/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936991/SRR34936991_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936991/SRR34936991_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936991/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936991/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936991/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936991/fastp.json 
+fastp v1.0.1, time used: 105 seconds
+2026-11-04T04:52:02Z OK SRR34936991 min=46
+2026-11-04T04:52:02Z START SRR34936990
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,347,240
+reads read      : 44,694,480
+reads written   : 44,694,480
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22347240
+total bases: 3374433240
+Q20 bases: 3341909845(99.0362%)
+Q30 bases: 3239782134(96.0097%)
+Q40 bases: 3239782134(96.0097%)
+
+Read2 before filtering:
+total reads: 22347240
+total bases: 3374433240
+Q20 bases: 3329505551(98.6686%)
+Q30 bases: 3217987526(95.3638%)
+Q40 bases: 3217987526(95.3638%)
+
+Read1 after filtering:
+total reads: 21410977
+total bases: 3213801777
+Q20 bases: 3202962531(99.6627%)
+Q30 bases: 3131781678(97.4479%)
+Q40 bases: 3131781678(97.4479%)
+
+Read2 after filtering:
+total reads: 21410977
+total bases: 3213637512
+Q20 bases: 3202136005(99.6421%)
+Q30 bases: 3130404151(97.41%)
+Q40 bases: 3130404151(97.41%)
+
+Filtering result:
+reads passed filter: 42821954
+reads failed due to low quality: 1864930
+reads failed due to too many N: 5558
+reads failed due to too short: 2038
+reads with adapter trimmed: 1463220
+bases trimmed due to adapters: 37510779
+
+Duplication rate: 20.6844%
+
+Insert size peak (evaluated by paired-end reads): 269
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936990/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936990/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936990/SRR34936990_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936990/SRR34936990_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936990/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936990/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936990/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936990/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-04T05:36:55Z OK SRR34936990 min=44
+2026-11-04T05:36:55Z START SRR34936989
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,687,502
+reads read      : 45,375,004
+reads written   : 45,375,004
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22687502
+total bases: 3425812802
+Q20 bases: 3396355985(99.1402%)
+Q30 bases: 3292825281(96.1181%)
+Q40 bases: 3292825281(96.1181%)
+
+Read2 before filtering:
+total reads: 22687502
+total bases: 3425812802
+Q20 bases: 3383942582(98.7778%)
+Q30 bases: 3270740062(95.4734%)
+Q40 bases: 3270740062(95.4734%)
+
+Read1 after filtering:
+total reads: 21825707
+total bases: 3279681643
+Q20 bases: 3268287012(99.6526%)
+Q30 bases: 3192933810(97.355%)
+Q40 bases: 3192933810(97.355%)
+
+Read2 after filtering:
+total reads: 21825707
+total bases: 3279503739
+Q20 bases: 3267400053(99.6309%)
+Q30 bases: 3191390482(97.3132%)
+Q40 bases: 3191390482(97.3132%)
+
+Filtering result:
+reads passed filter: 43651414
+reads failed due to low quality: 1716050
+reads failed due to too many N: 5608
+reads failed due to too short: 1932
+reads with adapter trimmed: 1283143
+bases trimmed due to adapters: 31294842
+
+Duplication rate: 19.7212%
+
+Insert size peak (evaluated by paired-end reads): 267
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936989/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936989/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936989/SRR34936989_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936989/SRR34936989_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936989/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936989/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936989/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936989/fastp.json 
+fastp v1.0.1, time used: 105 seconds
+2026-11-04T06:23:43Z OK SRR34936989 min=46
+2026-11-04T06:23:43Z START SRR34936988
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,123,730
+reads read      : 44,247,460
+reads written   : 44,247,460
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22123730
+total bases: 3340683230
+Q20 bases: 3310122348(99.0852%)
+Q30 bases: 3206959946(95.9971%)
+Q40 bases: 3206959946(95.9971%)
+
+Read2 before filtering:
+total reads: 22123730
+total bases: 3340683230
+Q20 bases: 3298902062(98.7493%)
+Q30 bases: 3188587971(95.4472%)
+Q40 bases: 3188587971(95.4472%)
+
+Read1 after filtering:
+total reads: 21259301
+total bases: 3192292670
+Q20 bases: 3181094479(99.6492%)
+Q30 bases: 3106953227(97.3267%)
+Q40 bases: 3106953227(97.3267%)
+
+Read2 after filtering:
+total reads: 21259301
+total bases: 3192132021
+Q20 bases: 3180402852(99.6326%)
+Q30 bases: 3107034257(97.3341%)
+Q40 bases: 3107034257(97.3341%)
+
+Filtering result:
+reads passed filter: 42518602
+reads failed due to low quality: 1722428
+reads failed due to too many N: 5040
+reads failed due to too short: 1390
+reads with adapter trimmed: 1392423
+bases trimmed due to adapters: 35172573
+
+Duplication rate: 18.8477%
+
+Insert size peak (evaluated by paired-end reads): 270
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936988/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936988/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936988/SRR34936988_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936988/SRR34936988_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936988/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936988/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936988/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936988/fastp.json 
+fastp v1.0.1, time used: 101 seconds
+2026-11-04T07:09:01Z OK SRR34936988 min=45
+2026-11-04T07:09:01Z START SRR34936987
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 21,123,677
+reads read      : 42,247,354
+reads written   : 42,247,354
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 21123677
+total bases: 3189675227
+Q20 bases: 3161321462(99.1111%)
+Q30 bases: 3063674765(96.0497%)
+Q40 bases: 3063674765(96.0497%)
+
+Read2 before filtering:
+total reads: 21123677
+total bases: 3189675227
+Q20 bases: 3148805867(98.7187%)
+Q30 bases: 3040247878(95.3153%)
+Q40 bases: 3040247878(95.3153%)
+
+Read1 after filtering:
+total reads: 20296557
+total bases: 3048284208
+Q20 bases: 3037789857(99.6557%)
+Q30 bases: 2967744464(97.3579%)
+Q40 bases: 2967744464(97.3579%)
+
+Read2 after filtering:
+total reads: 20296557
+total bases: 3048028785
+Q20 bases: 3036395072(99.6183%)
+Q30 bases: 2963863389(97.2387%)
+Q40 bases: 2963863389(97.2387%)
+
+Filtering result:
+reads passed filter: 40593114
+reads failed due to low quality: 1639960
+reads failed due to too many N: 5046
+reads failed due to too short: 9234
+reads with adapter trimmed: 1171415
+bases trimmed due to adapters: 32739799
+
+Duplication rate: 18.6554%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936987/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936987/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936987/SRR34936987_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936987/SRR34936987_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936987/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936987/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936987/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936987/fastp.json 
+fastp v1.0.1, time used: 99 seconds
+2026-11-04T07:51:47Z OK SRR34936987 min=42
+2026-11-04T07:51:47Z START SRR34936986
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 20,668,775
+reads read      : 41,337,550
+reads written   : 41,337,550
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20668775
+total bases: 3120985025
+Q20 bases: 3092852170(99.0986%)
+Q30 bases: 3000488932(96.1392%)
+Q40 bases: 3000488932(96.1392%)
+
+Read2 before filtering:
+total reads: 20668775
+total bases: 3120985025
+Q20 bases: 3080540400(98.7041%)
+Q30 bases: 2975914911(95.3518%)
+Q40 bases: 2975914911(95.3518%)
+
+Read1 after filtering:
+total reads: 19830558
+total bases: 2979255001
+Q20 bases: 2969315618(99.6664%)
+Q30 bases: 2903962356(97.4728%)
+Q40 bases: 2903962356(97.4728%)
+
+Read2 after filtering:
+total reads: 19830558
+total bases: 2979094628
+Q20 bases: 2967968578(99.6265%)
+Q30 bases: 2899001421(97.3115%)
+Q40 bases: 2899001421(97.3115%)
+
+Filtering result:
+reads passed filter: 39661116
+reads failed due to low quality: 1670204
+reads failed due to too many N: 4978
+reads failed due to too short: 1252
+reads with adapter trimmed: 1179778
+bases trimmed due to adapters: 29431238
+
+Duplication rate: 20.9446%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936986/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936986/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936986/SRR34936986_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936986/SRR34936986_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936986/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936986/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936986/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936986/fastp.json 
+fastp v1.0.1, time used: 100 seconds
+2026-11-04T08:33:36Z OK SRR34936986 min=41
+2026-11-04T08:33:36Z START SRR34936985
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,284,543
+reads read      : 44,569,086
+reads written   : 44,569,086
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22284543
+total bases: 3364965993
+Q20 bases: 3336541621(99.1553%)
+Q30 bases: 3235051481(96.1392%)
+Q40 bases: 3235051481(96.1392%)
+
+Read2 before filtering:
+total reads: 22284543
+total bases: 3364965993
+Q20 bases: 3327900778(98.8985%)
+Q30 bases: 3224511733(95.826%)
+Q40 bases: 3224511733(95.826%)
+
+Read1 after filtering:
+total reads: 21495876
+total bases: 3226748552
+Q20 bases: 3215650241(99.6561%)
+Q30 bases: 3141310934(97.3522%)
+Q40 bases: 3141310934(97.3522%)
+
+Read2 after filtering:
+total reads: 21495876
+total bases: 3226619620
+Q20 bases: 3215763321(99.6635%)
+Q30 bases: 3146248111(97.5091%)
+Q40 bases: 3146248111(97.5091%)
+
+Filtering result:
+reads passed filter: 42991752
+reads failed due to low quality: 1569694
+reads failed due to too many N: 4136
+reads failed due to too short: 3504
+reads with adapter trimmed: 1452696
+bases trimmed due to adapters: 37836009
+
+Duplication rate: 18.6256%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936985/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936985/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936985/SRR34936985_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936985/SRR34936985_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936985/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936985/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936985/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936985/fastp.json 
+fastp v1.0.1, time used: 102 seconds
+2026-11-04T09:18:59Z OK SRR34936985 min=45
+2026-11-04T09:18:59Z START SRR34936984
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 20,939,186
+reads read      : 41,878,372
+reads written   : 41,878,372
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 20939186
+total bases: 3161817086
+Q20 bases: 3130803687(99.0191%)
+Q30 bases: 3031136630(95.8669%)
+Q40 bases: 3031136630(95.8669%)
+
+Read2 before filtering:
+total reads: 20939186
+total bases: 3161817086
+Q20 bases: 3117037745(98.5837%)
+Q30 bases: 3007987233(95.1348%)
+Q40 bases: 3007987233(95.1348%)
+
+Read1 after filtering:
+total reads: 20035570
+total bases: 3007431810
+Q20 bases: 2996769162(99.6455%)
+Q30 bases: 2926546466(97.3105%)
+Q40 bases: 2926546466(97.3105%)
+
+Read2 after filtering:
+total reads: 20035570
+total bases: 3007259545
+Q20 bases: 2995903070(99.6224%)
+Q30 bases: 2925708195(97.2882%)
+Q40 bases: 2925708195(97.2882%)
+
+Filtering result:
+reads passed filter: 40071140
+reads failed due to low quality: 1798254
+reads failed due to too many N: 4978
+reads failed due to too short: 4000
+reads with adapter trimmed: 1369238
+bases trimmed due to adapters: 35340637
+
+Duplication rate: 19.1087%
+
+Insert size peak (evaluated by paired-end reads): 271
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936984/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936984/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936984/SRR34936984_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936984/SRR34936984_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936984/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936984/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936984/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936984/fastp.json 
+fastp v1.0.1, time used: 95 seconds
+2026-11-04T10:00:34Z OK SRR34936984 min=41
+2026-11-04T10:00:34Z START SRR34936983
+$SCRATCH/rsem_all.sh: line 19: $CONDA_BASE/envs/daphnia_quant/bin/fasterq-dump: No such file or directory
+spots read      : 22,252,245
+reads read      : 44,504,490
+reads written   : 44,504,490
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22252245
+total bases: 3360088995
+Q20 bases: 3328921051(99.0724%)
+Q30 bases: 3226299537(96.0183%)
+Q40 bases: 3226299537(96.0183%)
+
+Read2 before filtering:
+total reads: 22252245
+total bases: 3360088995
+Q20 bases: 3317736036(98.7395%)
+Q30 bases: 3207712929(95.4651%)
+Q40 bases: 3207712929(95.4651%)
+
+Read1 after filtering:
+total reads: 21356910
+total bases: 3205390370
+Q20 bases: 3194229703(99.6518%)
+Q30 bases: 3121252625(97.3751%)
+Q40 bases: 3121252625(97.3751%)
+
+Read2 after filtering:
+total reads: 21356910
+total bases: 3205213521
+Q20 bases: 3193674339(99.64%)
+Q30 bases: 3121877921(97.4%)
+Q40 bases: 3121877921(97.4%)
+
+Filtering result:
+reads passed filter: 42713820
+reads failed due to low quality: 1783326
+reads failed due to too many N: 5366
+reads failed due to too short: 1978
+reads with adapter trimmed: 1480178
+bases trimmed due to adapters: 38119431
+
+Duplication rate: 21.3791%
+
+Insert size peak (evaluated by paired-end reads): 263
+
+JSON report: $RP/work/liao2026_quant/rsem/SRR34936983/fastp.json
+HTML report: $RP/work/liao2026_quant/rsem/SRR34936983/fastp.html
+
+fastp -i $RP/work/liao2026_quant/rsem_tmp_SRR34936983/SRR34936983_1.fastq -I $RP/work/liao2026_quant/rsem_tmp_SRR34936983/SRR34936983_2.fastq -o $RP/work/liao2026_quant/rsem_tmp_SRR34936983/c1.fq.gz -O $RP/work/liao2026_quant/rsem_tmp_SRR34936983/c2.fq.gz -q 20 -u 10 -n 5 -l 20 --cut_tail --cut_tail_mean_quality 20 --detect_adapter_for_pe -w 8 -h $RP/work/liao2026_quant/rsem/SRR34936983/fastp.html -j $RP/work/liao2026_quant/rsem/SRR34936983/fastp.json 
+fastp v1.0.1, time used: 101 seconds
+2026-11-04T10:45:40Z OK SRR34936983 min=45
+2026-11-04T10:45:40Z RSEM_DONE ok=24 failed=0

@@ -1,0 +1,2 @@
+fastp=1.0.1=hee05c9d_0
+hisat2=2.2.1=haef7865_8

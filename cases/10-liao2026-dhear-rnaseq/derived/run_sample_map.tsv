@@ -1,0 +1,25 @@
+run	biosample	sample_name	library_name	experiment_title
+SRR34936983	SAMN50546176	Daphnia_Pb2+_1h_1	DM_pb2_1h_1	RNA-Seq of Daphnia magna:Pb2+
+SRR34936984	SAMN50546175	Daphnia_Cr6+_1h_3	DM_cr6_1h_3	RNA-Seq of Daphnia magna:Cr6+
+SRR34936985	SAMN50546174	Daphnia_Cr6+_1h_2	DM_cr6_1h_2	RNA-Seq of Daphnia magna:Cr6+
+SRR34936986	SAMN50546173	Daphnia_Cr6+_1h_1	DM_cr6_1h_1	RNA-Seq of Daphnia magna:Cr6+
+SRR34936987	SAMN50546172	Daphnia_Cd2+_1h_3	DM_cd2_1h_3	RNA-Seq of Daphnia magna:Cd2+
+SRR34936988	SAMN50546171	Daphnia_Cd2+_1h_2	DM_cd2_1h_2	RNA-Seq of Daphnia magna:Cd2+
+SRR34936989	SAMN50546170	Daphnia_Cd2+_1h_1	DM_cd2_1h_1	RNA-Seq of Daphnia magna:Cd2+
+SRR34936990	SAMN50546190	Daphnia_Imidacloprid_3h_3	DM_imidacloprid1_3h_3	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34936991	SAMN50546189	Daphnia_Imidacloprid_3h_2	DM_imidacloprid1_3h_2	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34936992	SAMN50546188	Daphnia_Imidacloprid_3h_1	DM_imidacloprid1_3h_1	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34936993	SAMN50546187	Daphnia_Triclosan_1h_3	DM_triclosan1_1h_3	RNA-Seq of Daphnia magna:Triclosan
+SRR34936994	SAMN50546169	Daphnia_Control_1h_3	DM_C_1h_3	RNA-Seq of Daphnia magna:Control
+SRR34936995	SAMN50546186	Daphnia_Triclosan_1h_2	DM_triclosan1_1h_2	RNA-Seq of Daphnia magna:Triclosan
+SRR34936996	SAMN50546185	Daphnia_Triclosan_1h_1	DM_triclosan1_1h_1	RNA-Seq of Daphnia magna:Triclosan
+SRR34936997	SAMN50546184	Daphnia_Imidacloprid_1h_3	DM_imidacloprid1_1h_3	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34936998	SAMN50546183	Daphnia_Imidacloprid_1h_2	DM_imidacloprid1_1h_2	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34936999	SAMN50546182	Daphnia_Imidacloprid_1h_1	DM_imidacloprid1_1h_1	RNA-Seq of Daphnia magna:Imidacloprid
+SRR34937000	SAMN50546181	Daphnia_Hg2+_1h_3	DM_hg2_1h_3	RNA-Seq of Daphnia magna:Hg2+
+SRR34937001	SAMN50546180	Daphnia_Hg2+_1h_2	DM_hg2_1h_2	RNA-Seq of Daphnia magna:Hg2+
+SRR34937002	SAMN50546179	Daphnia_Hg2+_1h_1	DM_hg2_1h_1	RNA-Seq of Daphnia magna:Hg2+
+SRR34937003	SAMN50546178	Daphnia_Pb2+_1h_3	DM_pb2_1h_3	RNA-Seq of Daphnia magna:Pb2+
+SRR34937004	SAMN50546177	Daphnia_Pb2+_1h_2	DM_pb2_1h_2	RNA-Seq of Daphnia magna:Pb2+
+SRR34937005	SAMN50546168	Daphnia_Control_1h_2	DM_C_1h_2	RNA-Seq of Daphnia magna:Control
+SRR34937006	SAMN50546167	Daphnia_Control_1h_1	DM_C_1h_1	RNA-Seq of Daphnia magna:Control

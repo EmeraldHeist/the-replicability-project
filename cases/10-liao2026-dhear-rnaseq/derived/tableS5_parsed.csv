@@ -1,0 +1,12 @@
+module,size,principal_treatment,integrated_candidate_genes,enriched_functions,selected_cardiac_descriptor,spearman_r,direction,visualization
+green,193,Cd(II) 1 h,24,Regulation of cytokinesis; regulation of cell division,Stroke-volume-related proxy,-0.378,negative,"Figure 4b,c; not in Figure S14"
+pink,115,Imidacloprid 3 h,74,"Leading strand elongation; DNA replication, synthesis of RNA primer",Total wall-motion velocity at point 8,-0.489,negative,"Figure 4b,c; not in Figure S14"
+magenta,107,Hg(II) 1 h,37,Oxidoreductase activity; structural constituent of cuticle,Heart rate,-0.581,negative,"Figure 4b,c; not in Figure S14"
+blue,247,Hg(II) 1 h,44,Hydrolase activity,Total wall-motion velocity at point 5,0.328,positive,"Figure 4b,c; not in Figure S14"
+yellow,218,Pb(II) 1 h,13,Molecular transducer activity; signaling receptor activity,Ejection-fraction-related proxy,0.365,positive,"Figure 4b,c; not in Figure S14"
+greenyellow,30,Hg(II) 1 h,13,carbohydrate metabolic process; structural constituent of cuticle; glucuronosyltransferase activity; UDP-glycosyltransferase activity,Cardiac-output-related proxy,0.63,positive,"Figure 4b,c; Figure S14"
+black,152,Imidacloprid 3 h,62,rRNA processing; RNA binding; protein folding; ncRNA processing,Width fractional shortening,0.686,positive,"Figure 4b,c; Figure S14"
+brown,228,Imidacloprid 3 h,75,chitin binding; peptidase activity; peptide metabolic process; oxidoreductase activity,Total wall-motion velocity at point 8,0.554,positive,"Figure 4b,c; Figure S14"
+purple,99,Triclosan 1 h,14,Proteolysis; protein metabolic process; response to reactive oxygen species,Mean chamber area,0.386,positive,"Figure 4b,c; not in Figure S14"
+red,179,Triclosan 1 h,103,peptidase activity; oxidoreductase activity; tetrapyrrole binding; unfolded protein binding,Heart rate,-0.791,negative,"Figure 4b,c; Figure S14"
+turquoise,596,Hg(II) 1 h,99,protein folding; chitin binding; peptidase activity; peptide metabolic process,Stroke-volume-related proxy,0.609,positive,"Figure 4b,c; Figure S14"

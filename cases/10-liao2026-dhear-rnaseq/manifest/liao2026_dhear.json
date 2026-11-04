@@ -1,0 +1,746 @@
+{
+  "dataset_id": "liao2026_dhear",
+  "paper": "Liao Z. et al. Multidimensional Cardiac Phenotyping of Daphnia magna Enables One-Hour Effect-Based Screening of Aquatic Toxicity. Environ. Sci. Technol. 2026. doi:10.1021/acs.est.6c09772",
+  "components": [
+    {
+      "name": "RNA-seq (raw reads, SRA format)",
+      "accession": "BioProject PRJNA1304005",
+      "source": "NCBI SRA",
+      "route": "sra-tools prefetch 3.4.1 (retry up to 3x)",
+      "retrieved_utc": "2026-10-31",
+      "runs": 24,
+      "total_bytes": 44462859624,
+      "license": "NCBI SRA open access; no controlled-access terms observed",
+      "files": [
+        {
+          "run": "SRR34937006",
+          "file": "data/raw/prjna1304005/sra/SRR34937006/SRR34937006.sra",
+          "bytes": 1868429155,
+          "sha256": "35bda50a64a3d5bd4da20ca1322c57b4d7e65e5c0fb9e00506256cae674506b1",
+          "sample": "Daphnia_Control_1h_1",
+          "layout": "PAIRED",
+          "spots": 23347355,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937005",
+          "file": "data/raw/prjna1304005/sra/SRR34937005/SRR34937005.sra",
+          "bytes": 2029443235,
+          "sha256": "4a5861738b113f5148dee622bf696878850c0161628887dd163bb6bd6e4c7ea1",
+          "sample": "Daphnia_Control_1h_2",
+          "layout": "PAIRED",
+          "spots": 25483495,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937004",
+          "file": "data/raw/prjna1304005/sra/SRR34937004/SRR34937004.sra",
+          "bytes": 1566331501,
+          "sha256": "df99c2cd607e34716ebde4f0465aa4af1e8d7f90bd7dd301b16ed18d9ac56e49",
+          "sample": "Daphnia_Pb2+_1h_2",
+          "layout": "PAIRED",
+          "spots": 19479811,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937003",
+          "file": "data/raw/prjna1304005/sra/SRR34937003/SRR34937003.sra",
+          "bytes": 1840301278,
+          "sha256": "7e97b37ccf7857dc5821654aff850efaff6579e4c152863750c16756230b7144",
+          "sample": "Daphnia_Pb2+_1h_3",
+          "layout": "PAIRED",
+          "spots": 23494668,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937002",
+          "file": "data/raw/prjna1304005/sra/SRR34937002/SRR34937002.sra",
+          "bytes": 1940693895,
+          "sha256": "07152d1d3fa5dc5249161d5360e79e59084fb15ed684791b60af6831977fc4bd",
+          "sample": "Daphnia_Hg2+_1h_1",
+          "layout": "PAIRED",
+          "spots": 24796943,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937001",
+          "file": "data/raw/prjna1304005/sra/SRR34937001/SRR34937001.sra",
+          "bytes": 1828147484,
+          "sha256": "2a4461132415a4ff4002093cbc3fb1be20ffc8ece4027144473506df9eed0037",
+          "sample": "Daphnia_Hg2+_1h_2",
+          "layout": "PAIRED",
+          "spots": 22707994,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34937000",
+          "file": "data/raw/prjna1304005/sra/SRR34937000/SRR34937000.sra",
+          "bytes": 2014171763,
+          "sha256": "30de02c7a51c360ea4893b7ebd63e9ac571af0a681c6a3aa89542a21b7610bf6",
+          "sample": "Daphnia_Hg2+_1h_3",
+          "layout": "PAIRED",
+          "spots": 25074897,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936999",
+          "file": "data/raw/prjna1304005/sra/SRR34936999/SRR34936999.sra",
+          "bytes": 2226318274,
+          "sha256": "92e6f2b614fafe722c0aba71e166402fe5c645178d11a0f6800668692ce49d8a",
+          "sample": "Daphnia_Imidacloprid_1h_1",
+          "layout": "PAIRED",
+          "spots": 27759907,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936998",
+          "file": "data/raw/prjna1304005/sra/SRR34936998/SRR34936998.sra",
+          "bytes": 1817711991,
+          "sha256": "170d37d83a3df06ac6da86a85e4127fec650b9bcccb6843a1a17b94b5c283d3c",
+          "sample": "Daphnia_Imidacloprid_1h_2",
+          "layout": "PAIRED",
+          "spots": 22644422,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936997",
+          "file": "data/raw/prjna1304005/sra/SRR34936997/SRR34936997.sra",
+          "bytes": 2042163428,
+          "sha256": "2c4ebb54ff08e285434a5f239865eddd99c91f974cc32075a900fb58d0431844",
+          "sample": "Daphnia_Imidacloprid_1h_3",
+          "layout": "PAIRED",
+          "spots": 25433604,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936996",
+          "file": "data/raw/prjna1304005/sra/SRR34936996/SRR34936996.sra",
+          "bytes": 1925650769,
+          "sha256": "44040f92be3f08594b0381a216606e2a226d8584a4b3463adcbb77f87c9bba87",
+          "sample": "Daphnia_Triclosan_1h_1",
+          "layout": "PAIRED",
+          "spots": 24083768,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936995",
+          "file": "data/raw/prjna1304005/sra/SRR34936995/SRR34936995.sra",
+          "bytes": 2117424386,
+          "sha256": "3aa1bd4981e7d4562268fc6076284bc6f746f16a8ed92ea6b702b4439eb0e5aa",
+          "sample": "Daphnia_Triclosan_1h_2",
+          "layout": "PAIRED",
+          "spots": 26251191,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936994",
+          "file": "data/raw/prjna1304005/sra/SRR34936994/SRR34936994.sra",
+          "bytes": 1820700015,
+          "sha256": "c6b77f1b0e9ad41cb6b40f8ffd2b4d104aaf05eab7daa19c43c19fc2a215007c",
+          "sample": "Daphnia_Control_1h_3",
+          "layout": "PAIRED",
+          "spots": 22937710,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936993",
+          "file": "data/raw/prjna1304005/sra/SRR34936993/SRR34936993.sra",
+          "bytes": 1806785245,
+          "sha256": "02026d15745641cf15aaf94639544521fa3b5876dc8f4a17b54d9f1cc03233d5",
+          "sample": "Daphnia_Triclosan_1h_3",
+          "layout": "PAIRED",
+          "spots": 22291675,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936992",
+          "file": "data/raw/prjna1304005/sra/SRR34936992/SRR34936992.sra",
+          "bytes": 1686701812,
+          "sha256": "be876e41e93cba70735f587668bc830830368d0e4a720ea8fe110f89a0564868",
+          "sample": "Daphnia_Imidacloprid_3h_1",
+          "layout": "PAIRED",
+          "spots": 20474595,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936991",
+          "file": "data/raw/prjna1304005/sra/SRR34936991/SRR34936991.sra",
+          "bytes": 1844936981,
+          "sha256": "e9c66310af30b4bee3a78088675910b633eef541d82fd5b54efc664eaf48f908",
+          "sample": "Daphnia_Imidacloprid_3h_2",
+          "layout": "PAIRED",
+          "spots": 22621274,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936990",
+          "file": "data/raw/prjna1304005/sra/SRR34936990/SRR34936990.sra",
+          "bytes": 1782076516,
+          "sha256": "b071673c9856af97001aed1f3e9d857554953f90c5f1a94ee6163486375b8928",
+          "sample": "Daphnia_Imidacloprid_3h_3",
+          "layout": "PAIRED",
+          "spots": 22347240,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936989",
+          "file": "data/raw/prjna1304005/sra/SRR34936989/SRR34936989.sra",
+          "bytes": 1829448315,
+          "sha256": "5f99705cb615aa764bf240f8e8a6da327766186de10b30bbdbd43c6f4a3dea07",
+          "sample": "Daphnia_Cd2+_1h_1",
+          "layout": "PAIRED",
+          "spots": 22687502,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936988",
+          "file": "data/raw/prjna1304005/sra/SRR34936988/SRR34936988.sra",
+          "bytes": 1800276105,
+          "sha256": "8c6422dc3536d9e574eaaab7b5bdd1b56af74da38e45c30a050c9c1ff2b221c1",
+          "sample": "Daphnia_Cd2+_1h_2",
+          "layout": "PAIRED",
+          "spots": 22123730,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936987",
+          "file": "data/raw/prjna1304005/sra/SRR34936987/SRR34936987.sra",
+          "bytes": 1724383224,
+          "sha256": "3c52db5ffef5909695bd735b4a994ec4298bb65617b978e7604924f719e8605b",
+          "sample": "Daphnia_Cd2+_1h_3",
+          "layout": "PAIRED",
+          "spots": 21123677,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936986",
+          "file": "data/raw/prjna1304005/sra/SRR34936986/SRR34936986.sra",
+          "bytes": 1644688648,
+          "sha256": "91d790af555e4764c2eadb5888c0c79f8a135efcbf4b73a17e29de58b14d0c17",
+          "sample": "Daphnia_Cr6+_1h_1",
+          "layout": "PAIRED",
+          "spots": 20668775,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936985",
+          "file": "data/raw/prjna1304005/sra/SRR34936985/SRR34936985.sra",
+          "bytes": 1837408870,
+          "sha256": "1f8dc1a290a9e89030b0b023d5a1d232d7f5ffda5c572c708e50e2b89a6f9b6e",
+          "sample": "Daphnia_Cr6+_1h_2",
+          "layout": "PAIRED",
+          "spots": 22284543,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936984",
+          "file": "data/raw/prjna1304005/sra/SRR34936984/SRR34936984.sra",
+          "bytes": 1705307382,
+          "sha256": "67ddbdcec0eaf40ec8e90e71cb15cb20e6088786ca41169ea043f09f20701cdd",
+          "sample": "Daphnia_Cr6+_1h_3",
+          "layout": "PAIRED",
+          "spots": 20939186,
+          "vdb_validate": "consistent"
+        },
+        {
+          "run": "SRR34936983",
+          "file": "data/raw/prjna1304005/sra/SRR34936983/SRR34936983.sra",
+          "bytes": 1763359352,
+          "sha256": "ac837068dec414e1386e06aaa3788d53598e77bdb3a8c894fead7cb25b42b169",
+          "sample": "Daphnia_Pb2+_1h_1",
+          "layout": "PAIRED",
+          "spots": 22252245,
+          "vdb_validate": "consistent"
+        }
+      ]
+    },
+    {
+      "name": "Code, worked example, trained models",
+      "source": "https://github.com/LiaoZitong/Heartbeat-of-Daphnia-magna",
+      "commit": "88513feb5475f16c2d7b48b6f37fc936639a4e22",
+      "route": "raw.githubusercontent.com (code) and media.githubusercontent.com (3 Git LFS .pkl files, checked vs pointer oid and size)",
+      "license": "MIT",
+      "files_sha256": [
+        {
+          "file": "./read_filename_info.py",
+          "sha256": "a820ff10801375155bc745bcbdfc35c5d7982ee105167a851977ace8030a8509"
+        },
+        {
+          "file": "./seven_points_decode_Final.py",
+          "sha256": "d851b8fc1bdd66e97e7cf846b254e8ec177bef6706752579a0804edb2689f6eb"
+        },
+        {
+          "file": "./video_predict.py",
+          "sha256": "a3a4511cf5d600b80757a192a53062baf8b6d8b34f06577d1dcd05b68167787e"
+        },
+        {
+          "file": "./signal_clean_version2.py",
+          "sha256": "19b4e88f75b7fcf6cfd9fb3bc3fb2ca317137330f7a3366182f8cf8dabca3426"
+        },
+        {
+          "file": "./update_heartbeat_data.py",
+          "sha256": "df938aa35b1511e066e9cec85ac021e42c044cb149cbe7d758276787cb6bd76e"
+        },
+        {
+          "file": "./LICENSE",
+          "sha256": "cdfa1d5d659b027f4190b38a52625b465d61ab211fe57f678c392f7f664ae5e7"
+        },
+        {
+          "file": "./README.md",
+          "sha256": "4f071d66254422b13afa73a1f730f5a814a52973b7c2086b46c9f2768abf9fd3"
+        },
+        {
+          "file": "./.gitattributes",
+          "sha256": "92c4528c69b4b030843d30eccab275c697f284a8df2fa4cac936847a90f626f1"
+        },
+        {
+          "file": "./hti_worked_example/validate_worked_example.py",
+          "sha256": "ac248d22b4014cbc66e18f3b6abb945c7296e07d7350471008e5790122044704"
+        },
+        {
+          "file": "./hti_worked_example/requirements.txt",
+          "sha256": "8f1936bc6e11f46d702595c731e6182e6b3ead7fbdfab96267fadd31a4b4a2ac"
+        },
+        {
+          "file": "./hti_worked_example/README.md",
+          "sha256": "62980e032f9aa4633bb6e402781c7f1bbaad61bfaae1814b86a9ddd6a6b3fcba"
+        },
+        {
+          "file": "./hti_worked_example/.gitignore",
+          "sha256": "a543e6cc632adc8b5155bb5d6900b7528904fd00f3492814ea364ba422a19936"
+        },
+        {
+          "file": "./hti_worked_example/expected_results.csv",
+          "sha256": "2377e4bb48f4207bafbfb575d60de138f0f8e9db3a5ed8c77449d92c33d9971e"
+        },
+        {
+          "file": "./hti_worked_example/run_hti_worked_example.py",
+          "sha256": "f265b3cfe6bb04fa05b09847d9637696927b277e0cd63404740518662309a513"
+        },
+        {
+          "file": "./hti_worked_example/models/stage1_response_classifier.pkl",
+          "sha256": "5e251978a9869e114ba7dc10e47e59a7eabafded7e4209cc0df3649119974212"
+        },
+        {
+          "file": "./hti_worked_example/models/complete_two_stage_hti_regressor.pkl",
+          "sha256": "3e8bac31b78510911615325f0b7052d3e859a77e88b05a84ce56ac01ec71a61a"
+        },
+        {
+          "file": "./hti_worked_example/models/fallback_hti_regressor.pkl",
+          "sha256": "cbbf5ce51f518d68bde9a84707f1dc1259da6d9d844234330057cc7e9ad39181"
+        },
+        {
+          "file": "./hti_worked_example/data/worked_example_two_samples.csv",
+          "sha256": "ca3026881d608fc401ccd21a90812430af9bf3e510f4ea62d0b0a7c1dea53a0d"
+        }
+      ],
+      "models_sha256": {
+        "complete_two_stage_hti_regressor.pkl": "776c2fba7e93c534018db79d6a40d55f2e9efe7ef6ac7cd62621d7f3edc70052",
+        "fallback_hti_regressor.pkl": "832b8652537fc78cac0411f1e0db15fdccd822adce4e7b9406e3f714aa7eea5b",
+        "stage1_response_classifier.pkl": "ac33ef88f22dfb0c6347c42695fbb7e7f8752d0231f720afe34fc8801ee08c37"
+      }
+    },
+    {
+      "name": "SRA/BioProject/BioSample metadata",
+      "accession": "PRJNA1304005",
+      "source": "NCBI E-utilities (efetch db=sra, bioproject, biosample)",
+      "retrieved_utc": "2026-10-31",
+      "path": "data/raw/prjna1304005_metadata/",
+      "license": "NCBI public metadata",
+      "files": [
+        {
+          "file": "./bioproject.xml",
+          "sha256": "6173211cef491e730572f7af033ffa834db9ae85f1d20db187bf5b17ae184f3d"
+        },
+        {
+          "file": "./biosample.ids",
+          "sha256": "065271dc796a8893dfac9d029f6c168d60ea1b1fdd52046e6b08bd51fcd3fc1f"
+        },
+        {
+          "file": "./biosample.xml",
+          "sha256": "1443d818062ddcfe7f133e58357d7cb288a37d1248b6249b1d66a0770feeb66d"
+        },
+        {
+          "file": "./bp.id",
+          "sha256": "9869f4871c8d9bb5a9c48d05103c3b05421581e086e7fc76565c14fddb9b7e80"
+        },
+        {
+          "file": "./es.xml",
+          "sha256": "46ada0267ad2c6bebf65ed5b89acb614303399eca1a50073e0c843b93ef7f0e2"
+        },
+        {
+          "file": "./run_sample_map.tsv",
+          "sha256": "d36ab07e74c67ce2ca64d3fad7fd33f3810b081b8b5741fa4f70d2301bfb38ef"
+        },
+        {
+          "file": "./runinfo.csv",
+          "sha256": "ce30914ff1bde767d24afaa793866cf4e1a95e410deb6f73648a0f74bed0353f"
+        },
+        {
+          "file": "./sra_experiment_packages.xml",
+          "sha256": "14513cc529fae6bff3bccf2fd179d2bf99548572fa9c9cdcd0da4160c9563f55"
+        }
+      ],
+      "summary": {
+        "title": "Transcriptome regulation of Daphnia magna in the early stage (1h) of acute exposure to typical pollutants",
+        "submitter": "Tsinghua University",
+        "biosamples": 24,
+        "organism": "Daphnia magna",
+        "tissue": "whole animal",
+        "age": "1 day",
+        "collection_date": "2025-05",
+        "library": "RNA-Seq, TRANSCRIPTOMIC, PolyA, PAIRED, Illumina NovaSeq X Plus"
+      },
+      "notes": [
+        "biosample.xml also contains one unrelated human dbGaP record (SAMN01304005) returned by the elink; not part of this dataset, nothing downloaded for it.",
+        "No exposure concentrations, pooling, genome/annotation version or library-prep protocol in the metadata; concentrations are in the paper (Table 1)."
+      ]
+    },
+    {
+      "name": "Paper and Supporting Information (PDF)",
+      "path": "data/raw/liao2026_dhear_paper/",
+      "retrieved_utc": "2026-10-31",
+      "source": "ACS (user download via institutional access)",
+      "files": [
+        {
+          "file": "liao2026_article.pdf",
+          "sha256": "9b2cad9b71dbd2f7cb1b9d0e58ddd4bddf578c37dbdc3987fdd95fac8d0abc62"
+        },
+        {
+          "file": "liao2026_SI.pdf",
+          "sha256": "b5461d8200082f3eb3911e41ca2725985e8cefd7f5c00d6d114122b4d063a5b5"
+        }
+      ],
+      "si_pages": 73,
+      "note": "SI had to be downloaded by the user from the publisher; a first file saved as '*_SI.pdf' was the main article, the real SI is liao2026_SI.pdf."
+    }
+  ],
+  "deviations": [
+    "SRA files are .sra (not FASTQ); FASTQ conversion not performed.",
+    "No publisher checksums for SRA; SHA-256 recorded as observed, integrity via vdb-validate (all 24 consistent).",
+    "Run SRR34936995 needed one download retry."
+  ],
+  "open_items": [
+    "116-descriptor per-animal cardiac dataset and raw videos are NOT public (SI contains only summary tables: S1 definitions, S2 descriptor ranking, S3/S6/S7 model metrics, S8 water chemistry); data request emailed to corresponding authors 2026-10-31, no reply yet.",
+    "No count matrix or DEG/module tables are public as files; SI Table S4 (selected gene-level evidence, log2FC/padj) and Table S5 (WGCNA module summaries) are partial and PDF-only. Counts/DEGs/modules can be regenerated from the 24 SRA runs using the SI parameters (genome GCF_020631705.1 / ASM2063170v1.1; exact annotation file version not stated).",
+    "Exact reproduction of Figure 4c needs the cardiac condition means, which are not tabulated in the SI.",
+    "SRA runs are .sra, not FASTQ; conversion not done.",
+    "Reconcile WGCNA module count (32 vs 11); Fig 4c correlations need authors cardiac means; union DEGs 3922 vs 4605"
+  ],
+  "processed_counts_check": {
+    "date_utc": "2026-10-31",
+    "result": "none found",
+    "checked": [
+      "GEO/gds by BioProject and by text (0 hits; BioProject links only to biosample and sra)",
+      "Europe PMC for doi 10.1021/acs.est.6c09772 (not open access, no supplement via Europe PMC)",
+      "GitHub repo tree (only two worked-example CSVs, no count tables)"
+    ],
+    "not_checked": [
+      "ACS supplementary PDF (publisher site, login/bot-gated; described as methods/tables only)",
+      "Direct request to authors"
+    ]
+  },
+  "rnaseq_analysis_parameters_from_SI": {
+    "source": "SI Note S4 and Note S11",
+    "design": "8 conditions x 3 pooled replicates (~500 animals/pool) = 24 libraries; 1 h at fitted 48 h EC50, plus imidacloprid 3 h; cardiac descriptors measured in parallel cohorts, not paired to RNA-seq pools",
+    "rna_extraction": "TRIzol; RIN/RQN >= 6.5",
+    "library": "Illumina Stranded mRNA Prep (Ligation), poly(A), dUTP stranded, NovaSeq X Plus PE150",
+    "qc": "fastp 0.23.4 (adapter removal, Q<20 3' trim, drop reads <20 bp or >10% N)",
+    "reference": "D. magna ASM2063170v1.1, RefSeq GCF_020631705.1",
+    "alignment": "HISAT2 2.2.1, default params, --rna-strandness RF",
+    "assembly_quant": "StringTie 2.2.1; RSEM 1.3.3 (TPM)",
+    "differential_expression": "DESeq2 1.42.0; FDR < 0.05 and |log2FC| >= 1",
+    "enrichment": "GOATOOLS 1.4.4 (Fisher, FDR); KEGG enrichment via SciPy Fisher + BH",
+    "platform": "Majorbio Cloud",
+    "wgcna": "genes with <1 TPM or CV <0.1 removed; signed network; soft-threshold power 20; minModuleSize 30; minKMEtoStay 0.3; mergeCutHeight 0.25; 11 modules; module eigengenes averaged per condition then Spearman with condition-level cardiac means (n=8)",
+    "headline_results": "4,605 DEGs across 7 exposure groups; 28 shared"
+  },
+  "quantification_run_2026-11-02": {
+    "pipeline": "fasterq-dump -> fastp 0.23.4 (SI settings) -> HISAT2 (no strand flag) -> samtools sort -> StringTie 2.2.3 -e (GTF without NCBI gene rows) and featureCounts 2.1.1 (-p --countReadPairs -B -C -s 0, exon, gene_id)",
+    "reference": "GCF_020631705.1 ASM2063170v1.1 genomic.fna + genomic.gtf (NCBI RefSeq; annotation release not stated in SI)",
+    "libraries": "24/24 completed; HISAT2 overall alignment ~87-92% (not all tabulated here)",
+    "outputs_dir": "results/liao2026/",
+    "deviations": [
+      "StringTie 2.2.3 used, SI says 2.2.1 (no osx-arm64 build)",
+      "RSEM 1.3.3 not run (env daphnia_rsem prepared)",
+      "Alignment/counting unstranded: featureCounts on 2 libraries assigned 71.6-77.9% with -s 0 vs 37-42% with -s 1/2, contradicting SI stranded RF",
+      "StringTie counts built by own script (cov*exon_length/150) because prepDE.py raised KeyError",
+      "NCBI gene rows (empty transcript_id) removed from GTF for StringTie",
+      "DESeq2 prefilter: rowSums(counts)>=10 (not stated in SI)",
+      "fastp 1.0.1 used, SI says 0.23.4",
+      "DESeq2 1.46.0 used, SI says 1.42.0",
+      "Primary DESeq2 model was joint (all 24 libraries); Table S4 padj pattern indicates the paper ran pairwise (6 libraries per contrast). Rerun primary results pairwise before using."
+    ],
+    "deseq2_results": {
+      "thresholds_SI": "FDR<0.05, |log2FC|>=1",
+      "stringtie_counts_log2FC>=1": {
+        "Cd": 256,
+        "Cr": 301,
+        "Pb": 372,
+        "Hg": 450,
+        "Imidacloprid_1h": 149,
+        "Triclosan": 432,
+        "Imidacloprid_3h": 521,
+        "union": 1387,
+        "shared": 15
+      },
+      "featurecounts_log2FC>=1": {
+        "Cd": 209,
+        "Cr": 234,
+        "Pb": 317,
+        "Hg": 419,
+        "Imidacloprid_1h": 135,
+        "Triclosan": 420,
+        "Imidacloprid_3h": 462,
+        "union": 1310,
+        "shared": 7
+      },
+      "featurecounts_log2FC>=0.585": {
+        "Cd": 743,
+        "Cr": 687,
+        "Pb": 1018,
+        "Hg": 1337,
+        "Imidacloprid_1h": 637,
+        "Triclosan": 1267,
+        "Imidacloprid_3h": 1634,
+        "union": 3922,
+        "shared": 29
+      },
+      "paper": {
+        "Cd": 723,
+        "Cr": 677,
+        "Pb": 953,
+        "Hg": 1284,
+        "Imidacloprid_1h": 601,
+        "Triclosan": 1229,
+        "Imidacloprid_3h": 1634,
+        "union": 4605,
+        "shared": 28
+      },
+      "note": "0.585 (1.5-fold) chosen post hoc after seeing paper totals; it matches closely, suggesting the paper used a 1.5-fold cutoff despite SI text. Not independently confirmed."
+    },
+    "wgcna": {
+      "input": "StringTie TPM, genes with mean TPM>=1 and CV>=0.1 (11,275 genes), log2(TPM+1)",
+      "params": "signed, power 20, minModuleSize 30, minKMEtoStay 0.3, mergeCutHeight 0.25",
+      "modules": "32 in primary run (paper 11)",
+      "variants_modules_excl_grey": {
+        "mean TPM>=1, cv>=.1, log2(TPM+1)": 32,
+        "mean TPM>=1, cv>=.1, raw TPM": 23,
+        "all samples TPM>=1, cv>=.1, log2": 23,
+        "all samples TPM>=1, cv>=.1, raw": 27
+      },
+      "deg_only_variants_modules_excl_grey": {
+        "DEG union |log2FC|>=0.585 (3921 genes), no TPM/CV filter, log2": 20,
+        "DEG union |log2FC|>=0.585 + mean TPM>=1,CV>=.1 (3639), log2": 16,
+        "DEG union |log2FC|>=0.585 + same filter, raw TPM": 18,
+        "DEG union |log2FC|>=1 (1309 genes), no filter, log2": 9,
+        "DEG union |log2FC|>=1 + filter (1129), log2": 10,
+        "DEG union |log2FC|>=1 + filter, raw TPM": 12,
+        "note": "DEG sets from featureCounts DESeq2; StringTie TPM. Module count tracks gene number; paper says WGCNA used expression/variability-filtered genes (not stated DEG-only)."
+      }
+    },
+    "si_recheck_findings": {
+      "table_S4_threshold_evidence": "SI Table S4 lists transcripts labelled up/down with padj<0.05 and |log2FC| as low as 0.5897 (e.g. Hg_1h 0.5897, Pb_1h 0.6096, Tri_1h 0.6210). These contradict the stated |log2FC|>=1 and are consistent with a 1.5-fold cutoff (log2 1.5 = 0.585). Parsed 20 of the table rows automatically; wrapped negative values not parsed.",
+      "gene_ids": "Table S4 IDs are gene-LOC######## (NCBI RefSeq GFF3 gene- prefix), consistent with the RefSeq annotation used here.",
+      "platform": "SI says analyses ran on Majorbio Cloud Platform; its pipeline internals (count source for DESeq2, prefilters) are not described in the SI.",
+      "quantification": "SI Note S4 3.3 says TPM from RSEM; DESeq2 count source not stated.",
+      "strandedness_wording": "SI says --rna-strandness RF \"for stranded libraries\"; kit is Illumina Stranded mRNA Prep (dUTP), yet our featureCounts test on 2 libraries looks unstranded.",
+      "wgcna": "Note S11: genes <1 TPM or CV<0.1 excluded (unspecified whether mean or per-sample, or log transform); Spearman across 8 condition means; 11 modules reported."
+    },
+    "tool_versions_used": {
+      "fastp": "1.0.1 (SI 0.23.4)",
+      "hisat2": "2.2.1",
+      "stringtie": "2.2.3 (SI 2.2.1)",
+      "rsem": "1.3.3 per conda (binary prints v1.3.1)",
+      "bowtie2": "2.5.5",
+      "featureCounts": "2.1.1",
+      "samtools": "1.22.1",
+      "DESeq2": "1.46.0 (SI 1.42.0)",
+      "WGCNA": "1.74",
+      "R": "4.4.2"
+    },
+    "rsem_run": {
+      "status": "24/24 libraries, 0 failed (2026-11-03/04)",
+      "method": "fastp 1.0.1 -> rsem-calculate-expression --paired-end --bowtie2 --strandedness none, RSEM 1.3.3, bowtie2 2.5.5, reference from genes.tx.gtf + genome.fa",
+      "speed": "~40-55 min per library when Mac awake; longer entries reflect sleep",
+      "pilot_check": "SRR34937006 RSEM vs StringTie TPM Spearman 0.913; RSEM expected counts 18.4M vs StringTie 35.2M",
+      "outputs": [
+        "gene_count_matrix_rsem.csv",
+        "gene_tpm_matrix_rsem.csv",
+        "isoform_count_matrix_rsem.csv",
+        "isoform_tpm_matrix_rsem.csv"
+      ],
+      "deseq2_prefilter10": {
+        "gene_1.5fold": {
+          "Cd": 783,
+          "Cr": 739,
+          "Pb": 1060,
+          "Hg": 1355,
+          "Imidacloprid_1h": 628,
+          "Triclosan": 1313,
+          "Imidacloprid_3h": 1697,
+          "union": 4053,
+          "shared": 31
+        },
+        "gene_2fold": {
+          "Cd": 211,
+          "Cr": 219,
+          "Pb": 333,
+          "Hg": 423,
+          "Imidacloprid_1h": 128,
+          "Triclosan": 410,
+          "Imidacloprid_3h": 481,
+          "union": 1286,
+          "shared": 9
+        },
+        "isoform_1.5fold": {
+          "Cd": 1079,
+          "Cr": 1151,
+          "Pb": 1539,
+          "Hg": 1936,
+          "Imidacloprid_1h": 928,
+          "Triclosan": 1760,
+          "Imidacloprid_3h": 2218,
+          "union": 5680,
+          "shared": 55
+        }
+      },
+      "wgcna_modules_rsem_tpm": {
+        "mean TPM>=1,cv>=.1, log2": 25,
+        "mean TPM>=1,cv>=.1, raw": 21,
+        "all samples TPM>=1,cv>=.1, log2": 24,
+        "all samples TPM>=1,cv>=.1, raw": 21
+      }
+    },
+    "prefilter_test_featurecounts": "Removing the rowSums>=10 prefilter or turning independent filtering off changed union only 3872-3953 (paper 4605).",
+    "tableS4_comparison": {
+      "what": "31 gene-contrast rows (11 genes) parsed from SI Table S4 (results/liao2026/tableS4_parsed.csv) vs my DESeq2 results",
+      "log2FC_pearson_r": {
+        "stringtie": 0.963,
+        "featurecounts": 0.962,
+        "rsem": 0.968
+      },
+      "-log10padj_pearson_r": {
+        "stringtie": 0.652,
+        "featurecounts": 0.61,
+        "rsem": 0.931
+      },
+      "rsem_detail": "26/31 rows match paper log2FC within mean |diff| 0.022 (r=0.9997); 5 rows from 3 genes (LOC116922180, LOC116926869 Hg, LOC116922174) differ by 0.4-0.8 log2FC; my padj is smaller than paper padj by ~1-3 orders for most rows",
+      "inference": "Paper most likely used RSEM expected counts at gene level into DESeq2 (Wald), with a ~1.5-fold filter. Not proven; 3 outlier genes suggest annotation/multimapping differences."
+    },
+    "deseq2_settings_scan": "results/liao2026/deseq2_settings_scan.csv: 40 configs; best fit filter |LFC|>=0.585-0.6 after FDR<0.05; lfcThreshold test far too strict; raw p<0.05 inflates counts.",
+    "padj_test": {
+      "finding": "Running DESeq2 pairwise (Control vs one group, 6 libraries per contrast) on RSEM gene counts reproduces Table S4 padj pattern: r(-log10 padj)=0.999-1.000 vs 0.93 for the joint 24-library model. log2FC unaffected.",
+      "pairwise_rsem_1.5fold": {
+        "prefilter0_indepON": {
+          "perGroup": [
+            691,
+            670,
+            954,
+            1254,
+            571,
+            1221,
+            1589
+          ],
+          "union": 3747
+        },
+        "prefilter10_indepON": {
+          "perGroup": [
+            707,
+            676,
+            983,
+            1271,
+            577,
+            1229,
+            1617
+          ],
+          "union": 3805
+        },
+        "paper": [
+          723,
+          677,
+          953,
+          1284,
+          601,
+          1229,
+          1634
+        ]
+      },
+      "residual": "my padj still smaller than paper (median offset -0.2 to -0.9 orders, mean dominated by very small p); BH with n=26140 shrinks it only partly. Paper union 4605 vs pairwise 3722-3889 unresolved.",
+      "script": "scratchpad padj_test.R / padj_test2.R (not saved in project)"
+    },
+    "primary_result_pairwise_rsem": {
+      "model": "DESeq2 1.46.0 pairwise (Control 1 h vs each group, 3 vs 3 libraries), RSEM gene expected counts rounded, prefilter rowSums>=10, default Wald + independent filtering; DEG = padj<0.05 & |log2FC|>=0.585",
+      "table": "results/liao2026/per_gene_table_pairwise_rsem.csv (16,093 genes)",
+      "per_group": {
+        "Cd": 707,
+        "Cr": 676,
+        "Pb": 983,
+        "Hg": 1271,
+        "Imidacloprid_1h": 577,
+        "Triclosan": 1229,
+        "Imidacloprid_3h": 1617
+      },
+      "paper_per_group": {
+        "Cd": 723,
+        "Cr": 677,
+        "Pb": 953,
+        "Hg": 1284,
+        "Imidacloprid_1h": 601,
+        "Triclosan": 1229,
+        "Imidacloprid_3h": 1634
+      },
+      "union": 3805,
+      "paper_union": 4605,
+      "shared": 29,
+      "paper_shared": 28,
+      "two_fold_per_group": {
+        "Cd": 175,
+        "Cr": 192,
+        "Pb": 294,
+        "Hg": 380,
+        "Imidacloprid_1h": 103,
+        "Triclosan": 358,
+        "Imidacloprid_3h": 446
+      },
+      "tableS4": {
+        "rows": 31,
+        "direction_agrees": 29,
+        "pass_1.5fold_FDR": 27,
+        "mean_abs_dlog2FC_excl_3_genes": 0.022,
+        "median_padj_offset_orders": -0.93,
+        "off_genes": [
+          "LOC116922180",
+          "LOC116926869",
+          "LOC116922174"
+        ]
+      }
+    },
+    "wgcna_subset_search": {
+      "target_paper": "11 modules, 2164 genes in modules, sizes 596 247 228 218 193 179 152 115 107 99 30 (SI Table S5, tableS5_parsed.csv)",
+      "result": "13 subsets tried (RSEM TPM, log2, SI params); none matches. Closest on count only: top 2500 CV genes -> 12 modules, 2081 in modules, top sizes 399 355 327 191 (paper 596 247 228). DEG1.5x union -> 19 modules/3427; DEG1.5x in >=3 groups -> 10 modules/752; DEG2x -> 9 modules/937.",
+      "file": "results/liao2026/wgcna_subset_search.csv",
+      "status": "WGCNA input of the paper unresolved; ask authors."
+    },
+    "wgcna_membership_check": {
+      "basis": "Module labels for 11 genes in SI Table S4 (12 gene-module rows incl. LOC116922174); paper publishes no module gene lists",
+      "DEG1.5x union input": "5 of 6 paper-turquoise genes in input all land in one of my modules (10/10 pairs); 0/50 cross-module pairs merged; paper black pair (LOC116919481, LOC116925137) split; LOC116922180, LOC116922174 not in input",
+      "top2500 CV": "3/15 turquoise pairs together; 4 of 12 genes not in input",
+      "all filtered genes": "6/15 turquoise pairs together; 9/50 cross-module pairs wrongly merged",
+      "caveat": "tiny sample; turquoise is the paper largest module (596 genes), so co-membership is partly expected"
+    },
+    "module_enrichment_transcription": {
+      "file": "results/liao2026/tableS12_S13_S14_module_enrichment_transcribed.csv (141 rows)",
+      "S14": "5 modules x 6 GO terms, legible, rich factor approximate",
+      "S12_S13": "terms assigned to modules by dot column on raster images (medium confidence); no p-values or counts transcribed",
+      "inconsistency": "Fig S12 GO terms for black, brown, red, turquoise do not match Table S5 / Fig S14 (S14 has peptidase/oxidoreductase/chitin/protein folding terms for red, turquoise, brown; S12 columns for those modules list transport/regulation terms). S12 matches Table S5 for 7 other modules. Possible figure or mislabel error, or my column assignment; unresolved."
+    }
+  },
+  "hti_worked_example_run": {
+    "date": "2026-11-04",
+    "env": "conda env daphnia_hti: Python 3.11.18, pycaret 3.3.2, pandas 2.1.4, numpy 1.26.4, joblib 1.3.2, scikit-learn 1.4.2 (pip, per requirements.txt)",
+    "run_from": "scratch copy (original repo files untouched), python -I",
+    "result": "PASS: validate_worked_example.py matches expected_results.csv (2 records: id 1415 Pb(II), class 3, qmax 0.990, complete_two_stage, HTI 0.553 vs observed 0.5; id 6110 wastewater, class 1, qmax 0.441, fallback, HTI 0.827 vs observed 0.9)",
+    "caveat": "Pickle safety check was partial (first 424 opcodes per file, only pycaret/sklearn/joblib/numpy refs); only checks the code runs, not any paper result."
+  }
+}
