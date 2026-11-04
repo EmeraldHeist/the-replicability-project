@@ -16,3 +16,4 @@ Environments (versions in `environment/`): `daphnia_quant` (StringTie 2.2.3, sub
 9. **DESeq2.** Primary: `scripts/pairwise_final.R` (pairwise, prefilter rowSums >= 10). Alternatives and scans: `deseq.R`, `deseq_fc.R`, `deseq_pf.R`, `scan.R`, `padj_test.R`, `padj_test2.R`.
 10. **WGCNA.** `wgcna.R`, `wgcna_var.R`, `wgcna_rsem.R`, `wgcna_deg.R`, `wgcna_sizes.R`, `wgcna_search.R`, `member.R`.
 11. **SI tables.** `scripts/parse_tableS4_S5.py` for Table S4; Table S5 and Figures S12 to S14 were transcribed by hand (`derived/`).
+12. **Figures.** `Rscript scripts/pca_rsem.R` then `python3 -I scripts/make_figures.py` (from the case folder; needs matplotlib and pandas). Writes `figures/*.png` and `derived/pca_rsem.csv`, `derived/tableS4_vs_ours_log2FC.csv`.

@@ -84,6 +84,21 @@ The settings scans are in `derived/deseq2_settings_scan.csv`. At the stated 2-fo
 - Five rows from three genes are off by 0.4 to 0.8 (LOC116922180 and LOC116926869 in Hg, and LOC116922174).
 - Our significance values (padj) follow the same pattern as the paper's (correlation about 1.000 in the best setup). Ours are smaller by a median of about 0.9 orders of magnitude (about 8 times).
 
+### Figures
+Made from the files in `derived/` with `scripts/make_figures.py` (and `scripts/pca_rsem.R` for the PCA).
+
+![Changed genes per group, paper vs reanalysis](../cases/10-liao2026-dhear-rnaseq/figures/fig1_deg_counts.png)
+
+**Figure 1.** Changed genes per group. The orange bars match the paper only because the 1.5-fold cutoff was chosen after the paper's totals were seen. At the cutoff the paper states (2-fold, green) the counts are far lower.
+
+![Table S4 log2 fold change, paper vs ours](../cases/10-liao2026-dhear-rnaseq/figures/fig2_tableS4_log2FC.png)
+
+**Figure 2.** The 31 gene results in SI Table S4. 26 agree within 0.1. The 5 that differ come from three genes (LOC116922180, LOC116922174, LOC116926869). The values are in `derived/tableS4_vs_ours_log2FC.csv`.
+
+![PCA of the 24 libraries](../cases/10-liao2026-dhear-rnaseq/figures/fig3_pca.png)
+
+**Figure 3.** PCA of the 24 libraries. Each condition's three replicates sit together, so the replicates agree with each other. This is a quality check, not a test against the paper.
+
 ## Reconstruction log
 Each row is a detail the paper did not give clearly, and what was done about it. "I" means a decision or action of mine. "Claude" means a choice made by the AI assistant.
 
